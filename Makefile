@@ -13,8 +13,8 @@ default: install ;
 # Check the configuration
 .PHONY: check
 check:
-	@ssh -t $(SERVER) "sudo /usr/local/bin/docker exec homeassistant python -m homeassistant --script check_config --config /config"
+	@ssh $(SERVER) "sudo /usr/local/bin/docker exec homeassistant python -m homeassistant --script check_config --config /config"
 
 # Restart Home Assistant
 restart:
-	@ssh -t $(SERVER) "sudo /usr/local/bin/docker restart homeassistant"
+	@ssh $(SERVER) "sudo /usr/local/bin/docker restart homeassistant"
