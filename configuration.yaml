@@ -18,10 +18,9 @@ history:
 logbook:
 sun:
 
-# apple_tv:
-# - host: 192.168.7.39
-#   login_id: 00000000-08eb-e556-18d5-3251938d44ce
-#   credentials: 70FAD2DF10C7B0CA:828C8F97558B1CE2C349A35B5926F99CB5EC4FBA86EC1D5C245D47411ECB3C6A
+binary_sensor:
+- platform: template
+  sensors: !include_dir_merge_named binary_sensors
 
 sensor:
 
