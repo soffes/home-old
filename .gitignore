@@ -1,0 +1,8 @@
+.cloud
+.storage
+.uuid
+deps
+tts
+*.log
+*.db*
+secrets.yaml

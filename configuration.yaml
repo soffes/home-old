@@ -1,0 +1,54 @@
+homeassistant:
+  name: !secret home_name
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: imperial
+  time_zone: America/Los_Angeles
+
+frontend:
+lovelace:
+  mode: yaml
+config:
+system_health:
+http:
+updater:
+ios:
+history:
+logbook:
+sun:
+
+# apple_tv:
+# - host: 192.168.7.39
+#   login_id: 00000000-08eb-e556-18d5-3251938d44ce
+#   credentials: 70FAD2DF10C7B0CA:828C8F97558B1CE2C349A35B5926F99CB5EC4FBA86EC1D5C245D47411ECB3C6A
+
+sensor:
+
+# Dark Sky
+- platform: darksky
+  api_key: !secret darksky_api_key
+  monitored_conditions:
+    - summary
+    - icon
+    - temperature
+    - precip_probability  
+    - wind_speed
+    - wind_bearing
+    - sunrise_time
+    - sunset_time
+    - alerts
+
+# System Monitor
+- platform: systemmonitor
+  resources:
+  - type: disk_use_percent
+    arg: /
+  - type: memory_use_percent
+  - type: load_5m
+  - type: processor_use
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
