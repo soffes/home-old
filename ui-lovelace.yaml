@@ -1,0 +1,5 @@
+title: !secret home_name
+views:
+  - !include ui/media.yaml
+  - !include ui/monitoring.yaml
+

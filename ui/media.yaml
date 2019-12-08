@@ -1,0 +1,85 @@
+title: Media
+cards:
+- type: vertical-stack
+  cards:
+  - type: conditional
+    conditions:
+    - entity: binary_sensor.sonos_grouped
+      state: 'on'
+    card:
+      type: vertical-stack
+      cards:
+      - type: media-control
+        entity: media_player.media_room_sonos
+      - type: entity-button
+        entity: script.night_sonos
+        name: Night Mode
+        tap_action:
+          action: call-service
+          service: script.night_sonos
+  - type: conditional
+    conditions:
+    - entity: binary_sensor.sonos_grouped
+      state: 'off'
+    card:
+      type: horizontal-stack
+      cards:
+      - type: entity-button
+        entity: script.daytime_sonos
+        name: Group All
+        tap_action:
+          action: call-service
+          service: script.daytime_sonos
+      - type: entity-button
+        entity: script.night_sonos
+        name: Night Mode
+        tap_action:
+          action: call-service
+          service: script.night_sonos
+
+- type: vertical-stack
+  cards:
+  - type: glance
+    title: Media Center
+    show_state: false
+    show_name: false
+    entities:
+      - entity: script.media_center_sonos
+        tap_action:
+          action: call-service
+          service: script.media_center_sonos
+      - entity: script.media_center_apple_tv
+        tap_action:
+          action: call-service
+          service: script.media_center_apple_tv
+      - entity: script.media_center_nintendo_switch
+        tap_action:
+          action: call-service
+          service: script.media_center_nintendo_switch
+  - type: conditional
+    conditions:
+    - entity: sensor.media_center
+      state_not: "Powered Off"
+    card:
+      type: glance
+      show_state: false
+      show_name: false
+      title: Controls
+      entities:
+        - entity: script.media_center_mute
+          tap_action:
+            action: call-service
+            service: script.media_center_mute
+        - entity: script.media_center_volume_up
+          tap_action:
+            action: call-service
+            service: script.media_center_volume_up
+        - entity: script.media_center_volume_down
+          tap_action:
+            action: call-service
+            service: script.media_center_volume_down
+        - entity: script.media_center_off
+          tap_action:
+            action: call-service
+            service: script.media_center_off
+  

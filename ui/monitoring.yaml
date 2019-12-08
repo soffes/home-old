@@ -1,0 +1,17 @@
+title: Monitoring
+cards:
+- type: vertical-stack
+  cards:
+  - type: sensor
+    entity: sensor.processor_use
+    graph: line
+  - type: horizontal-stack
+    cards:
+    - type: sensor
+      entity: sensor.memory_use_percent
+      name: Memory
+      graph: line
+    - type: sensor
+      entity: sensor.disk_use_percent
+      name: Disk
+      graph: line
