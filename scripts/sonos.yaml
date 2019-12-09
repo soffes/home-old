@@ -1,0 +1,14 @@
+sonos_party_mode:
+  sequence:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.living_room
+        volume_level: 0.1
+    - service: sonos.join
+      data:
+        master: media_player.living_room
+      entity_id:
+        - media_player.master_bedroom
+        - media_player.guest_bathroom
+        - media_player.office
+        - media_player.garage
