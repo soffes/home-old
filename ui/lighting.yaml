@@ -1,0 +1,18 @@
+title: Lighting
+path: lighting
+cards:
+  - type: entities
+    title: Living Room
+    entities:
+    - entity: light.living_room_arc_lamp
+      name: Arc Lamp
+    - entity: group.living_room_lamp
+      name: Floor Lamp
+
+  - type: entities
+    title: Master Bedroom
+    entities:
+    - light.ellens_lamp
+    - light.sams_lamp
+    - entity: fan.master_bedroom
+      name: Fan

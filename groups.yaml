@@ -25,3 +25,8 @@ garage:
 guest_bathroom:
   entities:
     - media_player.guest_bathroom
+
+living_room_lamp:
+  entities:
+    - light.living_room_lamp_1
+    - light.living_room_lamp_2

@@ -1,0 +1,8 @@
+light.living_room_arc_lamp:
+  icon: mdi:desk-lamp
+group.living_room_lamp:
+  icon: mdi:floor-lamp
+light.ellens_lamp:
+  icon: mdi:lamp
+light.sams_lamp:
+  icon: mdi:lamp

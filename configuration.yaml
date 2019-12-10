@@ -5,10 +5,12 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: imperial
   time_zone: America/Los_Angeles
+  customize: !include customize.yaml
 
 frontend:
   themes: !include_dir_merge_named themes
 lovelace:
+  mode: yaml
 config:
 system_health:
 http:
@@ -30,18 +32,25 @@ august: !include platforms/august.yaml
 dyson: !include platforms/dyson.yaml
 
 sensor:
-- platform: darksky
-  api_key: !secret darksky_api_key
-  monitored_conditions:
-    - summary
-    - icon
-    - temperature
-    - precip_probability  
-    - wind_speed
-    - wind_bearing
-    - sunrise_time
-    - sunset_time
-    - alerts
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    monitored_conditions:
+      - summary
+      - icon
+      - temperature
+      - precip_probability  
+      - wind_speed
+      - wind_bearing
+      - sunrise_time
+      - sunset_time
+      - alerts
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /
+      - type: memory_use_percent
+      - type: load_5m
+      - type: processor_use
 
 group: !include groups.yaml
 automation: !include automations.yaml
