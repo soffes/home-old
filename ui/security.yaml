@@ -1,0 +1,15 @@
+title: Security
+path: security
+cards:
+  - type: entity-button
+    name: Front Door
+    entity: lock.front_door
+    tap_action:
+      action: toggle
+
+  - type: glance
+    title: Doors
+    show_state: false
+    entities:
+    - entity: binary_sensor.front_door_open
+      name: Front Door

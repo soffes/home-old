@@ -1,4 +1,5 @@
 title: !secret home_name
 views:
-  - !include ui/lighting.yaml
+  - !include ui/security.yaml
+  - !include ui/switches.yaml
   - !include ui/status.yaml
