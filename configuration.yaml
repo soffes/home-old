@@ -26,15 +26,10 @@ binary_sensor:
 - platform: template
   sensors: !include_dir_merge_named binary_sensors
 
-# August
-august:
-  login_method: phone
-  username: !secret august_username
-  password: !secret august_password
+august: !include platforms/august.yaml
+dyson: !include platforms/dyson.yaml
 
 sensor:
-
-# Dark Sky
 - platform: darksky
   api_key: !secret darksky_api_key
   monitored_conditions:
@@ -47,15 +42,6 @@ sensor:
     - sunrise_time
     - sunset_time
     - alerts
-
-# System Monitor
-- platform: systemmonitor
-  resources:
-  - type: disk_use_percent
-    arg: /
-  - type: memory_use_percent
-  - type: load_5m
-  - type: processor_use
 
 group: !include groups.yaml
 automation: !include automations.yaml

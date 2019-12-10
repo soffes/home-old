@@ -1,0 +1,6 @@
+username: !secret dyson_username
+password: !secret dyson_password
+language: GB
+devices:
+  - device_id: C2A-US-MDB5760A
+    device_ip: 10.0.0.60
