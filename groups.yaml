@@ -1,0 +1,27 @@
+dinning_room:
+  entities:
+    - light.dinning_room_overhead_1
+    - light.dinning_room_overhead_2
+    - light.dinning_room_overhead_3
+    - light.dinning_room_overhead_4
+master_bedroom:
+  entities:
+    - light.ellens_lamp
+    - light.sams_lamp
+    - media_player.master_bedroom
+    - fan.master_bedroom
+entryway:
+  entities:
+    - lock.front_door
+living_room:
+  entities:
+    - light.living_room_arc_lamp
+    - light.living_room_lamp_1
+    - light.living_room_lamp_2
+    - media_player.living_room
+garage:
+  entities:
+    - media_player.garage
+guest_bathroom:
+  entities:
+    - media_player.guest_bathroom
