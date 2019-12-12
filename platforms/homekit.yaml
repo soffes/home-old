@@ -1,0 +1,5 @@
+filter:
+  include_entities:
+    - lock.front_door
+    - climate.hallway
+    - fan.master_bedroom

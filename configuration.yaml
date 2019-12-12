@@ -30,9 +30,8 @@ binary_sensor:
 
 august: !include platforms/august.yaml
 dyson: !include platforms/dyson.yaml
-
-ecobee:
-  api_key: !secret ecobee_api_key
+ecobee: !include platforms/ecobee.yaml
+homekit: !include platforms/homekit.yaml
 
 sensor:
   - platform: darksky
