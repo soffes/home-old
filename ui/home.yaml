@@ -1,6 +1,9 @@
-title: Security
-path: security
+title: Home
+path: home
 cards:
+  - type: thermostat
+    entity: climate.hallway
+
   - type: entity-button
     name: Front Door
     entity: lock.front_door
