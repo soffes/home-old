@@ -3,3 +3,6 @@ filter:
     - lock.front_door
     - climate.hallway
     - fan.master_bedroom
+    - light.sams_lamp
+    - light.ellens_lamp
+    - light.living_room_arc_lamp
