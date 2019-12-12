@@ -31,6 +31,9 @@ binary_sensor:
 august: !include platforms/august.yaml
 dyson: !include platforms/dyson.yaml
 
+ecobee:
+  api_key: !secret ecobee_api_key
+
 sensor:
   - platform: darksky
     api_key: !secret darksky_api_key
@@ -38,7 +41,7 @@ sensor:
       - summary
       - icon
       - temperature
-      - precip_probability  
+      - precip_probability
       - wind_speed
       - wind_bearing
       - sunrise_time
