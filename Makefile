@@ -16,5 +16,11 @@ check:
 	@ssh $(SERVER) "sudo /usr/local/bin/docker exec homeassistant python -m homeassistant --script check_config --config /config"
 
 # Restart Home Assistant
+.PHONY: restart
 restart:
 	@ssh $(SERVER) "sudo /usr/local/bin/docker restart homeassistant"
+
+# ESPHome dashboard
+.PHONY: esphome
+esphome:
+	@esphome esphome dashboard
