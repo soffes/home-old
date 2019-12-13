@@ -6,3 +6,5 @@ light.ellens_lamp:
   icon: mdi:lamp
 light.sams_lamp:
   icon: mdi:lamp
+light.front_porch:
+  icon: mdi:outdoor-lamp

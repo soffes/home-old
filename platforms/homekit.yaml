@@ -6,3 +6,4 @@ filter:
     - light.sams_lamp
     - light.ellens_lamp
     - light.living_room_arc_lamp
+    - light.front_porch
