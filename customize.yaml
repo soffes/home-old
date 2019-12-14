@@ -2,6 +2,10 @@ light.living_room_arc_lamp:
   icon: mdi:desk-lamp
 group.living_room_lamp:
   icon: mdi:floor-lamp
+group.entryway_overhead:
+  icon: mdi:ceiling-light
+group.hallway_overhead:
+  icon: mdi:ceiling-light  
 light.ellens_lamp:
   icon: mdi:lamp
 light.sams_lamp:
