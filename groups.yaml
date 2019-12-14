@@ -30,3 +30,7 @@ living_room_lamp:
   entities:
     - light.living_room_lamp_1
     - light.living_room_lamp_2
+
+outdoor_lights:
+  entities:
+    - light.front_porch
