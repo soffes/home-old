@@ -7,3 +7,9 @@ filter:
     - light.ellens_lamp
     - light.living_room_arc_lamp
     - light.front_porch
+    - light.entryway_1
+    - light.entryway_2
+    - light.hallway_1
+    - light.hallway_2
+    - light.living_room_lamp_1
+    - light.living_room_lamp_2

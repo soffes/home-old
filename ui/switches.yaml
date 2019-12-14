@@ -16,3 +16,11 @@ cards:
     - light.sams_lamp
     - entity: fan.master_bedroom
       name: Fan
+
+  - type: entities
+    title: Overheads
+    entities:
+    - entity: group.entryway_overhead
+      name: Entryway
+    - entity: group.hallway_overhead
+      name: Hallway

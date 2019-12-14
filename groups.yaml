@@ -31,6 +31,16 @@ living_room_lamp:
     - light.living_room_lamp_1
     - light.living_room_lamp_2
 
+hallway_overhead:
+  entities:
+    - light.hallway_1
+    - light.hallway_2
+
+entryway_overhead:
+  entities:
+    - light.entryway_1
+    - light.entryway_2
+
 outdoor_lights:
   entities:
     - light.front_porch
