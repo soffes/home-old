@@ -4,7 +4,7 @@ REMOTE_CONFIG=/volume1/docker/homeassistant-config
 # Copy the config to the server
 .PHONY: install
 install:
-	@rsync -azh -e ssh --rsync-path=/bin/rsync --exclude .git . $(SERVER):$(REMOTE_CONFIG)
+	@rsync -hrPt -e ssh --rsync-path=/bin/rsync --exclude .git --exclude .storage . $(SERVER):$(REMOTE_CONFIG)
 	@$(MAKE) check
 
 .PHONY: default
