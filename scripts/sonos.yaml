@@ -12,3 +12,9 @@ sonos_party_mode:
         - media_player.guest_bathroom
         - media_player.office
         - media_player.garage
+
+sonos_pause_all:
+  sequence:
+  - service: media_player.media_pause
+    data:
+      entity_id: group.sonos

@@ -44,3 +44,11 @@ entryway_overhead:
 outdoor_lights:
   entities:
     - light.front_porch
+
+sonos:
+  entities:
+    - media_player.garage
+    - media_player.guest_bathroom
+    - media_player.living_room
+    - media_player.master_bedroom
+    - media_player.office
