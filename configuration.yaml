@@ -32,6 +32,7 @@ august: !include integrations/august.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml
 homekit: !include integrations/homekit.yaml
+timer: !include integrations/timer.yaml
 input_boolean: !include integrations/input_boolean.yaml
 
 sensor:
