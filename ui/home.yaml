@@ -16,3 +16,9 @@ cards:
     entities:
     - entity: binary_sensor.front_door_open
       name: Front Door
+  
+  - type: entities
+    title: Modes
+    show_header_toggle: false
+    entities:
+      - input_boolean.party_mode
