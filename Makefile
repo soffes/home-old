@@ -1,5 +1,8 @@
+# Synology host
 SERVER=archive.local
-REMOTE_CONFIG=/volume1/docker/homeassistant-config
+
+# Path to the configuration on Synology
+REMOTE_CONFIG=/volume1/docker/hass/homeassistant
 
 # Copy the config to the server
 .PHONY: install

@@ -20,9 +20,8 @@ history:
 logbook:
 sun:
 
-hacs:
-  token: !secret github_access_token
-  theme: true
+recorder:
+  db_url: !secret mysql_url
 
 binary_sensor:
 - platform: template
