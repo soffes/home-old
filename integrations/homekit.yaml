@@ -13,3 +13,4 @@ filter:
     - light.hallway_2
     - light.living_room_lamp_1
     - light.living_room_lamp_2
+    - cover.car_door

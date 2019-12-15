@@ -7,14 +7,15 @@ homeassistant:
   time_zone: America/Los_Angeles
   customize: !include customize.yaml
 
+http:
 frontend:
   themes: !include_dir_merge_named themes
 lovelace:
   mode: yaml
 config:
 system_health:
-http:
 updater:
+mobile_app:
 ios:
 history:
 logbook:
@@ -28,34 +29,14 @@ binary_sensor:
   sensors: !include_dir_merge_named binary_sensors
 
 august: !include integrations/august.yaml
+automation: !include_dir_merge_list automations
+cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml
-homekit: !include integrations/homekit.yaml
-timer: !include integrations/timer.yaml
-input_boolean: !include integrations/input_boolean.yaml
-
-sensor:
-  - platform: darksky
-    api_key: !secret darksky_api_key
-    monitored_conditions:
-      - summary
-      - icon
-      - temperature
-      - precip_probability
-      - wind_speed
-      - wind_bearing
-      - sunrise_time
-      - sunset_time
-      - alerts
-  - platform: systemmonitor
-    resources:
-      - type: disk_use_percent
-        arg: /
-      - type: memory_use_percent
-      - type: load_5m
-      - type: processor_use
-
 group: !include groups.yaml
-automation: !include_dir_merge_list automations
-script: !include_dir_merge_named scripts
+homekit: !include integrations/homekit.yaml
+input_boolean: !include integrations/input_boolean.yaml
 scene: !include scenes.yaml
+script: !include_dir_merge_named scripts
+sensor: !include integrations/sensor.yaml
+timer: !include integrations/timer.yaml

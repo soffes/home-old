@@ -4,11 +4,15 @@ cards:
   - type: thermostat
     entity: climate.hallway
 
-  - type: entity-button
-    name: Front Door
-    entity: lock.front_door
-    tap_action:
-      action: toggle
+  - type: horizontal-stack
+    cards:
+      - type: entity-button
+        name: Front Door
+        entity: lock.front_door
+        tap_action:
+          action: toggle
+      - type: entity-button
+        entity: cover.car_door
 
   - type: glance
     title: Doors
@@ -16,7 +20,7 @@ cards:
     entities:
     - entity: binary_sensor.front_door_open
       name: Front Door
-  
+
   - type: entities
     title: Modes
     show_header_toggle: false

@@ -1,0 +1,19 @@
+- platform: darksky
+  api_key: !secret darksky_api_key
+  monitored_conditions:
+    - summary
+    - icon
+    - temperature
+    - precip_probability
+    - wind_speed
+    - wind_bearing
+    - sunrise_time
+    - sunset_time
+    - alerts
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: memory_use_percent
+    - type: load_5m
+    - type: processor_use
