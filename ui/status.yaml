@@ -2,10 +2,11 @@ title: Status
 path: status
 cards:
   - type: entities
-    title: Filters
+    title: Status
     show_header_toggle: false
     entities:
       - sensor.master_bedroom_filter_life
+      - timer.front_door_lock
 
   - type: vertical-stack
     cards:

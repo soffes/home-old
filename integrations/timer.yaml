@@ -1,4 +1,4 @@
 front_door_lock:
-  name: "Front Door Lock"
+  name: "Front Door Lock Timer"
   duration: '00:01:00'
   icon: mdi:door
