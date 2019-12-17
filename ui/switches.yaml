@@ -22,6 +22,7 @@ cards:
     - lock.front_door
     - entity: group.entryway_overhead
       name: Overhead
+    - light.front_porch
   
   - type: entities
     title: Garage
