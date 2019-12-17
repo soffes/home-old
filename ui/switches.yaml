@@ -5,79 +5,80 @@ cards:
     title: Bonus Room
     show_header_toggle: false
     entities:
-    - entity: group.bonus_room_overhead
-      name: Overhead
+      - entity: group.bonus_room_overhead
+        name: Overhead
 
   - type: entities
     title: Dinning Room
     show_header_toggle: false
     entities:
-    - entity: group.dinning_room_overhead
-      name: Overhead
+      - entity: group.dinning_room_overhead
+        name: Overhead
 
   - type: entities
     title: Entryway
     show_header_toggle: false
     entities:
-    - lock.front_door
-    - entity: group.entryway_overhead
-      name: Overhead
-    - light.front_porch
-  
+      - lock.front_door
+      - entity: group.entryway_overhead
+        name: Overhead
+      - light.front_porch
+
   - type: entities
     title: Garage
     show_header_toggle: false
     entities:
-    - entity: group.garage_hallway_overhead
-      name: Overhead
-  
+      - cover.car_door
+      - entity: group.garage_hallway_overhead
+        name: Overhead
+
   - type: entities
     title: Guest Bedroom
     entities:
-    - entity: group.guest_bedroom_overhead
-      name: Overhead
-    - entity: light.guest_bedroom_lamp_left
-      name: Left Lamp
-    - entity: light.guest_bedroom_lamp_right
-      name: Right Lamp
-  
+      - entity: group.guest_bedroom_overhead
+        name: Overhead
+      - entity: light.guest_bedroom_lamp_left
+        name: Left Lamp
+      - entity: light.guest_bedroom_lamp_right
+        name: Right Lamp
+
   - type: entities
     title: Hallway
     show_header_toggle: false
     entities:
-    - entity: group.hallway_overhead
-      name: Overhead
+      - entity: group.hallway_overhead
+        name: Overhead
 
   - type: entities
     title: Living Room
     entities:
-    - entity: light.living_room_arc_lamp
-      name: Arc Lamp
-    - entity: group.living_room_lamp
-      name: Floor Lamp
-  
+      - entity: light.living_room_arc_lamp
+        name: Arc Lamp
+      - entity: group.living_room_lamp
+        name: Floor Lamp
+
   - type: entities
     title: Master Bathroom
     show_header_toggle: false
     entities:
-    - entity: group.master_bathroom_overhead
-      name: Overhead
-  
+      - entity: group.master_bathroom_overhead
+        name: Overhead
+
   - type: entities
     title: Master Bedroom
     entities:
-    - entity: fan.master_bedroom
-      name: Fan
-    - entity: group.master_bedroom_overhead
-      name: Overhead
-    - light.ellens_lamp
-    - light.sams_lamp
-    - entity: light.master_bedroom_hallway_overhead
-      name: Hallway Overhead
-  
+      - entity: fan.master_bedroom
+        name: Fan
+      - entity: group.master_bedroom_overhead
+        name: Overhead
+      - light.ellens_lamp
+      - light.sams_lamp
+      - entity: light.master_bedroom_hallway_overhead
+        name: Hallway Overhead
+
   - type: entities
     title: Office
     show_header_toggle: false
     entities:
-    - entity: group.office_overhead
-      name: Overhead
+      - entity: group.office_overhead
+        name: Overhead
