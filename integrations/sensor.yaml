@@ -1,3 +1,5 @@
+- platform: huesensor
+
 - platform: darksky
   api_key: !secret darksky_api_key
   monitored_conditions:
@@ -10,6 +12,7 @@
     - sunrise_time
     - sunset_time
     - alerts
+
 - platform: systemmonitor
   resources:
     - type: disk_use_percent
