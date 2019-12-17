@@ -43,3 +43,4 @@ scene: !include scenes.yaml
 script: !include_dir_merge_named scripts
 sensor: !include integrations/sensor.yaml
 timer: !include integrations/timer.yaml
+weather: !include integrations/weather.yaml
