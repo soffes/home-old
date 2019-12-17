@@ -1,6 +1,9 @@
 title: Home
 path: home
 cards:
+  - type: custom:search-card
+    max_results: 10
+
   - type: thermostat
     entity: climate.hallway
 
@@ -20,6 +23,10 @@ cards:
     entities:
     - entity: binary_sensor.front_door_open
       name: Front Door
+
+  - type: custom:simple-weather-card
+    entity: weather.dark_sky
+    name: at home
 
   - type: entities
     title: Modes
