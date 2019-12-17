@@ -1,14 +1,35 @@
 light.living_room_arc_lamp:
   icon: mdi:desk-lamp
-group.living_room_lamp:
-  icon: mdi:floor-lamp
-group.entryway_overhead:
-  icon: mdi:ceiling-light
-group.hallway_overhead:
-  icon: mdi:ceiling-light  
 light.ellens_lamp:
   icon: mdi:lamp
 light.sams_lamp:
   icon: mdi:lamp
+light.guest_bedroom_lamp_left:
+  icon: mdi:lamp
+light.guest_bedroom_lamp_right:
+  icon: mdi:lamp
+light.master_bathroom_hallway_overhead:
+  icon: mdi:ceiling-light
 light.front_porch:
   icon: mdi:outdoor-lamp
+
+group.bonus_room_overhead:
+  icon: mdi:ceiling-light
+group.dinning_room_overhead:
+  icon: mdi:ceiling-light
+group.entryway_overhead:
+  icon: mdi:ceiling-light
+group.garage_hallway_overhead:
+  icon: mdi:ceiling-light
+group.guest_bedroom_overhead:
+  icon: mdi:ceiling-light
+group.hallway_overhead:
+  icon: mdi:ceiling-light  
+group.living_room_lamp:
+  icon: mdi:floor-lamp
+group.master_bathroom_overhead:
+  icon: mdi:ceiling-light
+group.master_bedroom_overhead:
+  icon: mdi:ceiling-light
+group.office_overhead:
+  icon: mdi:ceiling-light

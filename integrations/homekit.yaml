@@ -1,16 +1,34 @@
 filter:
   include_entities:
-    - lock.front_door
-    - climate.hallway
     - fan.master_bedroom
-    - light.sams_lamp
+    - light.bonus_room_overhead_1
+    - light.bonus_room_overhead_2
+    - light.dinning_room_overhead_1
+    - light.dinning_room_overhead_2
+    - light.dinning_room_overhead_3
+    - light.dinning_room_overhead_4
     - light.ellens_lamp
-    - light.living_room_arc_lamp
+    - light.entryway_overhead_1
+    - light.entryway_overhead_2
     - light.front_porch
-    - light.entryway_1
-    - light.entryway_2
-    - light.hallway_1
-    - light.hallway_2
+    - light.garage_hallway_overhead_1
+    - light.garage_hallway_overhead_2
+    - light.guest_bedroom_lamp_left
+    - light.guest_bedroom_lamp_right
+    - light.guest_bedroom_overhead_1
+    - light.guest_bedroom_overhead_2
+    - light.hallway_overhead_1
+    - light.hallway_overhead_2
+    - light.living_room_arc_lamp
     - light.living_room_lamp_1
     - light.living_room_lamp_2
-    - cover.car_door
+    - light.master_bathroom_overhead_1
+    - light.master_bathroom_overhead_2
+    - light.master_bathroom_overhead_3
+    - light.master_bedroom_hallway_overhead
+    - light.master_bedroom_overhead_1
+    - light.master_bedroom_overhead_2
+    - light.office_overhead_1
+    - light.office_overhead_2
+    - light.sams_lamp
+    - lock.front_door

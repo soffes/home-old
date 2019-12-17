@@ -1,49 +1,156 @@
+# -----
+# Rooms
+# -----
+
+# Bonus Room
+bonus_room:
+  entities:
+    - light.bonus_room_overhead_1
+    - light.bonus_room_overhead_2
+
+# Dinning Room
 dinning_room:
   entities:
     - light.dinning_room_overhead_1
     - light.dinning_room_overhead_2
     - light.dinning_room_overhead_3
     - light.dinning_room_overhead_4
-master_bedroom:
-  entities:
-    - light.ellens_lamp
-    - light.sams_lamp
-    - media_player.master_bedroom
-    - fan.master_bedroom
+
+# Entryway
 entryway:
   entities:
     - lock.front_door
-living_room:
-  entities:
-    - light.living_room_arc_lamp
-    - light.living_room_lamp_1
-    - light.living_room_lamp_2
-    - media_player.living_room
+    - light.entryway_overhead_1
+    - light.entryway_overhead_2
+
+# Garage
 garage:
   entities:
     - media_player.garage
+    - light.garage_hallway_overhead_1
+    - light.garage_hallway_overhead_2
+
+# Guest Bathroom
 guest_bathroom:
   entities:
     - media_player.guest_bathroom
+
+# Guest Bedroom
+guest_bedroom:
+  entities:
+    - media_player.guest_bathroom
+    - light.guest_bedroom_overhead_1
+    - light.guest_bedroom_overhead_2
+    - light.guest_bedroom_lamp_left
+    - light.guest_bedroom_lamp_right
+
+# Hallway
+hallway:
+  entities:
+    - light.hallway_overhead_1
+    - light.hallway_overhead_2
+
+# Living Room
+living_room:
+  entities:
+    - media_player.living_room
+    - light.living_room_arc_lamp
+    - light.living_room_lamp_1
+    - light.living_room_lamp_2
+
+# Master Bathroom
+master_bathroom:
+  entities:
+    - light.master_bathroom_overhead_1
+    - light.master_bathroom_overhead_2
+    - light.master_bathroom_overhead_3
+
+# Master Bedroom
+master_bedroom:
+  entities:
+    - media_player.master_bedroom
+    - fan.master_bedroom
+    - light.ellens_lamp
+    - light.sams_lamp
+    - light.master_bedroom_overhead_1
+    - light.master_bedroom_overhead_2
+    - light.master_bedroom_hallway_overhead
+
+# Overhead
+office:
+  entities:
+    - media_player.office
+    - light.office_overhead_1
+    - light.office_overhead_2
+
+# ------------
+# Multi-lights
+# ------------
+
+bonus_room_overhead:
+  entities:
+    - light.bonus_room_overhead_1
+    - light.bonus_room_overhead_2
+
+dinning_room_overhead:
+  entities:
+    - light.dinning_room_overhead_1
+    - light.dinning_room_overhead_2
+    - light.dinning_room_overhead_3
+    - light.dinning_room_overhead_4
+
+entryway_overhead:
+  entities:
+    - light.entryway_overhead_1
+    - light.entryway_overhead_2
+
+garage_hallway_overhead:
+  entities:
+    - light.garage_hallway_overhead_1
+    - light.garage_hallway_overhead_2
+
+guest_bedroom_overhead:
+  entities:
+    - light.guest_bedroom_overhead_1
+    - light.guest_bedroom_overhead_2
+
+hallway_overhead:
+  entities:
+    - light.hallway_overhead_1
+    - light.hallway_overhead_2
 
 living_room_lamp:
   entities:
     - light.living_room_lamp_1
     - light.living_room_lamp_2
 
-hallway_overhead:
+master_bathroom_overhead:
   entities:
-    - light.hallway_1
-    - light.hallway_2
+    - light.master_bathroom_overhead_1
+    - light.master_bathroom_overhead_2
+    - light.master_bathroom_overhead_3
 
-entryway_overhead:
+master_bedroom_overhead:
   entities:
-    - light.entryway_1
-    - light.entryway_2
+    - light.master_bedroom_overhead_1
+    - light.master_bedroom_overhead_2
+
+office_overhead:
+  entities:
+    - light.office_overhead_1
+    - light.office_overhead_2
+
+# ------------------
+# Other Light Groups
+# ------------------
 
 outdoor_lights:
   entities:
     - light.front_porch
+
+# ---------
+# All Sonos
+# ---------
 
 sonos:
   entities:
