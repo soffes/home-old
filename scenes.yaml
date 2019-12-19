@@ -1,0 +1,14 @@
+- name: Sunset
+  entities:
+    group.outdoor_lights:
+      state: on
+      brightness: 76
+    light.living_room_arc_lamp:
+      state: on
+      brightness: 200
+
+- name: Sunrise
+  entities:
+    group.outdoor_lights: off
+    light.living_room_arc_lamp: off
+

@@ -1,15 +1,15 @@
-- alias: 'Turn outdoor lights on at sunset'
+- alias: 'Turn on lights at sunset'
   trigger:
     - platform: sun
       event: sunset
   action:
     service: homeassistant.turn_on
-    entity_id: group.outdoor_lights
+    entity_id: scene.sunset
 
-- alias: 'Turn outdoor lights off at sunrise'
+- alias: 'Turn off lights at sunrise'
   trigger:
     - platform: sun
       event: sunrise
   action:
     service: homeassistant.turn_off
-    entity_id: group.outdoor_lights
+    entity_id: scene.sunrise
