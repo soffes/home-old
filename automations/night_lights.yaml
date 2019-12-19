@@ -1,4 +1,4 @@
-- alias: 'Turn on lights at sunset'
+- alias: "Turn on lights at sunset"
   trigger:
     - platform: sun
       event: sunset
@@ -6,10 +6,36 @@
     service: homeassistant.turn_on
     entity_id: scene.sunset
 
-- alias: 'Turn off lights at sunrise'
+- alias: "Turn off lights at sunrise"
   trigger:
     - platform: sun
       event: sunrise
   action:
     service: homeassistant.turn_off
     entity_id: scene.sunrise
+
+- alias: "Turn on extra lights at sunset in vacation mode"
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: "-01:00:00"
+  condition:
+    condition: state
+    entity_id: input_boolean.vacation_mode
+    state: "on"
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.setrise_vacation
+
+- alias: "Turn off extra lights in vacation mode after awhile"
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: "06:00:00"
+  condition:
+    condition: state
+    entity_id: input_boolean.vacation_mode
+    state: "on"
+  action:
+    service: homeassistant.turn_off
+    entity_id: scene.sunrise_vacation
