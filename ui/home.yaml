@@ -33,3 +33,4 @@ cards:
     show_header_toggle: false
     entities:
       - input_boolean.party_mode
+      - input_boolean.vacation_mode

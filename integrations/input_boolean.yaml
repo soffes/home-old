@@ -2,3 +2,8 @@ party_mode:
     name: Party Mode
     initial: off
     icon: mdi:party-popper
+
+vacation_mode:
+    name: Vacation Mode
+    initial: off
+    icon: mdi:airplane
