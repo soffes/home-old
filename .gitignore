@@ -7,3 +7,7 @@ tts
 *.db*
 secrets.yaml
 custom_components
+@eaDir
+www
+.*.conf
+.*.state
