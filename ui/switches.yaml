@@ -50,6 +50,14 @@ cards:
         name: Overhead
 
   - type: entities
+    title: Kitchen
+    entities:
+      - entity: group.kitchen_overhead
+        name: Overhead
+      - entity: light.kitchen_recessed
+        name: Sink
+
+  - type: entities
     title: Living Room
     entities:
       - entity: light.living_room_arc_lamp
