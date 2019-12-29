@@ -26,7 +26,6 @@ entryway:
 # Garage
 garage:
   entities:
-    - media_player.garage
     - light.garage_hallway_overhead_1
     - light.garage_hallway_overhead_2
 
@@ -76,12 +75,20 @@ master_bedroom:
     - light.master_bedroom_overhead_2
     - light.master_bedroom_hallway_overhead
 
-# Overhead
+# Office
 office:
   entities:
     - media_player.office
     - light.office_overhead_1
     - light.office_overhead_2
+
+# Kitchen
+kitchen:
+  entities:
+    - media_player.kitchen
+    - light.kitchen_overhead_1
+    - light.kitchen_overhead_2
+    - light.kitchen_recessed
 
 # ------------
 # Multi-lights
@@ -140,6 +147,11 @@ office_overhead:
     - light.office_overhead_1
     - light.office_overhead_2
 
+kitchen_overhead:
+  entities:
+    - light.kitchen_overhead_1
+    - light.kitchen_overhead_2
+
 # ------------------
 # Other Light Groups
 # ------------------
@@ -154,7 +166,7 @@ outdoor_lights:
 
 sonos:
   entities:
-    - media_player.garage
+    - media_player.kitchen
     - media_player.guest_bathroom
     - media_player.living_room
     - media_player.master_bedroom

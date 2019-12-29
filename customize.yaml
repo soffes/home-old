@@ -12,6 +12,8 @@ light.master_bedroom_hallway_overhead:
   icon: mdi:ceiling-light
 light.front_porch:
   icon: mdi:outdoor-lamp
+light.kitchen_recessed:
+  icon: mdi:wall-sconce-flat
 
 group.bonus_room_overhead:
   icon: mdi:ceiling-light
@@ -33,3 +35,5 @@ group.master_bedroom_overhead:
   icon: mdi:ceiling-light
 group.office_overhead:
   icon: mdi:ceiling-light
+group.kitchen_overhead:
+  icon: mdi:ceiling-light  
