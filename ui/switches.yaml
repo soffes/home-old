@@ -64,6 +64,9 @@ cards:
         name: Arc Lamp
       - entity: group.living_room_lamp
         name: Floor Lamp
+      - light.sofa_lightstrip
+      - light.chair_lightstrip
+      
 
   - type: entities
     title: Master Bathroom

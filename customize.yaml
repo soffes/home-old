@@ -14,6 +14,10 @@ light.front_porch:
   icon: mdi:outdoor-lamp
 light.kitchen_recessed:
   icon: mdi:wall-sconce-flat
+light.sofa_lightstrip:
+  icon: mdi:led-strip-variant
+light.chair_lightstrip:
+  icon: mdi:led-strip-variant
 
 group.bonus_room_overhead:
   icon: mdi:ceiling-light

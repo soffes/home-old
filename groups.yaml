@@ -56,6 +56,8 @@ living_room:
     - light.living_room_arc_lamp
     - light.living_room_lamp_1
     - light.living_room_lamp_2
+    - light.sofa_lightstrip
+    - light.chair_lightstrip
 
 # Master Bathroom
 master_bathroom:

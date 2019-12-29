@@ -3,6 +3,7 @@ filter:
     - fan.master_bedroom
     - light.bonus_room_overhead_1
     - light.bonus_room_overhead_2
+    - light.chair_lightstrip
     - light.dinning_room_overhead_1
     - light.dinning_room_overhead_2
     - light.dinning_room_overhead_3
@@ -19,6 +20,8 @@ filter:
     - light.guest_bedroom_overhead_2
     - light.hallway_overhead_1
     - light.hallway_overhead_2
+    - light.kitchen_overhead_1
+    - light.kitchen_overhead_2
     - light.living_room_arc_lamp
     - light.living_room_lamp_1
     - light.living_room_lamp_2
@@ -31,4 +34,5 @@ filter:
     - light.office_overhead_1
     - light.office_overhead_2
     - light.sams_lamp
+    - light.sofa_lightstrip
     - lock.front_door
