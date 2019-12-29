@@ -24,6 +24,10 @@ I have a UniFi router and use it to configure a URL with Dynamic DNS for my hous
 
 Then you can follow this [simple guide](https://community.home-assistant.io/t/ios-shortcuts-with-ha-no-ssl-required/89529) to create a Siri Shortcut to do things. I made one that hits `/api/services/script/sonos_pause_all` so I can yell "Hey Siri, stop Sonos"! This is great for things you want to be able to control with Siri but don’t want to expose in the Home app.
 
+### ZigBee
+
+I use a [ConBee II](https://www.amazon.com/gp/product/B07PZ7ZHG5) with the [deCONZ](https://www.home-assistant.io/integrations/deconz/) Hass.io addone to connect to my connect to my [ZigBee](https://en.wikipedia.org/wiki/ZigBee) devices. I’m currently only using this for [Aqara Door/Window Sensors](https://www.amazon.com/gp/product/B07D37VDM3) since the US version of their bridge isn’t scriptable.
+
 ## Questions?
 
 Have questions about my setup? [Tweet me](https://twitter.com/soffes)!
