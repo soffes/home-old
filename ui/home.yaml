@@ -15,7 +15,7 @@ cards:
         tap_action:
           action: toggle
       - type: entity-button
-        entity: cover.car_door
+        entity: cover.garage_door
 
   - type: glance
     title: Doors

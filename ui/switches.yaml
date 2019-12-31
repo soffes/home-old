@@ -28,7 +28,7 @@ cards:
     title: Garage
     show_header_toggle: false
     entities:
-      - cover.car_door
+      - cover.garage_door
       - entity: group.garage_hallway_overhead
         name: Overhead
 
