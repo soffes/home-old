@@ -155,21 +155,38 @@ kitchen_overhead:
     - light.kitchen_overhead_2
 
 # ------------------
-# Other Light Groups
+# Other Groups
 # ------------------
 
-outdoor_lights:
+all_outdoor_lights:
   entities:
     - light.front_porch
 
-# ---------
-# All Sonos
-# ---------
-
-sonos:
+all_sonos:
   entities:
     - media_player.kitchen
     - media_player.guest_bathroom
     - media_player.living_room
     - media_player.master_bedroom
     - media_player.office
+
+all_door_sensors:
+  entities:
+    - binary_sensor.front_door_open
+    - binary_sensor.back_door
+
+all_window_sensors:
+  entities:
+    - binary_sensor.bonus_room_left_window
+    - binary_sensor.bonus_room_right_window
+    - binary_sensor.bonus_room_small_window
+    - binary_sensor.dinning_room_window
+    - binary_sensor.guest_bedroom_left_window
+    - binary_sensor.guest_bedroom_right_window
+    - binary_sensor.kitchen_window
+    - binary_sensor.laundry_window
+    - binary_sensor.living_room_left_window
+    - binary_sensor.living_room_right_window
+    - binary_sensor.master_bathroom_window
+    - binary_sensor.master_bedroom_window
+    - binary_sensor.office_window

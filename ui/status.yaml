@@ -2,10 +2,37 @@ title: Status
 path: status
 cards:
   - type: entities
-    title: Status
+    title: Batteries
+    show_header_toggle: false
+    entities:
+      - sensor.motion_sensor_battery
+      - sensor.smart_switch_battery
+      - sensor.back_door_battery
+      - sensor.bonus_room_left_window_battery
+      - sensor.bonus_room_right_window_battery
+      - sensor.bonus_room_small_window_battery
+      - sensor.dinning_room_window_battery
+      - sensor.guest_bedroom_left_window_battery
+      - sensor.guest_bedroom_right_window_battery
+      - sensor.kitchen_window_battery
+      - sensor.laundry_window_battery
+      - sensor.living_room_left_window_battery
+      - sensor.living_room_right_window_battery
+      - sensor.master_bathroom_window_battery
+      - sensor.master_bedroom_window_battery
+      - sensor.office_window_battery
+  
+  - type: entities
+    title: Filters
     show_header_toggle: false
     entities:
       - sensor.master_bedroom_filter_life
+  
+  - type: entities
+    title: Debugging
+    show_header_toggle: false
+    entities:
+      - binary_sensor.any_window_open
       - timer.front_door_lock
 
   - type: vertical-stack

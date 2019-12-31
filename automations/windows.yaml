@@ -1,0 +1,37 @@
+# When a window opens, capture the thermostat state and turn it off
+- alias: Window opened
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.any_window_open
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  # Create a scene of the current state
+  - service: scene.create
+    data:
+      scene_id: window_before
+      snapshot_entities:
+      - climate.hallway
+  
+  # Turn off the thermostat
+  - service: climate.set_hvac_mode
+    data:
+      entity_id: climate.hallway
+      hvac_mode: 'off'
+
+
+# When all windows are closed, restore the previous thermostat state
+- alias: Window closed
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.any_window_open
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+
+  # Restore the state before the window opened
+  - service: scene.turn_on
+    data:
+      entity_id: scene.window_before
