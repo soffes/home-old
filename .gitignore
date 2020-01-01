@@ -8,7 +8,7 @@ tts
 secrets.yaml
 custom_components
 @eaDir
-www
+www/community
 .*.conf
 .*.state
 .pip*
