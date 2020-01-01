@@ -1,6 +1,22 @@
 title: Home
 path: home
 cards:
+  - type: 'custom:floorplan-card'
+    config:
+      image: /local/level1.svg
+      rules:
+        - entities:
+            - binary_sensor.dinning_room_window
+          states:
+            - class: 'binary-sensor-off'
+              state: 'off'
+            - class: 'window-open'
+              state: 'on'
+      stylesheet: /local/floorplan.css
+    title: Floorplan
+    icon: 'mdi:floor-plan'
+    id: floorplan
+
   - type: custom:search-card
     max_results: 10
 

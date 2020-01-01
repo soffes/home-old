@@ -7,6 +7,8 @@ resources:
     type: module
   - url: /community_plugin/simple-weather-card/simple-weather-card-bundle.js
     type: module
+  - url: /local/floorplan/floorplan-card.js?v=1.1.14
+    type: module
 
 views:
   - !include ui/home.yaml
