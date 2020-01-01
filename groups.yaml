@@ -173,7 +173,7 @@ all_sonos:
 all_door_sensors:
   entities:
     - binary_sensor.front_door_open
-    - binary_sensor.back_door
+    - binary_sensor.back_door_open
 
 all_window_sensors:
   entities:

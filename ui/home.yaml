@@ -17,13 +17,6 @@ cards:
       - type: entity-button
         entity: cover.garage_door
 
-  - type: glance
-    title: Doors
-    show_state: false
-    entities:
-    - entity: binary_sensor.front_door_open
-      name: Front Door
-
   - type: custom:simple-weather-card
     entity: weather.dark_sky
     name: at home
