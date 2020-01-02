@@ -1,0 +1,19 @@
+esphome:
+  name: car_sensor
+  platform: ESP8266
+  board: nodemcu
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  use_address: 10.0.0.65
+
+logger:
+api:
+ota:
+
+sensor:
+  - platform: ultrasonic
+    trigger_pin: D1
+    echo_pin: D2
+    name: "Ultrasonic Sensor"

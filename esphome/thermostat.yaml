@@ -19,9 +19,13 @@ switch:
     pin: D0
 
 sensor:
-  - platform: homeassistant
-    id: temperature
-    entity_id: sensor.master_bedroom_temperature
+  - platform: dht
+    pin: D1
+    temperature:
+      id: temperature
+    humidity:
+      id: humidity
+    update_interval: 60s
 
 climate:
   - platform: bang_bang
