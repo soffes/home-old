@@ -119,5 +119,7 @@ group.master_bedroom_overhead:
   icon: mdi:ceiling-light
 group.office_overhead:
   icon: mdi:ceiling-light
+group.office_closet:
+  icon: mdi:lightbulb
 group.kitchen_overhead:
-  icon: mdi:ceiling-light  
+  icon: mdi:ceiling-light

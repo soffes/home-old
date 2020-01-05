@@ -51,11 +51,10 @@ cards:
 
   - type: entities
     title: Kitchen
+    show_header_toggle: false
     entities:
       - entity: group.kitchen_overhead
         name: Overhead
-      - entity: light.kitchen_recessed
-        name: Sink
 
   - type: entities
     title: Living Room
@@ -88,7 +87,8 @@ cards:
 
   - type: entities
     title: Office
-    show_header_toggle: false
     entities:
       - entity: group.office_overhead
         name: Overhead
+      - entity: group.office_closet
+        name: Closet

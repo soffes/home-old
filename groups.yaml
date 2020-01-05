@@ -158,6 +158,7 @@ kitchen_overhead:
   entities:
     - light.kitchen_overhead_1
     - light.kitchen_overhead_2
+    - light.kitchen_recessed
 
 # ------------------
 # Other Groups
