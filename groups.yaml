@@ -149,6 +149,11 @@ office_overhead:
     - light.office_overhead_1
     - light.office_overhead_2
 
+office_closet:
+  entities:
+    - light.office_closet_left
+    - light.office_closet_right
+
 kitchen_overhead:
   entities:
     - light.kitchen_overhead_1

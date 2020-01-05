@@ -1,24 +1,72 @@
-light.living_room_arc_lamp:
-  icon: mdi:desk-lamp
+# Lights
+light.bonus_room_nook:
+  icon: mdi:ceiling-light
+light.bonus_room_overhead_1:
+  icon: mdi:ceiling-light
+light.bonus_room_overhead_2:
+  icon: mdi:ceiling-light
+light.chair_lightstrip:
+  icon: mdi:led-strip-variant
+light.dinning_room_overhead_1:
+  icon: mdi:ceiling-light
+light.dinning_room_overhead_2:
+  icon: mdi:ceiling-light
+light.dinning_room_overhead_3:
+  icon: mdi:ceiling-light
 light.ellens_lamp:
   icon: mdi:lamp
-light.sams_lamp:
-  icon: mdi:lamp
+light.entryway_overhead_1:
+  icon: mdi:ceiling-light
+light.entryway_overhead_2:
+  icon: mdi:ceiling-light
+light.front_porch:
+  icon: mdi:outdoor-lamp
+light.garage_hallway_overhead_1:
+  icon: mdi:ceiling-light
+light.garage_hallway_overhead_2:
+  icon: mdi:ceiling-light
 light.guest_bedroom_lamp_left:
   icon: mdi:lamp
 light.guest_bedroom_lamp_right:
   icon: mdi:lamp
-light.master_bedroom_hallway_overhead:
+light.guest_bedroom_overhead_1:
   icon: mdi:ceiling-light
-light.front_porch:
-  icon: mdi:outdoor-lamp
+light.guest_bedroom_overhead_2:
+  icon: mdi:ceiling-light
+light.hallway_overhead_1:
+  icon: mdi:ceiling-light
+light.hallway_overhead_2:
+  icon: mdi:ceiling-light
+light.kitchen_overhead_1:
+  icon: mdi:ceiling-light
+light.kitchen_overhead_2:
+  icon: mdi:ceiling-light
 light.kitchen_recessed:
   icon: mdi:wall-sconce-flat
+light.living_room_arc_lamp:
+  icon: mdi:desk-lamp
+light.living_room_lamp_1:
+  icon: mdi:floor-lamp
+light.living_room_lamp_2:
+  icon: mdi:floor-lamp
+light.master_bathroom_overhead_1:
+  icon: mdi:vanity-light
+light.master_bathroom_overhead_2:
+  icon: mdi:vanity-light
+light.master_bathroom_overhead_3:
+  icon: mdi:vanity-light
+light.master_bedroom_hallway_overhead:
+  icon: mdi:ceiling-light
+light.office_overhead_1:
+  icon: mdi:ceiling-light
+light.office_overhead_2:
+  icon: mdi:ceiling-light
+light.sams_lamp:
+  icon: mdi:lamp
 light.sofa_lightstrip:
   icon: mdi:led-strip-variant
-light.chair_lightstrip:
-  icon: mdi:led-strip-variant
 
+# Windows
 binary_sensor.bonus_room_left_window:
   device_class: window
 binary_sensor.bonus_room_right_window:
@@ -46,9 +94,11 @@ binary_sensor.master_bedroom_window:
 binary_sensor.office_window:
   device_class: window
 
+# Doors
 binary_sensor.back_door_open:
   device_class: door
 
+# Groups
 group.bonus_room_overhead:
   icon: mdi:ceiling-light
 group.dinning_room_overhead:

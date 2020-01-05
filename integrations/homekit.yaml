@@ -24,6 +24,7 @@ filter:
     - light.hallway_overhead_2
     - light.kitchen_overhead_1
     - light.kitchen_overhead_2
+    - light.kitchen_recessed
     - light.living_room_arc_lamp
     - light.living_room_lamp_1
     - light.living_room_lamp_2
@@ -35,6 +36,8 @@ filter:
     - light.master_bedroom_overhead_2
     - light.office_overhead_1
     - light.office_overhead_2
+    - light.office_closet_left
+    - light.office_closet_right
     - light.sams_lamp
     - light.sofa_lightstrip
     - lock.front_door
