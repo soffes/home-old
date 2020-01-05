@@ -57,8 +57,11 @@ cards:
     title: Debugging
     show_header_toggle: false
     entities:
-      - binary_sensor.any_window_open
+      - sensor.open_windows_count
       - timer.front_door_lock
+  
+  - type: thermostat
+    entity: climate.thermostat
 
   - type: vertical-stack
     cards:

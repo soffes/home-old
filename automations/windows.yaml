@@ -2,9 +2,9 @@
 - alias: Window opened
   trigger:
   - platform: state
-    entity_id: binary_sensor.any_window_open
-    from: 'off'
-    to: 'on'
+    entity_id: sensor.open_windows_count
+    from: "0"
+    to: "1"
   condition: []
   action:
   # Create a scene of the current state
@@ -25,9 +25,9 @@
 - alias: Window closed
   trigger:
   - platform: state
-    entity_id: binary_sensor.any_window_open
-    from: 'on'
-    to: 'off'
+    entity_id: sensor.open_windows_count
+    from: "1"
+    to: "0"
   condition: []
   action:
 

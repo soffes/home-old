@@ -1,7 +1,0 @@
-# Are any windows open
-any_window_open:
-  friendly_name: "Any Window Open"
-  device_class: window
-  entity_id: group.all_window_sensors
-  value_template: >-
-    {{ expand('group.all_window_sensors') | selectattr('state', 'eq', 'on') | list | length > 0 }}

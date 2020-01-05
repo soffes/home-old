@@ -7,3 +7,17 @@
     - type: memory_use_percent
     - type: load_5m
     - type: processor_use
+
+- platform: template
+  sensors:
+    open_windows_count:
+      friendly_name: "Open Windows"
+      entity_id: group.all_window_sensors
+      value_template: >-
+        {{ expand('group.all_window_sensors') | selectattr('state', 'eq', 'on') | list | length | int }}
+      icon_template: >-
+        {% if expand('group.all_window_sensors') | selectattr('state', 'eq', 'on') | list | length > 0 %}
+          mdi:window-open
+        {% else %}
+          mdi:window-closed
+        {% endif %}
