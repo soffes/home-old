@@ -2,6 +2,7 @@ filter:
   include_entities:
     - climate.hallway
     - cover.garage_door
+    - cover.shop_door
     - fan.master_bedroom
     - light.bonus_room_overhead_1
     - light.bonus_room_overhead_2
