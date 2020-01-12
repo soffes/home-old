@@ -1,22 +1,6 @@
 title: Home
 path: home
 cards:
-  - type: 'custom:floorplan-card'
-    config:
-      image: /local/level1.svg
-      rules:
-        - entities:
-            - binary_sensor.dinning_room_window
-          states:
-            - class: 'binary-sensor-off'
-              state: 'off'
-            - class: 'window-open'
-              state: 'on'
-      stylesheet: /local/floorplan.css
-    title: Floorplan
-    icon: 'mdi:floor-plan'
-    id: floorplan
-
   - type: custom:search-card
     max_results: 10
 
@@ -35,9 +19,8 @@ cards:
       - type: entity-button
         entity: cover.garage_door
 
-  - type: custom:simple-weather-card
+  - type: weather-forecast
     entity: weather.dark_sky
-    name: at home
 
   - type: entities
     title: Modes

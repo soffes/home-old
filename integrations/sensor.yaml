@@ -12,11 +12,11 @@
   sensors:
     open_windows_count:
       friendly_name: "Open Windows"
-      entity_id: group.all_window_sensors
+      entity_id: group.window_sensors
       value_template: >-
-        {{ expand('group.all_window_sensors') | selectattr('state', 'eq', 'on') | list | length | int }}
+        {{ expand('group.window_sensors') | selectattr('state', 'eq', 'on') | list | length | int }}
       icon_template: >-
-        {% if expand('group.all_window_sensors') | selectattr('state', 'eq', 'on') | list | length > 0 %}
+        {% if expand('group.window_sensors') | selectattr('state', 'eq', 'on') | list | length > 0 %}
           mdi:window-open
         {% else %}
           mdi:window-closed

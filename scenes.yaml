@@ -1,12 +1,12 @@
 - name: Sunset
   entities:
-    group.all_outdoor_lights:
+    group.outdoor_lights:
       state: on
       brightness: 76
 
 - name: Sunrise
   entities:
-    group.all_outdoor_lights: off
+    group.outdoor_lights: off
 
 - name: Sunset Vacation
   entities:

@@ -185,11 +185,11 @@ family:
     - person.sam_soffes
     - person.ellen_soffes
 
-all_outdoor_lights:
+outdoor_lights:
   entities:
     - light.front_porch
 
-all_sonos:
+sonos:
   entities:
     - media_player.kitchen
     - media_player.guest_bathroom
@@ -197,12 +197,12 @@ all_sonos:
     - media_player.master_bedroom
     - media_player.office
 
-all_door_sensors:
+door_sensors:
   entities:
     - binary_sensor.front_door_open
     - binary_sensor.back_door_open
 
-all_window_sensors:
+window_sensors:
   entities:
     - binary_sensor.bonus_room_left_window
     - binary_sensor.bonus_room_right_window
@@ -218,7 +218,7 @@ all_window_sensors:
     - binary_sensor.master_bedroom_window
     - binary_sensor.office_window
 
-all_batteries:
+batteries:
   entities:
     - sensor.motion_sensor_battery
     - sensor.smart_switch_battery
@@ -237,7 +237,7 @@ all_batteries:
     - sensor.master_bedroom_window_battery
     - sensor.office_window_battery
 
-all_garage_doors:
+garage_doors:
   icon: mdi:garage
   entities:
     - cover.shop_door

@@ -1,0 +1,29 @@
+title: Development
+path: development
+cards:
+  - type: 'custom:floorplan-card'
+    config:
+      image: /local/level1.svg
+      rules:
+        - entities:
+            - binary_sensor.dinning_room_window
+          states:
+            - class: 'binary-sensor-off'
+              state: 'off'
+            - class: 'window-open'
+              state: 'on'
+      stylesheet: /local/floorplan.css
+    title: Floorplan
+    icon: 'mdi:floor-plan'
+    id: floorplan
+
+  - type: entities
+    title: Debugging
+    show_header_toggle: false
+    entities:
+      - sensor.open_windows_count
+      - timer.front_door_lock
+      - group.family
+  
+  - type: thermostat
+    entity: climate.thermostat

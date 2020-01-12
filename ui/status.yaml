@@ -13,38 +13,27 @@ cards:
       type: entities
       title: Doors
       show_header_toggle: false
-    group: group.all_door_sensors
+    group: group.door_sensors
   
   - type: custom:group-card
     card:
       type: entities
       title: Windows
       show_header_toggle: false
-    group: group.all_window_sensors
+    group: group.window_sensors
 
   - type: custom:group-card
     card:
       type: entities
       title: Batteries
       show_header_toggle: false
-    group: group.all_batteries
+    group: group.batteries
   
   - type: entities
     title: Filters
     show_header_toggle: false
     entities:
       - sensor.master_bedroom_filter_life
-  
-  - type: entities
-    title: Debugging
-    show_header_toggle: false
-    entities:
-      - sensor.open_windows_count
-      - timer.front_door_lock
-      - group.family
-  
-  # - type: thermostat
-  #   entity: climate.thermostat
 
   - type: vertical-stack
     cards:

@@ -17,4 +17,4 @@ sonos_pause_all:
   sequence:
   - service: media_player.media_pause
     data:
-      entity_id: group.all_sonos
+      entity_id: group.sonos
