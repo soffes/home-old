@@ -4,20 +4,26 @@
 
 # Bonus Room
 bonus_room:
+  name: Bonus Room
+  icon: mdi:select-group
   entities:
     - light.bonus_room_overhead_1
     - light.bonus_room_overhead_2
 
-# Dinning Room
-dinning_room:
+# Dining Room
+dining_room:
+  name: "Dining Room"
+  icon: mdi:food-fork-drink
   entities:
-    - light.dinning_room_overhead_1
-    - light.dinning_room_overhead_2
-    - light.dinning_room_overhead_3
-    - light.dinning_room_overhead_4
+    - light.dining_room_overhead_1
+    - light.dining_room_overhead_2
+    - light.dining_room_overhead_3
+    - light.dining_room_overhead_4
 
 # Entryway
 entryway:
+  name: "Entryway"
+  icon: mdi:select-group
   entities:
     - lock.front_door
     - light.entryway_overhead_1
@@ -25,6 +31,8 @@ entryway:
 
 # Garage
 garage:
+  name: "Garage"
+  icon: mdi:garage-variant
   entities:
     - cover.garage_door
     - cover.shop_door
@@ -33,11 +41,15 @@ garage:
 
 # Guest Bathroom
 guest_bathroom:
+  name: "Guest Bathroom"
+  icon: mdi:shower
   entities:
     - media_player.guest_bathroom
 
 # Guest Bedroom
 guest_bedroom:
+  name: "Guest Bedroom"
+  icon: mdi:bed-queen-outline
   entities:
     - media_player.guest_bathroom
     - light.guest_bedroom_overhead_1
@@ -47,12 +59,16 @@ guest_bedroom:
 
 # Hallway
 hallway:
+  name: "Hallway"
+  icon: mdi:select-group
   entities:
     - light.hallway_overhead_1
     - light.hallway_overhead_2
 
 # Living Room
 living_room:
+  name: "Living Room"
+  icon: mdi:sofa
   entities:
     - media_player.living_room
     - light.living_room_arc_lamp
@@ -63,6 +79,8 @@ living_room:
 
 # Master Bathroom
 master_bathroom:
+  name: "Master Bathroom"
+  icon: mdi:shower
   entities:
     - light.master_bathroom_overhead_1
     - light.master_bathroom_overhead_2
@@ -70,6 +88,8 @@ master_bathroom:
 
 # Master Bedroom
 master_bedroom:
+  name: "Master Bedroom"
+  icon: mdi:bed-king-outline
   entities:
     - media_player.master_bedroom
     - fan.master_bedroom
@@ -81,6 +101,8 @@ master_bedroom:
 
 # Office
 office:
+  name: "Office"
+  icon: mdi:desk
   entities:
     - media_player.office
     - light.office_overhead_1
@@ -88,6 +110,8 @@ office:
 
 # Kitchen
 kitchen:
+  name: "Kitchen"
+  icon: mdi:fridge-outline
   entities:
     - media_player.kitchen
     - light.kitchen_overhead_1
@@ -105,12 +129,12 @@ bonus_room_overhead:
     - light.bonus_room_overhead_2
     - light.bonus_room_nook
 
-dinning_room_overhead:
+dining_room_overhead:
   icon: mdi:ceiling-light
   entities:
-    - light.dinning_room_overhead_1
-    - light.dinning_room_overhead_2
-    - light.dinning_room_overhead_3
+    - light.dining_room_overhead_1
+    - light.dining_room_overhead_2
+    - light.dining_room_overhead_3
 
 entryway_overhead:
   icon: mdi:ceiling-light
@@ -207,7 +231,7 @@ window_sensors:
     - binary_sensor.bonus_room_left_window
     - binary_sensor.bonus_room_right_window
     - binary_sensor.bonus_room_small_window
-    - binary_sensor.dinning_room_window
+    - binary_sensor.dining_room_window
     - binary_sensor.guest_bedroom_left_window
     - binary_sensor.guest_bedroom_right_window
     - binary_sensor.kitchen_window
@@ -226,7 +250,7 @@ batteries:
     - sensor.bonus_room_left_window_battery
     - sensor.bonus_room_right_window_battery
     - sensor.bonus_room_small_window_battery
-    - sensor.dinning_room_window_battery
+    - sensor.dining_room_window_battery
     - sensor.guest_bedroom_left_window_battery
     - sensor.guest_bedroom_right_window_battery
     - sensor.kitchen_window_battery

@@ -6,7 +6,7 @@ cards:
       image: /local/level1.svg
       rules:
         - entities:
-            - binary_sensor.dinning_room_window
+            - binary_sensor.dining_room_window
           states:
             - class: 'binary-sensor-off'
               state: 'off'

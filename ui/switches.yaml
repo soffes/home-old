@@ -9,10 +9,10 @@ cards:
         name: Overhead
 
   - type: entities
-    title: Dinning Room
+    title: Dining Room
     show_header_toggle: false
     entities:
-      - entity: group.dinning_room_overhead
+      - entity: group.dining_room_overhead
         name: Overhead
 
   - type: entities

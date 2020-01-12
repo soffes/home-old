@@ -43,6 +43,6 @@
     <polygon fill="#FFF" fill-rule="nonzero" points=".988 .54 .988 8.16 150.848 8.16 150.848 .54" transform="translate(524.25 .19)"/>
     <polygon stroke="#000" points=".988 .54 .988 8.16 150.848 8.16 150.848 .54" transform="translate(524.25 .19)"/>
     <polygon fill="#FFF" fill-rule="nonzero" points="150.848 8.16 .988 8.16 .988 .54 150.848 .54" transform="translate(524.25 .19)"/>
-    <polygon stroke="#000" points="150.848 8.16 .988 8.16 .988 .54 150.848 .54" transform="translate(524.25 .19)" id="binary_sensor.dinning_room_window"/>
+    <polygon stroke="#000" points="150.848 8.16 .988 8.16 .988 .54 150.848 .54" transform="translate(524.25 .19)" id="binary_sensor.dining_room_window"/>
   </g>
 </svg>

@@ -8,9 +8,9 @@ filter:
     - light.bonus_room_overhead_2
     - light.bonus_room_nook
     - light.chair_lightstrip
-    - light.dinning_room_overhead_1
-    - light.dinning_room_overhead_2
-    - light.dinning_room_overhead_3
+    - light.dining_room_overhead_1
+    - light.dining_room_overhead_3
+    - light.dining_room_overhead_2
     - light.ellens_lamp
     - light.entryway_overhead_1
     - light.entryway_overhead_2
