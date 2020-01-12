@@ -1,0 +1,23 @@
+- id: leave-home
+  alias: 'Turn off things when everyone leaves'
+  trigger:
+    - platform: state
+      entity_id: group.family
+      to: 'not_home'
+  action:
+    service: climate.set_preset_mode
+    entity_id: climate.hallway
+    data:
+      preset_mode: Away
+
+- id: arrive-home
+  alias: 'Turn on things when someone arrives'
+  trigger:
+    - platform: state
+      entity_id: group.family
+      to: 'home'
+  action:
+    service: climate.set_preset_mode
+    entity_id: climate.hallway
+    data:
+      preset_mode: Home
