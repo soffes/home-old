@@ -1,51 +1,33 @@
 title: Status
 path: status
 cards:
-  - type: entities
-    title: Doors
-    show_header_toggle: false
-    entities:
-      - binary_sensor.front_door_open
-      - binary_sensor.back_door_open
+  - type: custom:group-card
+    card:
+      type: entities
+      title: People
+      show_header_toggle: false
+    group: group.family
+  
+  - type: custom:group-card
+    card:
+      type: entities
+      title: Doors
+      show_header_toggle: false
+    group: group.all_door_sensors
+  
+  - type: custom:group-card
+    card:
+      type: entities
+      title: Windows
+      show_header_toggle: false
+    group: group.all_window_sensors
 
-  - type: entities
-    title: Windows
-    show_header_toggle: false
-    entities:
-      - binary_sensor.bonus_room_left_window
-      - binary_sensor.bonus_room_right_window
-      - binary_sensor.bonus_room_small_window
-      - binary_sensor.dinning_room_window
-      - binary_sensor.guest_bedroom_left_window
-      - binary_sensor.guest_bedroom_right_window
-      - binary_sensor.kitchen_window
-      - binary_sensor.laundry_window
-      - binary_sensor.living_room_left_window
-      - binary_sensor.living_room_right_window
-      - binary_sensor.master_bathroom_window
-      - binary_sensor.master_bedroom_window
-      - binary_sensor.office_window
-
-  - type: entities
-    title: Batteries
-    show_header_toggle: false
-    entities:
-      - sensor.motion_sensor_battery
-      - sensor.smart_switch_battery
-      - sensor.back_door_battery
-      - sensor.bonus_room_left_window_battery
-      - sensor.bonus_room_right_window_battery
-      - sensor.bonus_room_small_window_battery
-      - sensor.dinning_room_window_battery
-      - sensor.guest_bedroom_left_window_battery
-      - sensor.guest_bedroom_right_window_battery
-      - sensor.kitchen_window_battery
-      - sensor.laundry_window_battery
-      - sensor.living_room_left_window_battery
-      - sensor.living_room_right_window_battery
-      - sensor.master_bathroom_window_battery
-      - sensor.master_bedroom_window_battery
-      - sensor.office_window_battery
+  - type: custom:group-card
+    card:
+      type: entities
+      title: Batteries
+      show_header_toggle: false
+    group: group.all_batteries
   
   - type: entities
     title: Filters
@@ -59,9 +41,10 @@ cards:
     entities:
       - sensor.open_windows_count
       - timer.front_door_lock
+      - group.family
   
-  - type: thermostat
-    entity: climate.thermostat
+  # - type: thermostat
+  #   entity: climate.thermostat
 
   - type: vertical-stack
     cards:

@@ -31,6 +31,8 @@ cards:
         tap_action:
           action: toggle
       - type: entity-button
+        entity: cover.shop_door
+      - type: entity-button
         entity: cover.garage_door
 
   - type: custom:simple-weather-card

@@ -97,29 +97,3 @@ binary_sensor.office_window:
 # Doors
 binary_sensor.back_door_open:
   device_class: door
-
-# Groups
-group.bonus_room_overhead:
-  icon: mdi:ceiling-light
-group.dinning_room_overhead:
-  icon: mdi:ceiling-light
-group.entryway_overhead:
-  icon: mdi:ceiling-light
-group.garage_hallway_overhead:
-  icon: mdi:ceiling-light
-group.guest_bedroom_overhead:
-  icon: mdi:ceiling-light
-group.hallway_overhead:
-  icon: mdi:ceiling-light
-group.living_room_lamp:
-  icon: mdi:floor-lamp
-group.master_bathroom_overhead:
-  icon: mdi:ceiling-light
-group.master_bedroom_overhead:
-  icon: mdi:ceiling-light
-group.office_overhead:
-  icon: mdi:ceiling-light
-group.office_closet:
-  icon: mdi:lightbulb
-group.kitchen_overhead:
-  icon: mdi:ceiling-light

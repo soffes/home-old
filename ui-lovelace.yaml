@@ -9,6 +9,8 @@ resources:
     type: module
   - url: /local/floorplan/floorplan-card.js?v=1.1.14
     type: module
+  - url: /community_plugin/group-card/group-card.js
+    type: module
 
 views:
   - !include ui/home.yaml

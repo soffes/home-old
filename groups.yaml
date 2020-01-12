@@ -26,6 +26,8 @@ entryway:
 # Garage
 garage:
   entities:
+    - cover.garage_door
+    - cover.shop_door
     - light.garage_hallway_overhead_1
     - light.garage_hallway_overhead_2
 
@@ -97,64 +99,76 @@ kitchen:
 # ------------
 
 bonus_room_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.bonus_room_overhead_1
     - light.bonus_room_overhead_2
     - light.bonus_room_nook
 
 dinning_room_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.dinning_room_overhead_1
     - light.dinning_room_overhead_2
     - light.dinning_room_overhead_3
 
 entryway_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.entryway_overhead_1
     - light.entryway_overhead_2
 
 garage_hallway_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.garage_hallway_overhead_1
     - light.garage_hallway_overhead_2
 
 guest_bedroom_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.guest_bedroom_overhead_1
     - light.guest_bedroom_overhead_2
 
 hallway_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.hallway_overhead_1
     - light.hallway_overhead_2
 
 living_room_lamp:
+  icon: mdi:floor-lamp
   entities:
     - light.living_room_lamp_1
     - light.living_room_lamp_2
 
 master_bathroom_overhead:
+  icon: mdi:vanity-light
   entities:
     - light.master_bathroom_overhead_1
     - light.master_bathroom_overhead_2
     - light.master_bathroom_overhead_3
 
 master_bedroom_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.master_bedroom_overhead_1
     - light.master_bedroom_overhead_2
 
 office_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.office_overhead_1
     - light.office_overhead_2
 
 office_closet:
+  icon: mdi:lightbulb
   entities:
     - light.office_closet_left
     - light.office_closet_right
 
 kitchen_overhead:
+  icon: mdi:ceiling-light
   entities:
     - light.kitchen_overhead_1
     - light.kitchen_overhead_2
@@ -163,6 +177,13 @@ kitchen_overhead:
 # ------------------
 # Other Groups
 # ------------------
+
+family:
+  name: Family
+  icon: mdi:account-multiple
+  entities:
+    - person.sam_soffes
+    - person.ellen_soffes
 
 all_outdoor_lights:
   entities:
@@ -196,3 +217,28 @@ all_window_sensors:
     - binary_sensor.master_bathroom_window
     - binary_sensor.master_bedroom_window
     - binary_sensor.office_window
+
+all_batteries:
+  entities:
+    - sensor.motion_sensor_battery
+    - sensor.smart_switch_battery
+    - sensor.back_door_battery
+    - sensor.bonus_room_left_window_battery
+    - sensor.bonus_room_right_window_battery
+    - sensor.bonus_room_small_window_battery
+    - sensor.dinning_room_window_battery
+    - sensor.guest_bedroom_left_window_battery
+    - sensor.guest_bedroom_right_window_battery
+    - sensor.kitchen_window_battery
+    - sensor.laundry_window_battery
+    - sensor.living_room_left_window_battery
+    - sensor.living_room_right_window_battery
+    - sensor.master_bathroom_window_battery
+    - sensor.master_bedroom_window_battery
+    - sensor.office_window_battery
+
+all_garage_doors:
+  icon: mdi:garage
+  entities:
+    - cover.shop_door
+    - cover.garage_door
