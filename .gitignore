@@ -6,7 +6,6 @@ tts
 *.log
 *.db*
 secrets.yaml
-custom_components
 @eaDir
 www/community
 .*.conf
