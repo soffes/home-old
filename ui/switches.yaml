@@ -22,7 +22,6 @@ cards:
       - lock.front_door
       - entity: group.entryway_overhead
         name: Overhead
-      - light.front_porch
 
   - type: entities
     title: Garage
@@ -92,3 +91,9 @@ cards:
         name: Overhead
       - entity: group.office_closet
         name: Closet
+
+  - type: entities
+    title: Outdoor Lights
+    entities:
+      - light.front_porch
+      - light.back_porch

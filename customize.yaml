@@ -1,4 +1,6 @@
 # Lights
+light.back_porch:
+  icon: mdi:outdoor-lamp
 light.bonus_room_nook:
   icon: mdi:ceiling-light
 light.bonus_room_overhead_1:

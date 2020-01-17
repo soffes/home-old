@@ -212,6 +212,7 @@ family:
 outdoor_lights:
   entities:
     - light.front_porch
+    - light.back_porch
 
 sonos:
   entities:
