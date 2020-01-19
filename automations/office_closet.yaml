@@ -7,7 +7,7 @@
     service: homeassistant.turn_on
     entity_id: group.office_closet
 
-- alias: "Turn off smart plug"
+- alias: "Turn off office closet light"
   trigger:
     platform: state
     entity_id: binary_sensor.office_closet_door
