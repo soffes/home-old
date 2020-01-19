@@ -1,7 +1,7 @@
 esphome:
   name: car_sensor
-  platform: ESP8266
-  board: nodemcu
+  platform: ESP32
+  board: nodemcu-32s
 
 wifi:
   ssid: !secret wifi_ssid
@@ -14,6 +14,6 @@ ota:
 
 sensor:
   - platform: ultrasonic
-    trigger_pin: D1
-    echo_pin: D2
+    trigger_pin: GPIO26
+    echo_pin: GPIO25
     name: "Ultrasonic Sensor"
