@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Lint
-        run: make lint
+        run: pip3 install setuptools && make lint
