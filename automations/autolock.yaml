@@ -1,4 +1,4 @@
-- alias: Start Front Door Autolock Timer
+- alias: Door Autolock - Start Timer
   trigger:
     - platform: state
       entity_id: lock.front_door
@@ -11,8 +11,8 @@
       entity_id: timer.front_door_lock
       data:
         duration: '00:01:00'
-      
-- alias: Pause Front Door Autolock Timer
+
+- alias: Front Door Autolock - Pause Timer
   trigger:
     - platform: state
       entity_id: binary_sensor.front_door_open
@@ -20,8 +20,8 @@
   action: 
     - service: timer.pause
       entity_id: timer.front_door_lock
-      
-- alias: Cancel Front Door Autolock Timer
+
+- alias: Front Door Autolock - Cancel Timer
   trigger:
     - platform: state
       entity_id: lock.front_door
@@ -30,7 +30,7 @@
     - service: timer.cancel
       entity_id: timer.front_door_lock
 
-- alias: Auto Lock Front Door
+- alias: Front Door Autolock - Lock
   trigger: 
     - platform: event
       event_type: timer.finished
