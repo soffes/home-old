@@ -204,10 +204,10 @@ kitchen_overhead:
 
 family:
   name: Family
-  icon: mdi:account-multiple
+  icon: mdi:human-male-female
   entities:
-    - person.sam_soffes
-    - person.ellen_soffes
+    - person.sam
+    - person.ellen
 
 outdoor_lights:
   entities:
