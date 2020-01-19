@@ -21,6 +21,7 @@ cards:
     title: Debugging
     show_header_toggle: false
     entities:
+      - sensor.open_doors_count
       - sensor.open_windows_count
       - timer.front_door_lock
       - group.family

@@ -21,3 +21,15 @@
         {% else %}
           mdi:window-closed
         {% endif %}
+
+    open_doors_count:
+      friendly_name: "Open Doors"
+      entity_id: group.door_sensors
+      value_template: >-
+        {{ expand('group.door_sensors') | selectattr('state', 'eq', 'on') | list | length | int }}
+      icon_template: >-
+        {% if expand('group.door_sensors') | selectattr('state', 'eq', 'on') | list | length > 0 %}
+          mdi:door-open
+        {% else %}
+          mdi:door-closed
+        {% endif %}
