@@ -5,9 +5,10 @@ deps
 tts
 *.log
 *.db*
-secrets.yaml
+/secrets.yaml
 @eaDir
 www/community
 .*.conf
 .*.state
 .pip*
+
