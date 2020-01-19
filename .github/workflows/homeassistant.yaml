@@ -9,7 +9,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: Copy secrets
         run: cp secrets_ci.yaml secrets.yaml
-      - name: Lint
-        run: make lint
       - name: Check configuration
         run: hass --script check_config -c .
