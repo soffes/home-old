@@ -14,4 +14,13 @@
     - service: notify.mobile_app_sams_iphone
       data_template:
         title: '🚨 Security Breach 🚨'
-        message: "{{ states('sensor.open_doors_count') }} open doors and {{ states('sensor.open_windows_count') }} open windows!"
+        message: >-
+          {% if states('sensor.open_doors_count')|int > 0 %}{{ states('sensor.open_doors_count') }} open door{% if  states('sensor.open_doors_count')|int != 1 %}s{% endif %}. {% endif %}{% if states('sensor.open_windows_count')|int > 0 %}{{ states('sensor.open_windows_count') }} open window{% if  states('sensor.open_windows_count')|int != 1 %}s{% endif %}. {% endif %}{% if states('sensor.open_garage_doors_count')|int > 0 %}{{ states('sensor.open_garage_doors_count') }} open garage door{% if  states('sensor.open_garage_doors_count')|int != 1 %}s{% endif %}.{% endif %}
+        data:
+          push:
+            sound:
+              name: default
+              critical: 1
+              volume: 1.0
+          apns_headers:
+            apns-collapse-id: vacation-mode-alert

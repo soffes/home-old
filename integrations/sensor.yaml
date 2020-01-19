@@ -33,3 +33,15 @@
         {% else %}
           mdi:door-closed
         {% endif %}
+    
+    open_garage_doors_count:
+      friendly_name: "Open Garage Doors"
+      entity_id: group.garage_doors
+      value_template: >-
+        {{ expand('group.garage_doors') | selectattr('state', 'eq', 'open') | list | length | int }}
+      icon_template: >-
+        {% if expand('group.garage_doors') | selectattr('state', 'eq', 'open') | list | length | int > 0 %}
+          mdi:garage-open-variant
+        {% else %}
+          mdi:garage-variant
+        {% endif %}
