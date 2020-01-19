@@ -26,7 +26,7 @@ Then you can follow this [simple guide](https://community.home-assistant.io/t/io
 
 ### ZigBee
 
-I use a [ConBee II](https://www.amazon.com/gp/product/B07PZ7ZHG5) with the [deCONZ](https://www.home-assistant.io/integrations/deconz/) Hass.io addone to connect to my connect to my [ZigBee](https://en.wikipedia.org/wiki/ZigBee) devices. I’m currently only using this for [Aqara Door/Window Sensors](https://www.amazon.com/gp/product/B07D37VDM3) since the US version of their bridge isn’t scriptable.
+I use a [ConBee II](https://www.amazon.com/gp/product/B07PZ7ZHG5) with the [ZHA](http://home-assistant.io/integrations/zha/) integration to connect to my connect to my [ZigBee](https://en.wikipedia.org/wiki/ZigBee) devices. I’m currently only using this for [Aqara Door/Window Sensors](https://www.amazon.com/gp/product/B07D37VDM3) since the US version of their bridge isn’t scriptable.
 
 ## Questions?
 
