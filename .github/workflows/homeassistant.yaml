@@ -6,8 +6,10 @@ jobs:
     container:
       image: homeassistant/amd64-homeassistant
     steps:
-    - uses: actions/checkout@v1
-    - name: Copy secrets
-      run: cp secrets_ci.yaml secrets.yaml
-    - name: Check configuration
-      run: hass --script check_config -c .
+      - uses: actions/checkout@v1
+      - name: Copy secrets
+        run: cp secrets_ci.yaml secrets.yaml
+      - name: Lint
+        run: make lint
+      - name: Check configuration
+        run: hass --script check_config -c .

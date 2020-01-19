@@ -15,6 +15,6 @@ sonos_party_mode:
 
 sonos_pause_all:
   sequence:
-  - service: media_player.media_pause
-    data:
-      entity_id: group.sonos
+    - service: media_player.media_pause
+      data:
+        entity_id: group.sonos

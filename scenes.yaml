@@ -1,23 +1,23 @@
 - name: Sunset
   entities:
     group.outdoor_lights:
-      state: on
+      state: 'on'
       brightness: 76
 
 - name: Sunrise
   entities:
-    group.outdoor_lights: off
+    group.outdoor_lights: "off"
 
 - name: Sunset Vacation
   entities:
     light.living_room_arc_lamp:
-      state: on
+      state: 'on'
       brightness: 76
     light.ellens_lamp:
-      state: on
+      state: 'on'
       brightness: 76
 
 - name: Sunrise Vacation
   entities:
-    light.living_room_arc_lamp: off
-    light.ellens_lamp: off
+    light.living_room_arc_lamp: 'off'
+    light.ellens_lamp: 'off'

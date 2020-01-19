@@ -1,0 +1,10 @@
+extends: default
+
+rules:
+  document-start: disable
+  line-length: disable
+  truthy: disable
+
+ignore: |
+  esphome/*/.piolibdeps/**/*
+  custom_components/hacs/*
