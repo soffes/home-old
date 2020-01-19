@@ -51,6 +51,7 @@ weather:
   - platform: darksky
     api_key: !secret dark_sky_api_key
 
+binary_sensor: !include integrations/binary_sensor.yaml
 group: !include groups.yaml
 homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml

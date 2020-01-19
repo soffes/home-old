@@ -99,3 +99,9 @@ binary_sensor.office_window:
 # Doors
 binary_sensor.back_door_open:
   device_class: door
+
+binary_sensor.office_closet_door_left:
+  device_class: door
+
+binary_sensor.office_closet_door_right:
+  device_class: door

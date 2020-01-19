@@ -24,6 +24,5 @@ cards:
       - sensor.open_windows_count
       - timer.front_door_lock
       - group.family
-  
-  - type: thermostat
-    entity: climate.thermostat
+      - sensor.car_distance_sensor
+      - binary_sensor.office_closet_door
