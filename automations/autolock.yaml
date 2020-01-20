@@ -6,6 +6,10 @@
     - platform: state
       entity_id: binary_sensor.front_door_open
       to: 'off'
+  condition:
+    condition: state
+    entity_id: binary_sensor.front_door_open
+    state: 'off'
   action:
     - service: timer.start
       entity_id: timer.front_door_lock
@@ -37,9 +41,14 @@
       event_data:
         entity_id: timer.front_door_lock
   condition:
-    condition: state
-    entity_id: input_boolean.party_mode
-    state: 'off'
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.party_mode
+        state: 'off'
+      - condition: state
+        entity_id: binary_sensor.front_door_open
+        state: 'off'
   action:
     - service: lock.lock
       entity_id: lock.front_door
