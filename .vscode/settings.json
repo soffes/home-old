@@ -1,5 +1,15 @@
 {
     "files.associations": {
         "*.yaml": "home-assistant"
+    },
+    "files.exclude": {
+        ".cloud/": true,
+        ".storage/": true,
+        "deps": true,
+        ".august.conf": true,
+        ".homekit.state": true,
+        ".uuid": true,
+        "*.db": true,
+        "*.log": true,
     }
 }
