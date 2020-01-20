@@ -1,29 +1,16 @@
 # Synology host
 SERVER=archive.local
-
-# Path to the configuration on Synology
-REMOTE_CONFIG=/volume1/docker/hass/homeassistant
-
-# Copy the config to the server
-.PHONY: install
-install:
-	@rsync -hrPt -e ssh --rsync-path=/bin/rsync --exclude .git --exclude .storage . $(SERVER):$(REMOTE_CONFIG)
-	@$(MAKE) check
+SSH_PORT=49160
 
 # Check the configuration
 .PHONY: check
 check:
-	@ssh $(SERVER) "sudo /usr/local/bin/docker exec homeassistant python -m homeassistant --script check_config --config /config"
+	@ssh $(SERVER) -p $(SSH_PORT) "sudo /usr/local/bin/docker exec homeassistant python -m homeassistant --script check_config --config /config"
 
 # Restart Home Assistant
 .PHONY: restart
 restart:
-	@ssh $(SERVER) "sudo /usr/local/bin/docker restart homeassistant"
-
-# ESPHome dashboard
-.PHONY: esphome
-esphome:
-	@esphome esphome dashboard
+	@ssh $(SERVER) -p $(SSH_PORT) "sudo /usr/local/bin/docker restart homeassistant"
 
 # Lint YAML
 .PHONY: lint
