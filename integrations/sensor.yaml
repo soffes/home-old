@@ -33,7 +33,7 @@
         {% else %}
           mdi:door-closed
         {% endif %}
-    
+
     open_garage_doors_count:
       friendly_name: "Open Garage Doors"
       entity_id: group.garage_doors
