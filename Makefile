@@ -10,9 +10,6 @@ install:
 	@rsync -hrPt -e ssh --rsync-path=/bin/rsync --exclude .git --exclude .storage . $(SERVER):$(REMOTE_CONFIG)
 	@$(MAKE) check
 
-.PHONY: default
-default: install ;
-
 # Check the configuration
 .PHONY: check
 check:
