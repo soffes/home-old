@@ -1,19 +1,23 @@
 # When an exterior door or window opens, send a notification if vacation mode is on
 - alias: Vacation mode alerts
   trigger:
-    - platform: state
+    - platform: numeric_state
       entity_id: sensor.open_windows_count
-      from: "0"
-      to: "1"
-    - platform: state
+      above: 0
+    - platform: numeric_state
       entity_id: sensor.open_doors_count
-      from: "0"
-      to: "1"
-  condition: []
+      above: 0
+    - platform: numeric_state
+      entity_id: sensor.open_garage_doors_count
+      above: 0
+  condition:
+    condition: state
+    entity_id: input_boolean.vacation_mode
+    state: 'on'
   action:
     - service: notify.mobile_app_sams_iphone
       data_template:
-        title: '🚨 Security Breach 🚨'
+        title: '🚨 Security Breach'
         message: >-
           {% if states('sensor.open_doors_count')|int > 0 %}{{ states('sensor.open_doors_count') }} open door{% if  states('sensor.open_doors_count')|int != 1 %}s{% endif %}. {% endif %}{% if states('sensor.open_windows_count')|int > 0 %}{{ states('sensor.open_windows_count') }} open window{% if  states('sensor.open_windows_count')|int != 1 %}s{% endif %}. {% endif %}{% if states('sensor.open_garage_doors_count')|int > 0 %}{{ states('sensor.open_garage_doors_count') }} open garage door{% if  states('sensor.open_garage_doors_count')|int != 1 %}s{% endif %}.{% endif %}
         data:
