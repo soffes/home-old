@@ -245,8 +245,6 @@ window_sensors:
 
 batteries:
   entities:
-    - sensor.motion_sensor_battery
-    - sensor.smart_switch_battery
     - sensor.back_door_battery
     - sensor.bonus_room_left_window_battery
     - sensor.bonus_room_right_window_battery
@@ -264,6 +262,8 @@ batteries:
     - sensor.office_closet_door_left_battery
     - sensor.office_closet_door_right_battery
     - sensor.hall_closet_door_battery
+    - sensor.motion_sensor_battery
+    - sensor.mini_button_battery
 
 garage_doors:
   icon: mdi:garage

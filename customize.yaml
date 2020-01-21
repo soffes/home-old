@@ -106,6 +106,9 @@ binary_sensor.office_closet_door_left:
 binary_sensor.office_closet_door_right:
   device_class: door
 
+binary_sensor.hall_closet_door:
+  device_class: door
+
 # People
 person.sam:
   icon: mdi:human-male
