@@ -1,0 +1,12 @@
+- name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  radius: 100
+  icon: mdi:home
+
+- name: San Francisco
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  radius: 35000
+  icon: mdi:city
+  passive: true
