@@ -20,7 +20,7 @@
             apns-collapse-id: vacation-mode-enabled
 
 # Turn off vacation mode when we enter the city
-- alias: Enable vacation mode
+- alias: Disable vacation mode
   trigger:
     platform: zone
     entity_id: group.family
