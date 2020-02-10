@@ -109,6 +109,10 @@ binary_sensor.office_closet_door_right:
 binary_sensor.hall_closet_door:
   device_class: door
 
+# Leak Sensors
+binary_sensor.dishwasher_leak:
+  device_class: moisture
+
 # People
 person.sam:
   icon: mdi:human-male
