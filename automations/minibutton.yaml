@@ -1,0 +1,9 @@
+- alias: "Pause Sonos"
+  trigger:
+    device_id: 173b1a5da7934b708004c2e7b99eafaa
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  action:
+    service: script.sonos_pause_all
