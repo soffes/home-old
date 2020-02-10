@@ -1,3 +1,4 @@
+.DS_Store
 .cloud
 .storage
 .uuid
@@ -11,4 +12,4 @@ www/community
 .*.conf
 .*.state
 .pip*
-
+/ssl
