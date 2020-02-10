@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Copy secrets
-        run: cp secrets_ci.yaml secrets.yaml && mkdir -p ssl && touch ssl/fullchain.pem && ssl/privkey.pem
+        run: cp secrets_ci.yaml secrets.yaml && mkdir -p ssl && touch ssl/fullchain.pem && touch ssl/privkey.pem
       - name: Check configuration
         run: hass --script check_config -c .
