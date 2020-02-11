@@ -28,8 +28,9 @@ cards:
     show_header_toggle: false
     entities:
       - cover.garage_door
+      - cover.shop_door
       - entity: light.garage_hallway_overhead
-        name: Overhead
+        name: Hallway Overhead
 
   - type: entities
     title: Guest Bedroom
