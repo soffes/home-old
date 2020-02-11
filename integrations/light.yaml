@@ -1,0 +1,75 @@
+- platform: group
+  name: Bonus Room Overhead
+  entities:
+    - light.bonus_room_overhead_1
+    - light.bonus_room_overhead_2
+    - light.bonus_room_nook
+
+- platform: group
+  name: Dining Room Overhead
+  entities:
+    - light.dining_room_overhead_1
+    - light.dining_room_overhead_2
+    - light.dining_room_overhead_3
+
+- platform: group
+  name: Entryway Overhead
+  entities:
+    - light.entryway_overhead_1
+    - light.entryway_overhead_2
+
+- platform: group
+  name: Garage Hallway Overhead
+  entities:
+    - light.garage_hallway_overhead_1
+    - light.garage_hallway_overhead_2
+
+- platform: group
+  name: Guest Bedroom Overhead
+  entities:
+    - light.guest_bedroom_overhead_1
+    - light.guest_bedroom_overhead_2
+
+- platform: group
+  name: Hallway Overhead
+  entities:
+    - light.hallway_overhead_1
+    - light.hallway_overhead_2
+
+- platform: group
+  name: Living Room Lamp
+  entities:
+    - light.living_room_lamp_1
+    - light.living_room_lamp_2
+
+- platform: group
+  name: Master Bathroom Vanity
+  entities:
+    - light.master_bathroom_overhead_1
+    - light.master_bathroom_overhead_2
+    - light.master_bathroom_overhead_3
+
+- platform: group
+  name: Master Bedroom Overhead
+  entities:
+    - light.master_bedroom_overhead_1
+    - light.master_bedroom_overhead_2
+
+- platform: group
+  name: Office Overhead
+  entities:
+    - light.office_overhead_1
+    - light.office_overhead_2
+
+- platform: group
+  name: Office Closet
+  entities:
+    - light.office_closet_left
+    - light.office_closet_right
+
+- platform: group
+  name: Kitchen Overhead
+  entities:
+    - light.kitchen_overhead_1
+    - light.kitchen_overhead_2
+    - light.kitchen_recessed

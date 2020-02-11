@@ -57,6 +57,7 @@ binary_sensor: !include integrations/binary_sensor.yaml
 group: !include groups.yaml
 homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
+light: !include integrations/light.yaml
 scene: !include scenes.yaml
 script: !include_dir_merge_named scripts
 sensor: !include integrations/sensor.yaml

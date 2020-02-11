@@ -1,3 +1,29 @@
+# Light Groups
+light.bonus_room_overhead:
+  icon: mdi:ceiling-light
+light.dining_room_overhead:
+  icon: mdi:ceiling-light
+light.entryway_overhead:
+  icon: mdi:ceiling-light
+light.garage_hallway_overhead:
+  icon: mdi:ceiling-light
+light.guest_bedroom_overhead:
+  icon: mdi:ceiling-light
+light.hallway_overhead:
+  icon: mdi:ceiling-light
+light.living_room_lamp:
+  icon: mdi:floor-lamp
+light.master_bathroom_overhead:
+  icon: mdi:vanity-light
+light.master_bedroom_overhead:
+  icon: mdi:ceiling-light
+light.office_overhead:
+  icon: mdi:ceiling-light
+light.office_closet:
+  icon: mdi:lightbulb
+light.kitchen_overhead:
+  icon: mdi:ceiling-light
+
 # Lights
 light.back_porch:
   icon: mdi:outdoor-lamp

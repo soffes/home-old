@@ -5,14 +5,14 @@ cards:
     title: Bonus Room
     show_header_toggle: false
     entities:
-      - entity: group.bonus_room_overhead
+      - entity: light.bonus_room_overhead
         name: Overhead
 
   - type: entities
     title: Dining Room
     show_header_toggle: false
     entities:
-      - entity: group.dining_room_overhead
+      - entity: light.dining_room_overhead
         name: Overhead
 
   - type: entities
@@ -20,7 +20,7 @@ cards:
     show_header_toggle: false
     entities:
       - lock.front_door
-      - entity: group.entryway_overhead
+      - entity: light.entryway_overhead
         name: Overhead
 
   - type: entities
@@ -28,13 +28,13 @@ cards:
     show_header_toggle: false
     entities:
       - cover.garage_door
-      - entity: group.garage_hallway_overhead
+      - entity: light.garage_hallway_overhead
         name: Overhead
 
   - type: entities
     title: Guest Bedroom
     entities:
-      - entity: group.guest_bedroom_overhead
+      - entity: light.guest_bedroom_overhead
         name: Overhead
       - entity: light.guest_bedroom_lamp_left
         name: Left Lamp
@@ -45,14 +45,14 @@ cards:
     title: Hallway
     show_header_toggle: false
     entities:
-      - entity: group.hallway_overhead
+      - entity: light.hallway_overhead
         name: Overhead
 
   - type: entities
     title: Kitchen
     show_header_toggle: false
     entities:
-      - entity: group.kitchen_overhead
+      - entity: light.kitchen_overhead
         name: Overhead
 
   - type: entities
@@ -60,7 +60,7 @@ cards:
     entities:
       - entity: light.living_room_arc_lamp
         name: Arc Lamp
-      - entity: group.living_room_lamp
+      - entity: light.living_room_lamp
         name: Floor Lamp
       - light.sofa_lightstrip
       - light.chair_lightstrip
@@ -69,15 +69,15 @@ cards:
     title: Master Bathroom
     show_header_toggle: false
     entities:
-      - entity: group.master_bathroom_overhead
-        name: Overhead
+      - entity: light.master_bathroom_vanity
+        name: Vanity
 
   - type: entities
     title: Master Bedroom
     entities:
       - entity: fan.master_bedroom
         name: Fan
-      - entity: group.master_bedroom_overhead
+      - entity: light.master_bedroom_overhead
         name: Overhead
       - light.ellens_lamp
       - light.sams_lamp
@@ -87,9 +87,9 @@ cards:
   - type: entities
     title: Office
     entities:
-      - entity: group.office_overhead
+      - entity: light.office_overhead
         name: Overhead
-      - entity: group.office_closet
+      - entity: light.office_closet
         name: Closet
 
   - type: entities
