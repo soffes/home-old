@@ -13,7 +13,7 @@ light.hallway_overhead:
   icon: mdi:ceiling-light
 light.living_room_lamp:
   icon: mdi:floor-lamp
-light.master_bathroom_overhead:
+light.master_bathroom_vanity:
   icon: mdi:vanity-light
 light.master_bedroom_overhead:
   icon: mdi:ceiling-light
