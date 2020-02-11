@@ -13,3 +13,4 @@ www/community
 .*.state
 .pip*
 /ssl
+*.pyc
