@@ -14,3 +14,5 @@ www/community
 .pip*
 /ssl
 *.pyc
+/appdaemon/compiled
+__pycache__
