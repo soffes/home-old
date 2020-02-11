@@ -1,65 +1,47 @@
+# General configuration
 homeassistant:
-  name: !secret home_name
+  customize: !include customize.yaml
+  elevation: !secret home_elevation
   latitude: !secret home_latitude
   longitude: !secret home_longitude
-  elevation: !secret home_elevation
-  unit_system: imperial
+  name: !secret home_name
   time_zone: America/Los_Angeles
-  customize: !include customize.yaml
+  unit_system: imperial
 
+# Base configuration
+automation: !include_dir_merge_list automations
+config:
+frontend:
+  themes: !include_dir_merge_named themes
+history:
 http:
   ssl_certificate: ssl/fullchain.pem
   ssl_key: ssl/privkey.pem
-frontend:
-  themes: !include_dir_merge_named themes
+ios:
+logbook:
 lovelace:
   mode: yaml
-config:
-system_health:
-updater:
 mobile_app:
-ios:
-history:
-logbook:
-sun:
-
 recorder:
   db_url: !secret mysql_url
+script: !include_dir_merge_named scripts
+sun:
+system_health:
+updater:
 
-hacs:
-  token: !secret github_access_token
-
-august:
-  login_method: phone
-  username: !secret august_username
-  password: !secret august_password
-
-automation: !include_dir_merge_list automations
-
-cover: !include integrations/cover.yaml
-
-dyson:
-  username: !secret dyson_username
-  password: !secret dyson_password
-  language: GB
-  devices:
-    - device_id: !secret dyson_fan_id
-      device_ip: 10.0.0.60
-
-ecobee:
-  api_key: !secret ecobee_api_key
-
-weather:
-  - platform: darksky
-    api_key: !secret dark_sky_api_key
-
+# Integrations
+august: !include integrations/august.yaml
 binary_sensor: !include integrations/binary_sensor.yaml
+cover: !include integrations/cover.yaml
+dyson: !include integrations/dyson.yaml
+ecobee: !include integrations/ecobee.yaml
 group: !include groups.yaml
+hacs: !include integrations/hacs.yaml
 homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
 scene: !include scenes.yaml
-script: !include_dir_merge_named scripts
 sensor: !include integrations/sensor.yaml
 timer: !include integrations/timer.yaml
+weather: !include integrations/weather.yaml
 zone: !include integrations/zone.yaml
