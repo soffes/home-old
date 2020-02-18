@@ -32,6 +32,7 @@ updater:
 # Integrations
 august: !include integrations/august.yaml
 binary_sensor: !include integrations/binary_sensor.yaml
+camera: !include integrations/camera.yaml
 cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml
@@ -43,5 +44,27 @@ light: !include integrations/light.yaml
 scene: !include scenes.yaml
 sensor: !include integrations/sensor.yaml
 timer: !include integrations/timer.yaml
+unifiprotect: !include integrations/unifiprotect.yaml
 weather: !include integrations/weather.yaml
 zone: !include integrations/zone.yaml
+
+switch:
+  - platform: flux
+    lights:
+      - light.sams_lamp
+      - light.ellens_lamp
+      - light.master_bedroom_overhead
+      - light.master_bedroom_hallway_overhead
+      - light.master_bathroom_vanity
+      - light.hallway_overhead
+      - light.kitchen_overhead
+    name: Fluxer
+    start_time: '7:00'
+    stop_time: '23:00'
+    start_colortemp: 4000
+    sunset_colortemp: 3000
+    stop_colortemp: 1900
+    brightness: 128
+    mode: xy
+    transition: 30
+    interval: 60

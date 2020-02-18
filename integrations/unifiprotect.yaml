@@ -1,0 +1,3 @@
+host: 10.0.0.83
+username: !secret unifi_protect_username
+password: !secret unifi_protect_password

@@ -4,6 +4,10 @@ cards:
   - type: custom:search-card
     max_results: 10
 
+  - type: picture-entity
+    entity: camera.front_porch
+    name: Front Porch
+
   - type: thermostat
     entity: climate.hallway
 
