@@ -5,7 +5,7 @@
     to: 'on'
   action:
     service: homeassistant.turn_on
-    entity_id: group.office_closet
+    entity_id: light.office_closet
 
 - alias: "Turn off office closet light"
   trigger:
@@ -14,4 +14,4 @@
     to: 'off'
   action:
     service: homeassistant.turn_off
-    entity_id: group.office_closet
+    entity_id: light.office_closet
