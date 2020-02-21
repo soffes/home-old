@@ -1,0 +1,8 @@
+- alias: Turn off fan in the morning
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '06:00:00'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: fan.master_bedroom
