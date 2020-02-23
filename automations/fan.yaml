@@ -1,8 +1,12 @@
-- alias: Turn off fan in the morning
+- alias: Turn off fan in the morning on workdays
   initial_state: 'on'
   trigger:
-    - platform: time
-      at: '06:00:00'
+    - platform: sun
+      event: sunrise
+  condition:
+    condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
   action:
     - service: homeassistant.turn_off
       entity_id: fan.master_bedroom
