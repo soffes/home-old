@@ -1,0 +1,3 @@
+host: octoprint.local
+api_key: !secret octoprint_api_key
+bed: true
