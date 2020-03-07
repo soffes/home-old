@@ -93,7 +93,8 @@ cards:
         name: Overhead
       - entity: light.office_closet
         name: Closet
-      - switch.3d_printer
+      - entity: switch.3d_printer
+        name: 3D Printer
       - switch.3d_printer_lights
       - switch.space_heater
 
