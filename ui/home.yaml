@@ -26,6 +26,25 @@ cards:
   - type: weather-forecast
     entity: weather.dark_sky
 
+  - type: glance
+    show_icon: true
+    show_name: true
+    show_state: true
+    title: COVID-19 (US)
+    entities:
+      - entity: sensor.us_coronavirus_confirmed
+        icon: 'mdi:emoticon-neutral-outline'
+        name: Confirmed
+      - entity: sensor.us_coronavirus_current
+        icon: 'mdi:emoticon-frown-outline'
+        name: Current
+      - entity: sensor.us_coronavirus_recovered
+        icon: 'mdi:emoticon-happy-outline'
+        name: Recovered
+      - entity: sensor.us_coronavirus_deaths
+        icon: 'mdi:emoticon-dead-outline'
+        name: Deaths
+
   - type: entities
     title: Modes
     show_header_toggle: false
