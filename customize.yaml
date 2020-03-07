@@ -152,3 +152,6 @@ switch.3d_printer:
 
 switch.3d_printer_lights:
   icon: mdi:led-strip-variant
+
+switch.space_heater:
+  icon: mdi:radiator

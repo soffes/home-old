@@ -95,6 +95,7 @@ cards:
         name: Closet
       - switch.3d_printer
       - switch.3d_printer_lights
+      - switch.space_heater
 
   - type: entities
     title: Outdoor Lights

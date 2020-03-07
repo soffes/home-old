@@ -5,10 +5,12 @@
       entity_id: group.family
       to: 'not_home'
   action:
-    service: climate.set_preset_mode
-    entity_id: climate.hallway
-    data:
-      preset_mode: Away
+    - service: climate.set_preset_mode
+      entity_id: climate.hallway
+      data:
+        preset_mode: Away
+    - service: homeassistant.turn_off
+      entity_id: switch.space_heater
 
 - id: arrive-home
   alias: 'Turn on things when someone arrives'
