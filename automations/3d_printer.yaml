@@ -19,10 +19,10 @@
       entity_id: switch.3d_printer_lights
     - service: notify.mobile_app_sams_iphone
       data_template:
-          title: '🔩 3D print has finished'
-          data:
-            push:
-              sound:
-                name: default
-            apns_headers:
-              apns-collapse-id: 3d-print-finished
+        title: '🔩 3D print has finished'
+        data:
+          push:
+            sound:
+              name: default
+          apns_headers:
+            apns-collapse-id: 3d-print-finished
