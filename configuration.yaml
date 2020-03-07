@@ -44,6 +44,7 @@ light: !include integrations/light.yaml
 octoprint: !include integrations/octoprint.yaml
 scene: !include scenes.yaml
 sensor: !include integrations/sensor.yaml
+shell_command: !include integrations/shell_command.yaml
 timer: !include integrations/timer.yaml
 unifiprotect: !include integrations/unifiprotect.yaml
 weather: !include integrations/weather.yaml

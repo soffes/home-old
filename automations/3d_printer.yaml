@@ -15,8 +15,6 @@
     from: 'on'
     to: 'off'
   action:
-    - service: homeassistant.turn_off
-      entity_id: switch.3d_printer_lights
     - service: notify.mobile_app_sams_iphone
       data_template:
         title: '🔩 3D print has finished'
@@ -26,3 +24,6 @@
               name: default
           apns_headers:
             apns-collapse-id: 3d-print-finished
+    - delay: 300 # 5 minutes
+    - service: homeassistant.turn_off
+      entity_id: switch.3d_printer_lights
