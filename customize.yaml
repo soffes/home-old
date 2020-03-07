@@ -145,3 +145,10 @@ person.sam:
 
 person.ellen:
   icon: mdi:human-female
+
+# Misc
+switch.3d_printer:
+  icon: mdi:printer-3d
+
+switch.3d_printer_lights:
+  icon: mdi:led-strip-variant

@@ -1,0 +1,28 @@
+- alias: 3D print started
+  trigger:
+    platform: state
+    entity_id: binary_sensor.octoprint_printing
+    from: 'off'
+    to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.3d_printer_lights
+
+- alias: 3D print finished
+  trigger:
+    platform: state
+    entity_id: binary_sensor.octoprint_printing
+    from: 'on'
+    to: 'off'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.3d_printer_lights
+    - service: notify.mobile_app_sams_iphone
+      data_template:
+          title: '🔩 3D print has finished'
+          data:
+            push:
+              sound:
+                name: default
+            apns_headers:
+              apns-collapse-id: 3d-print-finished

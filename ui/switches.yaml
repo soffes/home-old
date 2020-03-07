@@ -87,11 +87,14 @@ cards:
 
   - type: entities
     title: Office
+    show_header_toggle: false
     entities:
       - entity: light.office_overhead
         name: Overhead
       - entity: light.office_closet
         name: Closet
+      - switch.3d_printer
+      - switch.3d_printer_lights
 
   - type: entities
     title: Outdoor Lights
