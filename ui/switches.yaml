@@ -14,6 +14,7 @@ cards:
     entities:
       - entity: light.dining_room_overhead
         name: Overhead
+      - cover.dining_room
 
   - type: entities
     title: Entryway
@@ -55,6 +56,7 @@ cards:
     entities:
       - entity: light.kitchen_overhead
         name: Overhead
+      - cover.kitchen
 
   - type: entities
     title: Living Room
@@ -65,6 +67,7 @@ cards:
         name: Floor Lamp
       - light.sofa_lightstrip
       - light.chair_lightstrip
+      - cover.living_room
 
   - type: entities
     title: Master Bathroom

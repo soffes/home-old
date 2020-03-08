@@ -1,45 +1,36 @@
 filter:
-  include_entities:
-    - climate.hallway
-    - cover.garage_door
-    - cover.shop_door
-    - fan.master_bedroom
-    - light.back_porch
+  include_domains:
+    - climate
+    - cover
+    - fan
+    - light
+    - lock
+  exclude_entities:
     - light.bonus_room_overhead_1
     - light.bonus_room_overhead_2
     - light.bonus_room_nook
-    - light.chair_lightstrip
     - light.dining_room_overhead_1
-    - light.dining_room_overhead_3
     - light.dining_room_overhead_2
-    - light.ellens_lamp
+    - light.dining_room_overhead_3
     - light.entryway_overhead_1
     - light.entryway_overhead_2
-    - light.front_porch
     - light.garage_hallway_overhead_1
     - light.garage_hallway_overhead_2
-    - light.guest_bedroom_lamp_left
-    - light.guest_bedroom_lamp_right
     - light.guest_bedroom_overhead_1
     - light.guest_bedroom_overhead_2
     - light.hallway_overhead_1
     - light.hallway_overhead_2
-    - light.kitchen_overhead_1
-    - light.kitchen_overhead_2
-    - light.kitchen_recessed
-    - light.living_room_arc_lamp
     - light.living_room_lamp_1
     - light.living_room_lamp_2
     - light.master_bathroom_overhead_1
     - light.master_bathroom_overhead_2
     - light.master_bathroom_overhead_3
-    - light.master_bedroom_hallway_overhead
     - light.master_bedroom_overhead_1
     - light.master_bedroom_overhead_2
     - light.office_overhead_1
     - light.office_overhead_2
     - light.office_closet_left
     - light.office_closet_right
-    - light.sams_lamp
-    - light.sofa_lightstrip
-    - lock.front_door
+    - light.kitchen_overhead_1
+    - light.kitchen_overhead_2
+    - light.kitchen_recessed
