@@ -3,7 +3,7 @@ sonos_party_mode:
     - service: media_player.volume_set
       data:
         entity_id: media_player.living_room
-        volume_level: 0.15
+        volume_level: 0.1
     - service: sonos.join
       data:
         master: media_player.living_room
