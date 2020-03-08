@@ -1,36 +1,33 @@
 filter:
+  # Automatically expose all of the following types of devices.
   include_domains:
     - climate
     - cover
     - fan
-    - light
     - lock
-  exclude_entities:
-    - light.bonus_room_overhead_1
-    - light.bonus_room_overhead_2
-    - light.bonus_room_nook
-    - light.dining_room_overhead_1
-    - light.dining_room_overhead_2
-    - light.dining_room_overhead_3
-    - light.entryway_overhead_1
-    - light.entryway_overhead_2
-    - light.garage_hallway_overhead_1
-    - light.garage_hallway_overhead_2
-    - light.guest_bedroom_overhead_1
-    - light.guest_bedroom_overhead_2
-    - light.hallway_overhead_1
-    - light.hallway_overhead_2
-    - light.living_room_lamp_1
-    - light.living_room_lamp_2
-    - light.master_bathroom_overhead_1
-    - light.master_bathroom_overhead_2
-    - light.master_bathroom_overhead_3
-    - light.master_bedroom_overhead_1
-    - light.master_bedroom_overhead_2
-    - light.office_overhead_1
-    - light.office_overhead_2
-    - light.office_closet_left
-    - light.office_closet_right
-    - light.kitchen_overhead_1
-    - light.kitchen_overhead_2
-    - light.kitchen_recessed
+
+  # Since there are so many lights we don’t want, it’s easier to whitelist
+  # them instead of trying to exclude the ones we don’t want.
+  include_entities:
+    - light.back_porch
+    - light.bonus_room_overhead
+    - light.chair_lightstrip
+    - light.dining_room_overhead
+    - light.ellens_lamp
+    - light.entryway_overhead
+    - light.front_porch
+    - light.garage_hallway_overhead
+    - light.guest_bedroom_lamp_left
+    - light.guest_bedroom_lamp_right
+    - light.guest_bedroom_overhead
+    - light.hallway_overhead
+    - light.kitchen_overhead
+    - light.living_room_arc_lamp
+    - light.living_room_lamp
+    - light.master_bathroom_overhead
+    - light.master_bedroom_hallway_overhead
+    - light.master_bedroom_overhead
+    - light.office_overhead
+    - light.office_closet_2
+    - light.sams_lamp
+    - light.sofa_lightstrip

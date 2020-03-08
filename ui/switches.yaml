@@ -85,8 +85,6 @@ cards:
         name: Overhead
       - light.ellens_lamp
       - light.sams_lamp
-      - entity: light.master_bedroom_hallway_overhead
-        name: Hallway Overhead
 
   - type: entities
     title: Office

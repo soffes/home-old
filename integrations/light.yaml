@@ -54,6 +54,7 @@
   entities:
     - light.master_bedroom_overhead_1
     - light.master_bedroom_overhead_2
+    - light.master_bedroom_hallway_overhead
 
 - platform: group
   name: Office Overhead
