@@ -1,0 +1,19 @@
+esphome:
+  name: 3d_printer_lights
+  platform: ESP8266
+  board: nodemcu
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  use_address: 10.0.0.61
+
+captive_portal:
+logger:
+api:
+ota:
+
+switch:
+  - platform: gpio
+    name: "3D Printer Lights"
+    pin: D0
