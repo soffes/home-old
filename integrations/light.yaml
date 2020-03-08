@@ -63,7 +63,7 @@
     - light.office_overhead_2
 
 - platform: group
-  name: Office Closet
+  name: Office Closet Overhead
   entities:
     - light.office_closet_left
     - light.office_closet_right

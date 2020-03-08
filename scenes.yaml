@@ -21,3 +21,13 @@
   entities:
     light.living_room_arc_lamp: 'off'
     light.ellens_lamp: 'off'
+
+- name: Office - On
+  entities:
+    light.office_overhead: 'on'
+
+- name: Office - Off
+  entities:
+    light.office_overhead: 'off'
+    light.office_closet_overhead: 'off'
+    switch.space_heater: 'off'
