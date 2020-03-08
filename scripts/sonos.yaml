@@ -3,7 +3,7 @@ sonos_party_mode:
     - service: media_player.volume_set
       data:
         entity_id: media_player.living_room
-        volume_level: 0.1
+        volume_level: 0.15
     - service: sonos.join
       data:
         master: media_player.living_room
@@ -15,3 +15,38 @@ sonos_pause_all:
     - service: media_player.media_pause
       data:
         entity_id: group.sonos
+
+sonos_station:
+  sequence:
+    - service: script.turn_on
+      entity_id: script.sonos_party_mode
+    - service: media_player.select_source
+      entity_id: group.sonos
+      data:
+        source: Sam Soffes' Station
+
+sonos_chill:
+  sequence:
+    - service: script.turn_on
+      entity_id: script.sonos_party_mode
+    - service: media_player.select_source
+      entity_id: group.sonos
+      data:
+        source: Chill
+    - service: media_player.shuffle_set
+      entity_id: group.sonos
+      data:
+        shuffle: true
+
+sonos_party:
+  sequence:
+    - service: script.turn_on
+      entity_id: script.sonos_party_mode
+    - service: media_player.select_source
+      entity_id: group.sonos
+      data:
+        source: Party
+    - service: media_player.shuffle_set
+      entity_id: group.sonos
+      data:
+        shuffle: true
