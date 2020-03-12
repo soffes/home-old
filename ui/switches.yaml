@@ -92,7 +92,8 @@ cards:
     entities:
       - entity: light.office_overhead
         name: Overhead
-      - entity: light.office_closet
+      - light.desk_lamp
+      - entity: light.office_closet_overhead
         name: Closet
       - entity: switch.3d_printer
         name: 3D Printer

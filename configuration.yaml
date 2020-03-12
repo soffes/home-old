@@ -23,7 +23,6 @@ lovelace:
   mode: yaml
 mobile_app:
 recorder:
-  db_url: !secret mysql_url
 script: !include_dir_merge_named scripts
 sun:
 system_health:
@@ -41,7 +40,7 @@ hacs: !include integrations/hacs.yaml
 homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
-octoprint: !include integrations/octoprint.yaml
+# octoprint: !include integrations/octoprint.yaml
 scene: !include scenes.yaml
 sensor: !include integrations/sensor.yaml
 shell_command: !include integrations/shell_command.yaml
@@ -49,25 +48,5 @@ somfy_mylink: !include integrations/somfy_mylink.yaml
 timer: !include integrations/timer.yaml
 unifiprotect: !include integrations/unifiprotect.yaml
 weather: !include integrations/weather.yaml
+yeelight: !include integrations/yeelight.yaml
 zone: !include integrations/zone.yaml
-
-switch:
-  - platform: flux
-    lights:
-      - light.sams_lamp
-      - light.ellens_lamp
-      - light.master_bedroom_overhead
-      - light.master_bedroom_hallway_overhead
-      - light.master_bathroom_vanity
-      - light.hallway_overhead
-      - light.kitchen_overhead
-    name: Fluxer
-    start_time: '7:00'
-    stop_time: '23:00'
-    start_colortemp: 4000
-    sunset_colortemp: 3000
-    stop_colortemp: 1900
-    brightness: 128
-    mode: xy
-    transition: 30
-    interval: 60

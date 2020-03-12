@@ -23,6 +23,8 @@ light.office_closet:
   icon: mdi:lightbulb
 light.kitchen_overhead:
   icon: mdi:ceiling-light
+light.desk_lamp:
+  icon: mdi:desk-lamp
 
 # Lights
 light.back_porch:
