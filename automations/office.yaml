@@ -19,3 +19,21 @@
   action:
     service: scene.turn_on
     entity_id: scene.office_off
+
+- alias: "Turn on office closet light"
+  trigger:
+    platform: state
+    entity_id: binary_sensor.office_closet_door
+    to: 'on'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.office_closet
+
+- alias: "Turn off office closet light"
+  trigger:
+    platform: state
+    entity_id: binary_sensor.office_closet_door
+    to: 'off'
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.office_closet

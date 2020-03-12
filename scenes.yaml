@@ -25,9 +25,11 @@
 - name: Office - On
   entities:
     light.office_overhead: 'on'
+    light.desk_lamp: 'on'
 
 - name: Office - Off
   entities:
     light.office_overhead: 'off'
+    light.desk_lamp: 'off'
     light.office_closet_overhead: 'off'
     switch.space_heater: 'off'
