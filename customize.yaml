@@ -19,7 +19,7 @@ light.master_bedroom_overhead:
   icon: mdi:ceiling-light
 light.office_overhead:
   icon: mdi:ceiling-light
-light.office_closet:
+light.office_closet_overhead:
   icon: mdi:lightbulb
 light.kitchen_overhead:
   icon: mdi:ceiling-light

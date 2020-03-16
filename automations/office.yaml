@@ -27,7 +27,7 @@
     to: 'on'
   action:
     service: homeassistant.turn_on
-    entity_id: light.office_closet
+    entity_id: light.office_closet_overhead
 
 - alias: "Turn off office closet light"
   trigger:
@@ -36,4 +36,4 @@
     to: 'off'
   action:
     service: homeassistant.turn_off
-    entity_id: light.office_closet
+    entity_id: light.office_closet_overhead
