@@ -67,6 +67,7 @@ cards:
         name: Floor Lamp
       - light.sofa_lightstrip
       - light.chair_lightstrip
+      - light.living_room_shelf_lamp
       - cover.living_room
 
   - type: entities

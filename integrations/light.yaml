@@ -74,3 +74,7 @@
     - light.kitchen_overhead_1
     - light.kitchen_overhead_2
     - light.kitchen_recessed
+
+- platform: switch
+  name: Living Room Shelf Lamp
+  entity_id: switch.living_room_shelf_lamp
