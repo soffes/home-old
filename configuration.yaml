@@ -11,6 +11,7 @@ homeassistant:
 # Base configuration
 automation: !include_dir_merge_list automations
 config:
+discovery:
 frontend:
   themes: !include_dir_merge_named themes
 history:

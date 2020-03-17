@@ -1,30 +1,43 @@
 - alias: "Office Switch - On"
   trigger:
-    platform: event
-    event_type: zha_event
-    event_data:
-      device_ieee: "00:17:88:01:02:d4:34:c0"
-      command: "on"
+    device_id: 686f8b550a3d4976bbcb888b1eae0062
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
   action:
     service: scene.turn_on
     entity_id: scene.office_on
 
 - alias: "Office Switch - Off"
   trigger:
-    platform: event
-    event_type: zha_event
-    event_data:
-      device_ieee: "00:17:88:01:02:d4:34:c0"
-      command: "off_with_effect"
+    device_id: 686f8b550a3d4976bbcb888b1eae0062
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
   action:
     service: scene.turn_on
     entity_id: scene.office_off
 
 - alias: "Turn on office closet light"
   trigger:
-    platform: state
+    # Closet opens
+    - platform: state
+      entity_id: binary_sensor.office_closet_door
+      to: 'on'
+    # Office switch is turned on
+    - device_id: 686f8b550a3d4976bbcb888b1eae0062
+      domain: deconz
+      platform: device
+      type: remote_button_short_press
+      subtype: turn_on
+  # Ensure the closet is open since it could’ve been an
+  # office switch press but the door is closed
+  condition:
+    condition: state
     entity_id: binary_sensor.office_closet_door
-    to: 'on'
+    state: 'on'
   action:
     service: homeassistant.turn_on
     entity_id: light.office_closet_overhead
