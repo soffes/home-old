@@ -50,3 +50,16 @@
   action:
     service: homeassistant.turn_off
     entity_id: light.office_closet_overhead
+
+- alias: "Toggle space heater"
+  trigger:
+    device_id: 73d8432e2db042689597b3bd59a9139a
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  action:
+    service: homeassistant.toggle
+    entity_id: switch.space_heater
+
+
