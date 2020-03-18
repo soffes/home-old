@@ -25,6 +25,13 @@ cards:
   - type: custom:group-card
     card:
       type: entities
+      title: Closets
+      show_header_toggle: false
+    group: group.closet_doors_sensors
+
+  - type: custom:group-card
+    card:
+      type: entities
       title: Batteries
       show_header_toggle: false
     group: group.batteries

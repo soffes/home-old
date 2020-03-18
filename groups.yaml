@@ -6,11 +6,15 @@ family:
     - person.ellen
 
 outdoor_lights:
+  name: Outdoor Lights
+  icon: mdi:outdoor-lamp
   entities:
     - light.front_porch
     - light.back_porch
 
 sonos:
+  name: Sonos
+  icon: mdi:speaker
   entities:
     - media_player.guest_bathroom
     - media_player.kitchen
@@ -20,11 +24,15 @@ sonos:
     - media_player.office
 
 door_sensors:
+  name: Door Sensors
+  icon: mdi:door
   entities:
     - binary_sensor.front_door_open
     - binary_sensor.back_door_open
 
 window_sensors:
+  name: Window Sensors
+  icon: mdi:window-closed
   entities:
     - binary_sensor.bonus_room_left_window
     - binary_sensor.bonus_room_right_window
@@ -40,7 +48,17 @@ window_sensors:
     - binary_sensor.master_bedroom_window
     - binary_sensor.office_window
 
+closet_doors_sensors:
+  name: Closet Door Sensors
+  icon: mdi:wardrobe
+  entities:
+    - binary_sensor.hall_closet_door
+    - binary_sensor.office_closet_door_left
+    - binary_sensor.office_closet_door_right
+
 batteries:
+  name: Batteries
+  icon: mdi:battery
   entities:
     - sensor.back_door_open_battery
     - sensor.bonus_room_left_window_battery
@@ -61,14 +79,17 @@ batteries:
     - sensor.office_closet_door_left_battery
     - sensor.office_closet_door_right_battery
     - sensor.office_window_battery
+    - sensor.office_switch_battery
 
 garage_doors:
+  name: Garage Doors
   icon: mdi:garage
   entities:
     - cover.shop_door
     - cover.garage_door
 
 shades:
+  name: Shades
   icon: mdi:blinds
   entities:
     - cover.living_room
