@@ -7,6 +7,8 @@ resources:
     type: module
   - url: /community_plugin/group-card/group-card.js
     type: module
+  - url: /local/camera-card.js
+    type: module
 
 views:
   - !include ui/home.yaml

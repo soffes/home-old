@@ -11,3 +11,5 @@ cards:
       - group.family
       - sensor.car_distance_sensor
       - binary_sensor.office_closet_door
+  - type: "custom:camera-card"
+    entity: camera.front_porch
