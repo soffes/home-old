@@ -24,6 +24,7 @@
               name: default
           apns_headers:
             apns-collapse-id: 3d-print-finished
-    - delay: 300 # 5 minutes
+    # 5 minutes
+    - delay: 300
     - service: homeassistant.turn_off
       entity_id: switch.3d_printer_lights
