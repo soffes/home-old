@@ -62,4 +62,3 @@
     service: homeassistant.toggle
     entity_id: switch.space_heater
 
-
