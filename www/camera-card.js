@@ -2,28 +2,31 @@ class CameraCard extends HTMLElement {
   set hass(hass) {
     if (!this.content) {
       const card = document.createElement('ha-card');
-      card.header = 'Example card';
       this.content = document.createElement('div');
-      this.content.style.padding = '0 16px 16px';
+      this.content.style.paddingTop = '56.25%';
+      this.content.style.position = 'relative';
       card.appendChild(this.content);
       this.appendChild(card);
     }
 
-    const entityId = this.config.entity;
-    const state = hass.states[entityId];
-    const stateStr = state ? state.state : 'unavailable';
+    const href = this.config.camera_url;
+    const src = hass.states[this.config.entity].attributes.entity_picture;
 
     this.content.innerHTML = `
-      The state of ${entityId} is ${stateStr}!
-      <br><br>
-      <img src="http://via.placeholder.com/350x150">
-    `;
+      <a href="${href}" target="_blank" style="display:block;position:absolute;top:0;left:0;">
+        <img src="${src}" style="width:100%">
+      </a>`;
   }
 
   setConfig(config) {
     if (!config.entity) {
-      throw new Error('You need to define an entity');
+      throw new Error('You need to define entity');
     }
+
+    if (!config.camera_url) {
+      throw new Error('You need to define camera_url');
+    }
+
     this.config = config;
   }
 

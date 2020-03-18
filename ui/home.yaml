@@ -9,12 +9,12 @@ cards:
 
   - type: vertical-stack
     cards:
-      - type: picture-entity
+      - type: "custom:camera-card"
         entity: camera.front_porch
-        name: Front Porch
-      - type: picture-entity
+        camera_url: https://cloudkey.local:7443/liveview/5e7211bc00bd2603e70007d7
+      - type: "custom:camera-card"
         entity: camera.driveway
-        name: Driveway
+        camera_url: https://cloudkey.local:7443/liveview/5e7211c602d42603e70007d8
 
   - type: weather-forecast
     entity: weather.dark_sky
