@@ -12,5 +12,6 @@
         "*.db": true,
         "*.log": true,
         "*/@eaDir": true,
+        "*.db*": true,
     }
 }
