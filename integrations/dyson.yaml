@@ -3,4 +3,4 @@ password: !secret dyson_password
 language: GB
 devices:
   - device_id: !secret dyson_fan_id
-    device_ip: 10.0.0.60
+    device_ip: !secret dyson_fan_ip
