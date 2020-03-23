@@ -74,7 +74,3 @@
     - light.kitchen_overhead_1
     - light.kitchen_overhead_2
     - light.kitchen_recessed
-
-- platform: switch
-  name: Bulb Lamp
-  entity_id: switch.bulb_lamp

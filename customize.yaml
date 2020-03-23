@@ -158,6 +158,9 @@ switch.3d_printer_lights:
 switch.space_heater:
   icon: mdi:radiator
 
+switch.ellens_space_heater:
+  icon: mdi:radiator
+
 sensor.us_coronavirus_confirmed:
   icon: 'mdi:emoticon-neutral-outline'
 

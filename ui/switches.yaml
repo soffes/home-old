@@ -67,8 +67,8 @@ cards:
         name: Floor Lamp
       - light.sofa_lightstrip
       - light.chair_lightstrip
-      - light.bulb_lamp
       - cover.living_room
+      - switch.ellens_space_heater
 
   - type: entities
     title: Master Bathroom
