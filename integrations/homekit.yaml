@@ -11,6 +11,7 @@ filter:
   include_entities:
     - light.back_porch
     - light.bonus_room_overhead
+    - light.bulb_lamp
     - light.chair_lightstrip
     - light.desk_lamp
     - light.dining_room_overhead

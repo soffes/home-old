@@ -68,6 +68,7 @@ cards:
       - light.sofa_lightstrip
       - light.chair_lightstrip
       - cover.living_room
+      - light.bulb_lamp
       - switch.ellens_space_heater
 
   - type: entities
