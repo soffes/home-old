@@ -7,6 +7,8 @@
 - name: Sunrise
   entities:
     group.outdoor_lights: "off"
+    fan.master_bedroom: "off"
+    switch.humidifier: "off"
 
 - name: Sunset Vacation
   entities:

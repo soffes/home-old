@@ -161,6 +161,9 @@ switch.space_heater:
 switch.ellens_space_heater:
   icon: mdi:radiator
 
+switch.humidifier:
+  icon: mdi:air-humidifier
+
 sensor.us_coronavirus_confirmed:
   icon: 'mdi:emoticon-neutral-outline'
 

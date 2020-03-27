@@ -28,9 +28,10 @@ filter:
     - light.living_room_lamp
     - light.master_bathroom_vanity
     - light.master_bedroom_overhead
-    - light.office_overhead
     - light.office_closet_overhead
+    - light.office_overhead
     - light.sams_lamp
     - light.sofa_lightstrip
+    - switch.ellens_space_heater
+    - switch.humidifier
     - switch.space_heater
-    - switch.ellen_space_heater

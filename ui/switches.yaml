@@ -83,6 +83,7 @@ cards:
     entities:
       - entity: fan.master_bedroom
         name: Fan
+      - switch.humidifier
       - entity: light.master_bedroom_overhead
         name: Overhead
       - light.ellens_lamp
