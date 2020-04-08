@@ -1,0 +1,31 @@
+- alias: "Open shades on weekday mornings"
+  trigger:
+    - platform: sun
+      event: sunrise
+      offset: "01:00:00"
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.vacation_mode
+        state: "off"
+      - condition: state
+        entity_id: binary_sensor.workday_sensor
+        state: "on"
+  action:
+    service: cover.open_cover
+    entity_id:
+      - cover.living_room
+      - cover.dining_room
+
+- alias: "Close the shades in the evening"
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: "01:00:00"
+  action:
+    service: cover.close_cover
+    entity_id:
+      - cover.living_room
+      - cover.dining_room
+      - cover.kitchen
