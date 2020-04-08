@@ -7,6 +7,13 @@ cards:
   - type: thermostat
     entity: climate.hallway
 
+  - type: entities
+    title: Shades
+    entities:
+      - cover.living_room
+      - cover.dining_room
+      - cover.kitchen
+
   - type: vertical-stack
     cards:
       - type: "custom:camera-card"
@@ -19,16 +26,16 @@ cards:
   - type: weather-forecast
     entity: weather.dark_sky
 
-  - type: vertical-stack
-    cards:
-      - type: sensor
-        entity: sensor.us_coronavirus_current
-        name: Current Cases
-        graph: line
-      - type: sensor
-        entity: sensor.us_coronavirus_deaths
-        name: Deaths
-        graph: line
+  # - type: vertical-stack
+  #   cards:
+  #     - type: sensor
+  #       entity: sensor.us_coronavirus_current
+  #       name: Current Cases
+  #       graph: line
+  #     - type: sensor
+  #       entity: sensor.us_coronavirus_deaths
+  #       name: Deaths
+  #       graph: line
 
   - type: entities
     title: Modes
