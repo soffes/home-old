@@ -28,8 +28,8 @@ cards:
     title: Garage
     show_header_toggle: false
     entities:
-      - cover.garage_door
-      - cover.shop_door
+      - cover.left_garage_door
+      - cover.right_garage_door
       - entity: light.garage_hallway_overhead
         name: Hallway Overhead
 
