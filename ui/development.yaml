@@ -8,6 +8,5 @@ cards:
       - sensor.open_doors_count
       - sensor.open_windows_count
       - timer.front_door_lock
-      - group.family
       - sensor.car_distance_sensor
       - binary_sensor.office_closet_door

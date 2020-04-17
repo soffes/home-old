@@ -43,7 +43,7 @@ light.dining_room_overhead_2:
   icon: mdi:ceiling-light
 light.dining_room_overhead_3:
   icon: mdi:ceiling-light
-light.ellens_lamp:
+light.master_bedroom_right_lamp:
   icon: mdi:lamp
 light.entryway_overhead_1:
   icon: mdi:ceiling-light
@@ -91,7 +91,7 @@ light.office_overhead_1:
   icon: mdi:ceiling-light
 light.office_overhead_2:
   icon: mdi:ceiling-light
-light.sams_lamp:
+light.master_bedroom_right_lamp:
   icon: mdi:lamp
 light.sofa_lightstrip:
   icon: mdi:led-strip-variant
@@ -145,20 +145,14 @@ binary_sensor.dishwasher_leak:
 person.sam:
   icon: mdi:human-male
 
-person.ellen:
-  icon: mdi:human-female
-
 # Misc
 switch.3d_printer:
   icon: mdi:printer-3d
 
-switch.3d_printer_lights:
+light.3d_printer:
   icon: mdi:led-strip-variant
 
 switch.space_heater:
-  icon: mdi:radiator
-
-switch.ellens_space_heater:
   icon: mdi:radiator
 
 switch.humidifier:

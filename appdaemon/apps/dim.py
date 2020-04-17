@@ -30,6 +30,5 @@ class Dim(hass.Hass):
         brightness = int((1 - percent) * 255)
 
         self.turn_on("light.sams_lamp", brightness = brightness)
-        self.turn_on("light.ellens_lamp", brightness = brightness)
         self.turn_on("light.master_bedroom_overhead", brightness = brightness)
         self.turn_on("light.master_bedroom_hallway_overhead", brightness = brightness)

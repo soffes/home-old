@@ -9,13 +9,13 @@ filter:
   # Since there are so many lights we don’t want, it’s easier to whitelist
   # them instead of trying to exclude the ones we don’t want.
   include_entities:
+    - light.3d_printer
     - light.back_porch
     - light.bonus_room_overhead
     - light.bulb_lamp
     - light.chair_lightstrip
     - light.desk_lamp
     - light.dining_room_overhead
-    - light.ellens_lamp
     - light.entryway_overhead
     - light.front_porch
     - light.garage_hallway_overhead
@@ -27,11 +27,11 @@ filter:
     - light.living_room_arc_lamp
     - light.living_room_lamp
     - light.master_bathroom_vanity
+    - light.master_bedroom_left_lamp
     - light.master_bedroom_overhead
+    - light.master_bedroom_right_lamp
     - light.office_closet_overhead
     - light.office_overhead
-    - light.sams_lamp
     - light.sofa_lightstrip
-    - switch.ellens_space_heater
     - switch.humidifier
     - switch.space_heater

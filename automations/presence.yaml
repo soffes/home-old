@@ -2,7 +2,7 @@
   alias: 'Turn off things when everyone leaves'
   trigger:
     - platform: state
-      entity_id: group.family
+      entity_id: person.sam
       to: 'not_home'
   action:
     service: climate.set_preset_mode
@@ -23,7 +23,7 @@
   alias: 'Turn on things when someone arrives'
   trigger:
     - platform: state
-      entity_id: group.family
+      entity_id: person.sam
       to: 'home'
   action:
     service: climate.set_preset_mode

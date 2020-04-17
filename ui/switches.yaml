@@ -69,7 +69,6 @@ cards:
       - light.chair_lightstrip
       - cover.living_room
       - light.bulb_lamp
-      - switch.ellens_space_heater
 
   - type: entities
     title: Master Bathroom
@@ -86,8 +85,10 @@ cards:
       - switch.humidifier
       - entity: light.master_bedroom_overhead
         name: Overhead
-      - light.ellens_lamp
-      - light.sams_lamp
+      - entity: light.master_bedroom_left_lamp
+        name: Left Lamp
+      - entity: light.master_bedroom_right_lamp
+        name: Right Lamp
 
   - type: entities
     title: Office

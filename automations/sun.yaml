@@ -13,29 +13,3 @@
   action:
     service: homeassistant.turn_on
     entity_id: scene.sunrise
-
-- alias: "Sunset (Vacation Mode)"
-  trigger:
-    - platform: sun
-      event: sunset
-      offset: "-01:00:00"
-  condition:
-    condition: state
-    entity_id: input_boolean.vacation_mode
-    state: "on"
-  action:
-    service: homeassistant.turn_on
-    entity_id: scene.setrise_vacation
-
-- alias: "Post Sunset (Vacation Mode)"
-  trigger:
-    - platform: sun
-      event: sunset
-      offset: "06:00:00"
-  condition:
-    condition: state
-    entity_id: input_boolean.vacation_mode
-    state: "on"
-  action:
-    service: homeassistant.turn_on
-    entity_id: scene.sunrise_vacation

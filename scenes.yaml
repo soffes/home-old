@@ -10,20 +10,6 @@
     fan.master_bedroom: "off"
     switch.humidifier: "off"
 
-- name: Sunset Vacation
-  entities:
-    light.living_room_arc_lamp:
-      state: 'on'
-      brightness: 76
-    light.ellens_lamp:
-      state: 'on'
-      brightness: 76
-
-- name: Sunrise Vacation
-  entities:
-    light.living_room_arc_lamp: 'off'
-    light.ellens_lamp: 'off'
-
 - name: Office - On
   entities:
     light.office_overhead: 'on'

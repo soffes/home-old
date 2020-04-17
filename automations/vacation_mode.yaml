@@ -2,7 +2,7 @@
 - alias: Enable vacation mode
   trigger:
     platform: zone
-    entity_id: group.family
+    entity_id: person.sam
     zone: zone.san_francisco
     event: leave
   action:
@@ -23,7 +23,7 @@
 - alias: Disable vacation mode
   trigger:
     platform: zone
-    entity_id: group.family
+    entity_id: person.sam
     zone: zone.san_francisco
     event: enter
   action:
