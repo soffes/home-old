@@ -80,5 +80,9 @@
   entity_id: switch.bulb_lamp
 
 - platform: switch
-  name: 3D Printer LEDs
+  name: 3D Printer
   entity_id: switch.3d_printer_lights
+
+- platform: switch
+  name: Stairs
+  entity_id: switch.stair_lights

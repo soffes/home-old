@@ -152,6 +152,9 @@ switch.3d_printer:
 light.3d_printer:
   icon: mdi:led-strip-variant
 
+light.stairs:
+  icon: mdi:wall-sconce-flat
+
 switch.space_heater:
   icon: mdi:radiator
 

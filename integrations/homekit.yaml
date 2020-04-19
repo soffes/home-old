@@ -33,5 +33,6 @@ filter:
     - light.office_closet_overhead
     - light.office_overhead
     - light.sofa_lightstrip
+    - light.stairs
     - switch.humidifier
     - switch.space_heater

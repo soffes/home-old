@@ -4,6 +4,7 @@ outdoor_lights:
   entities:
     - light.front_porch
     - light.back_porch
+    - light.stairs
 
 sonos:
   name: Sonos

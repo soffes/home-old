@@ -82,7 +82,6 @@ cards:
     entities:
       - entity: fan.master_bedroom
         name: Fan
-      - switch.humidifier
       - entity: light.master_bedroom_overhead
         name: Overhead
       - entity: light.master_bedroom_left_lamp
@@ -100,8 +99,9 @@ cards:
       - entity: light.office_closet_overhead
         name: Closet
       - entity: switch.3d_printer
-        name: 3D Printer
-      - switch.3d_printer_lights
+        name: 3D Printer Power
+      - entity: light.3d_printer
+        name: 3D Printer Lights
       - switch.space_heater
 
   - type: entities
@@ -109,3 +109,4 @@ cards:
     entities:
       - light.front_porch
       - light.back_porch
+      - light.stairs
