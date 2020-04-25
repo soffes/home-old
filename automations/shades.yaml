@@ -17,14 +17,74 @@
     entity_id:
       - cover.living_room
       - cover.dining_room
+      - cover.office
 
-- alias: "Close the shades in the evening"
+- alias: "Close dining room shades in the evening"
   trigger:
     - platform: sun
       event: sunset
+  condition:
+    - condition: state
+      entity_id: binary_sensor.dining_room_window
+      state: 'off'
   action:
     service: cover.close_cover
     entity_id:
-      - cover.living_room
       - cover.dining_room
+
+- alias: "Close master bedroom shades in the evening"
+  trigger:
+    - platform: sun
+      event: sunset
+  condition:
+    - condition: state
+      entity_id: binary_sensor.master_bedroom_window
+      state: 'off'
+  action:
+    service: cover.close_cover
+    entity_id:
+      - cover.master_bedroom
+
+- alias: "Close office shades in the evening"
+  trigger:
+    - platform: sun
+      event: sunset
+  condition:
+    - condition: state
+      entity_id: binary_sensor.office_window
+      state: 'off'
+  action:
+    service: cover.close_cover
+    entity_id:
+      - cover.office
+
+- alias: "Close living room shades in the evening"
+  trigger:
+    - platform: sun
+      event: sunset
+  condition:
+    - condition: and
+      conditions:
+        - condition: state
+          entity_id: binary_sensor.living_room_window_left
+          state: 'off'
+        - condition: state
+          entity_id: binary_sensor.living_room_window_right
+          state: 'off'
+  action:
+    service: cover.close_cover
+    entity_id:
+      - cover.office
+
+- alias: "Close kitchen shades in the evening"
+  trigger:
+    - platform: sun
+      event: sunset
+  condition:
+    - condition: state
+      entity_id: binary_sensor.kitchen_window
+      state: 'off'
+  action:
+    service: cover.close_cover
+    entity_id:
       - cover.kitchen

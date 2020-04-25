@@ -7,12 +7,12 @@ cards:
   - type: thermostat
     entity: climate.hallway
 
-  - type: entities
-    title: Shades
-    entities:
-      - cover.living_room
-      - cover.dining_room
-      - cover.kitchen
+  - type: custom:group-card
+    card:
+      type: entities
+      title: Shades
+      show_header_toggle: false
+    group: group.shades
 
   - type: vertical-stack
     cards:

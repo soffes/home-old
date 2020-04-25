@@ -80,6 +80,7 @@ cards:
   - type: entities
     title: Master Bedroom
     entities:
+      - cover.master_bedroom
       - entity: fan.master_bedroom
         name: Fan
       - entity: light.master_bedroom_overhead
@@ -93,6 +94,7 @@ cards:
     title: Office
     show_header_toggle: false
     entities:
+      - cover.office
       - entity: light.office_overhead
         name: Overhead
       - light.desk_lamp

@@ -111,9 +111,9 @@ binary_sensor.kitchen_window:
   device_class: window
 binary_sensor.laundry_window:
   device_class: window
-binary_sensor.living_room_left_window:
+binary_sensor.living_room_window_left:
   device_class: window
-binary_sensor.living_room_right_window:
+binary_sensor.living_room_window_right:
   device_class: window
 binary_sensor.master_bathroom_window:
   device_class: window
