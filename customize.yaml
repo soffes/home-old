@@ -43,6 +43,8 @@ light.dining_room_overhead_2:
   icon: mdi:ceiling-light
 light.dining_room_overhead_3:
   icon: mdi:ceiling-light
+light.master_bedroom_left_lamp:
+  icon: mdi:lamp
 light.master_bedroom_right_lamp:
   icon: mdi:lamp
 light.entryway_overhead_1:
@@ -71,7 +73,7 @@ light.kitchen_overhead_1:
   icon: mdi:ceiling-light
 light.kitchen_overhead_2:
   icon: mdi:ceiling-light
-light.kitchen_recessed:
+light.kitchen_recessed_1:
   icon: mdi:wall-sconce-flat
 light.living_room_arc_lamp:
   icon: mdi:desk-lamp
