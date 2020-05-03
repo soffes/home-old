@@ -1,6 +1,9 @@
 title: Development
 path: development
 cards:
+  - type: custom:search-card
+    max_results: 10
+
   - type: entities
     title: Debugging
     show_header_toggle: false

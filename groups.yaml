@@ -79,8 +79,8 @@ garage_doors:
   name: Garage Doors
   icon: mdi:garage
   entities:
-    - cover.left_garage_door
-    - cover.right_garage_door
+    - cover.car_garage_door
+    - cover.shop_garage_door
 
 shades:
   name: Shades
