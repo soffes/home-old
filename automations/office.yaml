@@ -20,6 +20,28 @@
     service: scene.turn_on
     entity_id: scene.office_off
 
+- alias: "Office Switch - Dim Up"
+  trigger:
+    device_id: 686f8b550a3d4976bbcb888b1eae0062
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  action:
+    service: scene.turn_on
+    entity_id: scene.office_on
+
+- alias: "Office Switch - Dim Down"
+  trigger:
+    device_id: 686f8b550a3d4976bbcb888b1eae0062
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+  action:
+    service: scene.turn_on
+    entity_id: scene.office_off
+
 - alias: "Turn on office closet light"
   trigger:
     # Closet opens
