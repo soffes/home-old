@@ -17,7 +17,7 @@
     entity_id:
       - cover.living_room
       - cover.dining_room
-      - cover.office
+      # - cover.office
 
 - alias: "Close dining room shades in the evening"
   trigger:
