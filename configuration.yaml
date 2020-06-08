@@ -31,7 +31,6 @@ updater:
 # Integrations
 august: !include integrations/august.yaml
 binary_sensor: !include integrations/binary_sensor.yaml
-camera: !include integrations/camera.yaml
 cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml

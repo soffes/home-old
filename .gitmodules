@@ -1,3 +1,0 @@
-[submodule "custom_components/unifi_protect"]
-	path = custom_components/unifi_protect
-	url = https://github.com/briis/unifiprotect
