@@ -1,14 +1,20 @@
 filter:
-  # Automatically expose all of the following types of devices.
-  include_domains:
-    - climate
-    - cover
-    - fan
-    - lock
-
-  # Since there are so many lights we don’t want, it’s easier to whitelist
-  # them instead of trying to exclude the ones we don’t want.
   include_entities:
+    - camera.driveway
+    - camera.front_porch
+    - climate.hallway
+    - cover.car_garage_door
+    - cover.dining_room
+    - cover.kitchen
+    - cover.living_room_center
+    # - cover.living_room_left
+    # - cover.living_room_right
+    - cover.master_bedroom_left
+    - cover.master_bedroom_right
+    # - cover.office_left
+    # - cover.office_right
+    - cover.shop_garage_door
+    - fan.master_bedroom
     - light.3d_printer
     - light.back_porch
     - light.bonus_room_overhead
@@ -34,5 +40,7 @@ filter:
     - light.office_overhead
     - light.sofa_lightstrip
     - light.stairs
+    - lock.back_door
+    - lock.front_door
     - switch.humidifier
     - switch.space_heater
