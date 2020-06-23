@@ -25,7 +25,7 @@ filter:
     - light.entryway_overhead
     - light.front_porch
     - light.garage_hallway_overhead
-    - light.guest_bedroom_lamp_left
+    - light.garage_stairs
     - light.guest_bedroom_lamp_right
     - light.guest_bedroom_overhead
     - light.hallway_overhead

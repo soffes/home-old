@@ -57,8 +57,6 @@ light.garage_hallway_overhead_1:
   icon: mdi:ceiling-light
 light.garage_hallway_overhead_2:
   icon: mdi:ceiling-light
-light.guest_bedroom_lamp_left:
-  icon: mdi:lamp
 light.guest_bedroom_lamp_right:
   icon: mdi:lamp
 light.guest_bedroom_overhead_1:

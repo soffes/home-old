@@ -91,3 +91,28 @@ shades:
     - cover.living_room
     - cover.master_bedroom
     - cover.office
+
+lights:
+  name: Lights
+  icon: mdi:home-lightbulb
+  entities:
+    - group.outdoor_lights
+    - light.office_overhead
+    - light.desk_lamp
+    - light.office_closet_overhead
+    - light.master_bedroom_overhead
+    - light.master_bedroom_left_lamp
+    - light.master_bedroom_right_lamp
+    - light.master_bathroom_vanity
+    - light.hallway_overhead
+    - light.guest_bedroom_overhead
+    - light.guest_bedroom_lamp
+    - light.garage_stairs
+    - light.garage_hallway_overhead
+    - light.entryway_overhead
+    - light.living_room_lamp
+    - light.living_room_arc_lamp
+    - light.bulb_lamp
+    - light.dining_room_overhead
+    - light.kitchen_overhead
+    - light.bonus_room_overhead

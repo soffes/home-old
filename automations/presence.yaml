@@ -1,32 +1,80 @@
-- id: leave-home
-  alias: 'Turn off things when everyone leaves'
+- id: presence-leave
+  alias: 'Turn off things when leaving'
   trigger:
     - platform: state
       entity_id: person.sam
       to: 'not_home'
   action:
-    service: climate.set_preset_mode
-    entity_id: climate.hallway
-    data:
-      preset_mode: Away
+    # Set thermostate to away
+    - service: climate.set_preset_mode
+      entity_id: climate.hallway
+      data:
+        preset_mode: Away
 
-- alias: Turn off things when Sam leaves
-  trigger:
-    - platform: state
-      entity_id: person.sam
-      to: 'not_home'
-  action:
-    service: homeassistant.turn_off
-    entity_id: switch.space_heater
+    # Turn off space heater
+    - service: homeassistant.turn_off
+      entity_id: switch.space_heater
 
-- id: arrive-home
-  alias: 'Turn on things when someone arrives'
+    # Close garage doors
+    - service: homeassistant.turn_off
+      entity_id: group.garage_doors
+
+    # Create a scene of the shades
+    - service: scene.create
+      data:
+        scene_id: presence_before_shades
+        snapshot_entities:
+          - group.shades
+
+    # Close shades (unless the window is open)
+    - service: script.turn_on
+      entity_id: script.shades_close_all
+
+    # Create a scene of the lights and Sonos
+    - service: scene.create
+      data:
+        scene_id: presence_before
+        snapshot_entities:
+          - group.lights
+          - group.sonos
+
+    # Turn off all lights
+    - service: homeassistant.turn_off
+      entity_id: group.lights
+
+    # Pause Sonos
+    - service: script.turn_on
+      entity_id: script.sonos_pause_all
+
+- id: presence-arrive
+  alias: 'Turn on things when arriving'
   trigger:
     - platform: state
       entity_id: person.sam
       to: 'home'
   action:
-    service: climate.set_preset_mode
-    entity_id: climate.hallway
-    data:
-      preset_mode: Home
+    # Restore the thermostat
+    - service: climate.set_preset_mode
+      entity_id: climate.hallway
+      data:
+        preset_mode: Home
+
+    # Restore everything else
+    - service: scene.turn_on
+      data:
+        entity_id: scene.presence_before
+
+- id: presence-arrive-shades
+  alias: 'Restore shades when arriving if the sun is up'
+  trigger:
+    - platform: state
+      entity_id: person.sam
+      to: 'home'
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
+  action:
+    - service: scene.turn_on
+      data:
+        entity_id: scene.presence_before_shades
