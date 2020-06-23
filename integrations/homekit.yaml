@@ -24,7 +24,11 @@ filter:
     - light.dining_room_overhead
     - light.entryway_overhead
     - light.front_porch
+    - light.garage_car_overhead
+    - light.garage_front_overhead
     - light.garage_hallway_overhead
+    - light.garage_laundry_overhead
+    - light.garage_shop_overhead
     - light.garage_stairs
     - light.guest_bedroom_lamp_right
     - light.guest_bedroom_overhead
