@@ -6,13 +6,9 @@ filter:
     - cover.car_garage_door
     - cover.dining_room
     - cover.kitchen
-    - cover.living_room_center
-    # - cover.living_room_left
-    # - cover.living_room_right
-    - cover.master_bedroom_left
-    - cover.master_bedroom_right
-    # - cover.office_left
-    # - cover.office_right
+    - cover.living_room
+    - cover.master_bedroom
+    # - cover.office
     - cover.shop_garage_door
     - fan.master_bedroom
     - light.3d_printer

@@ -76,10 +76,6 @@
     - light.kitchen_recessed_1
 
 - platform: switch
-  name: Bulb Lamp
-  entity_id: switch.bulb_lamp
-
-- platform: switch
   name: 3D Printer
   entity_id: switch.3d_printer_lights
 
