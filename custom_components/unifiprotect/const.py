@@ -19,14 +19,16 @@ ATTR_EVENT_LENGTH = "event_length"
 
 CONF_THUMB_WIDTH = "image_width"
 CONF_RECORDING_MODE = "recording_mode"
+CONF_SNAPSHOT_DIRECT = "snapshot_direct"
 CONF_IR_MODE = "ir_mode"
 CONF_IR_ON = "ir_on"
 CONF_IR_OFF = "ir_off"
 
 DEFAULT_PORT = 7443
-DEFAULT_ATTRIBUTION = "Data provided by Ubiquiti's Unifi Protect Server"
+DEFAULT_ATTRIBUTION = "Powered by Unifi Protect Server"
 DEFAULT_BRAND = "Ubiquiti"
 DEFAULT_THUMB_WIDTH = 640
+DEFAULT_SCAN_INTERVAL = 2
 
 DEVICE_CLASS_DOORBELL = "doorbell"
 
