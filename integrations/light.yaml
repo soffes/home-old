@@ -75,6 +75,20 @@
     - light.kitchen_overhead_2
     - light.kitchen_recessed_1
 
+- platform: group
+  name: Garage Stairs
+  entities:
+    - light.garage_stairs1
+    - light.garage_stairs2
+
+- platform: group
+  name: Garage Overhead
+  entities:
+    - light.garage_font_overhead
+    - light.garage_car_overhead
+    - light.garage_shop_overhead
+    - light.garage_laundry_overhead
+
 - platform: switch
   name: 3D Printer
   entity_id: switch.3d_printer_lights
