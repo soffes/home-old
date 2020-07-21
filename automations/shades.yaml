@@ -25,4 +25,4 @@
       event: sunset
   action:
     service: script.turn_on
-    entity_id: script.shades_close
+    entity_id: script.shades_close_all
