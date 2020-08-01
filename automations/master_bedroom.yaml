@@ -1,0 +1,43 @@
+- alias: "Master Bedroom Switch - On"
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: master_bedroom_switch
+      event: 1000
+  action:
+    service: scene.turn_on
+    entity_id: scene.master_bedroom_on
+
+- alias: "Master Bedroom Switch - Off"
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: master_bedroom_switch
+      event: 4000
+  action:
+    service: scene.turn_on
+    entity_id: scene.master_bedroom_off
+
+- alias: "Master Bedroom Switch - Up"
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: master_bedroom_switch
+      event: 2000
+  action:
+    service: cover.open_cover
+    entity_id: cover.master_bedroom
+
+- alias: "Master Bedroom Switch - Down"
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: master_bedroom_switch
+      event: 3000
+  action:
+    service: cover.close_cover
+    entity_id: cover.master_bedroom
