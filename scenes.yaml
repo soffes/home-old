@@ -6,9 +6,9 @@
 
 - name: Sunrise
   entities:
-    group.outdoor_lights: "off"
-    fan.master_bedroom: "off"
-    switch.humidifier: "off"
+    group.outdoor_lights: 'off'
+    fan.master_bedroom: 'off'
+    switch.humidifier: 'off'
 
 - name: Office - On
   entities:
@@ -49,3 +49,13 @@
     light.sofa_lightstrip: 'off'
     light.chair_lightstrip: 'off'
     light.bulb_lamp: 'off'
+
+- name: Kitchen - On
+  entities:
+    light.kitchen_overhead: 'on'
+    light.dining_room_overhead: 'on'
+
+- name: Kitchen - Off
+  entities:
+    light.kitchen_overhead: 'off'
+    light.dining_room_overhead: 'off'
