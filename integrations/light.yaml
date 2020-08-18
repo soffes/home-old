@@ -96,3 +96,10 @@
 - platform: switch
   name: Stairs
   entity_id: switch.stair_lights
+
+- platform: group
+  name: Bed Lightstrips
+  entities:
+    - light.bed_left_lightstrip
+    - light.bed_right_lightstrip
+    - light.bed_rear_lightstrip

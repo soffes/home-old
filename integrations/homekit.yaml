@@ -13,6 +13,9 @@ filter:
     - fan.master_bedroom
     - light.3d_printer
     - light.back_porch
+    - light.bed_left_lightstrip
+    - light.bed_rear_lightstrip
+    - light.bed_right_lightstrip
     - light.bonus_room_overhead
     - light.bulb_lamp
     - light.chair_lightstrip

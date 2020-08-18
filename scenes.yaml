@@ -6,56 +6,87 @@
 
 - name: Sunrise
   entities:
-    group.outdoor_lights: 'off'
-    fan.master_bedroom: 'off'
-    switch.humidifier: 'off'
+    group.outdoor_lights:
+      state: 'off'
+    fan.master_bedroom:
+      state: 'off'
+    switch.humidifier:
+      state: 'off'
 
 - name: Office - On
   entities:
-    light.office_overhead: 'on'
-    light.desk_lamp: 'on'
+    light.office_overhead:
+      state: 'on'
+    light.desk_lamp:
+      state: 'on'
 
 - name: Office - Off
   entities:
-    light.office_overhead: 'off'
-    light.desk_lamp: 'off'
-    light.office_closet_overhead: 'off'
-    switch.space_heater: 'off'
+    light.office_overhead:
+      state: 'off'
+    light.desk_lamp:
+      state: 'off'
+    light.office_closet_overhead:
+      state: 'off'
+    switch.space_heater:
+      state: 'off'
 
 - name: Master Bedroom - On
   entities:
-    light.master_bedroom_overhead: 'on'
-    light.master_bedroom_left_lamp: 'on'
-    light.master_bedroom_right_lamp: 'on'
+    light.master_bedroom_overhead:
+      state: 'on'
+    light.master_bedroom_left_lamp:
+      state: 'on'
+    light.master_bedroom_right_lamp:
+      state: 'on'
 
 - name: Master Bedroom - Off
   entities:
-    light.master_bedroom_overhead: 'off'
-    light.master_bedroom_left_lamp: 'off'
-    light.master_bedroom_right_lamp: 'off'
+    light.master_bedroom_overhead:
+      state: 'off'
+    light.master_bedroom_left_lamp:
+      state: 'off'
+    light.master_bedroom_right_lamp:
+      state: 'off'
+    light.bed_lightstrips:
+      state: 'off'
 
 - name: Living Room - On
   entities:
-    light.living_room_arc_lamp: 'on'
-    light.living_room_lamp: 'on'
-    light.sofa_lightstrip: 'on'
-    light.chair_lightstrip: 'on'
-    light.bulb_lamp: 'on'
+    light.living_room_arc_lamp:
+      state: 'on'
+    light.living_room_lamp:
+      state: 'on'
+    light.sofa_lightstrip:
+      state: 'on'
+    light.chair_lightstrip:
+      state: 'on'
+    light.bulb_lamp:
+      state: 'on'
 
 - name: Living Room - Off
   entities:
-    light.living_room_arc_lamp: 'off'
-    light.living_room_lamp: 'off'
-    light.sofa_lightstrip: 'off'
-    light.chair_lightstrip: 'off'
-    light.bulb_lamp: 'off'
+    light.living_room_arc_lamp:
+      state: 'off'
+    light.living_room_lamp:
+      state: 'off'
+    light.sofa_lightstrip:
+      state: 'off'
+    light.chair_lightstrip:
+      state: 'off'
+    light.bulb_lamp:
+      state: 'off'
 
 - name: Kitchen - On
   entities:
-    light.kitchen_overhead: 'on'
-    light.dining_room_overhead: 'on'
+    light.kitchen_overhead:
+      state: 'on'
+    light.dining_room_overhead:
+      state: 'on'
 
 - name: Kitchen - Off
   entities:
-    light.kitchen_overhead: 'off'
-    light.dining_room_overhead: 'off'
+    light.kitchen_overhead:
+      state: 'off'
+    light.dining_room_overhead:
+      state: 'off'

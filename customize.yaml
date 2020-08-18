@@ -93,6 +93,14 @@ light.office_overhead_2:
   icon: mdi:ceiling-light
 light.sofa_lightstrip:
   icon: mdi:led-strip-variant
+light.bed_left_lightstrip:
+  icon: mdi:led-strip-variant
+light.bed_right_lightstrip:
+  icon: mdi:led-strip-variant
+light.bed_rear_lightstrip:
+  icon: mdi:led-strip-variant
+light.bed_lightstrips:
+  icon: mdi:led-strip-variant
 
 # Windows
 binary_sensor.bonus_room_left_window:
