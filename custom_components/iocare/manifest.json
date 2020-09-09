@@ -1,0 +1,8 @@
+{
+  "domain": "iocare",
+  "name": "IoCare",
+  "config_flow": true,
+  "requirements": ["python-iocare==0.1.5"],
+  "dependencies": [],
+  "codeowners": ["@sarahhenkens"]
+}
