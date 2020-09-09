@@ -1,2 +1,1 @@
-custom_components/hacs/** linguist-vendored=true
-custom_components/unifiprotect/** linguist-vendored=true
+custom_components/**/* linguist-vendored=true
