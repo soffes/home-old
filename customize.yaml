@@ -167,6 +167,7 @@ switch.space_heater:
 switch.humidifier:
   icon: mdi:air-humidifier
 
+# COVID-19
 sensor.us_coronavirus_confirmed:
   icon: 'mdi:emoticon-neutral-outline'
 

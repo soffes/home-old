@@ -20,6 +20,30 @@
         entity_id: climate.hallway
         hvac_mode: 'off'
 
+# When a window opens when the air is bad, send a push
+- alias: Window opened with bad air
+  trigger:
+  - platform: state
+    entity_id: sensor.open_windows_count
+    from: '0'
+    to: '1'
+  condition:
+    - condition: state
+      entity_id: binary_sensor.bad_air
+      state: 'on'
+  action:
+    - service: notify.mobile_app_sams_iphone
+      data_template:
+        title: '😷 Bad air'
+        message: 'There’s a window open and the current AQI is {{ states("sensor.purpleair_aqi") }}.'
+        data:
+          push:
+            sound:
+              name: default
+          apns_headers:
+            apns-collapse-id: window-bad-air
+
+
 # When all windows are closed, restore the previous thermostat state
 - alias: Window closed
   trigger:

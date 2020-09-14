@@ -3,11 +3,12 @@
     office_closet_door:
       friendly_name: "Office Closet Door"
       device_class: door
-      entity_id:
-        - binary_sensor.office_closet_door_left
-        - binary_sensor.office_closet_door_right
       value_template: >-
         {{ is_state("binary_sensor.office_closet_door_left", "on") or is_state("binary_sensor.office_closet_door_right", "on") }}
+    bad_air:
+      friendly_name: "Bad Air"
+      value_template: >-
+        {{ states("sensor.purpleair_aqi") | float > 50 }}
 
 - platform: workday
   country: US
