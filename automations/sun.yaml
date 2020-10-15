@@ -1,15 +1,15 @@
 - alias: Sunset
   trigger:
-    - platform: sun
-      event: sunset
+    platform: sun
+    event: sunset
   action:
     service: homeassistant.turn_on
     entity_id: scene.sunset
 
 - alias: Sunrise
   trigger:
-    - platform: sun
-      event: sunrise
+    platform: sun
+    event: sunrise
   action:
     service: homeassistant.turn_on
     entity_id: scene.sunrise
