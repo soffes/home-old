@@ -1,43 +1,43 @@
 - alias: "Kitchen Switch - On"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: kitchen_switch
-      event: 1000
+    device_id: 4518723e0e9a11eb98e9396f5762261c
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
   action:
     service: scene.turn_on
     entity_id: scene.kitchen_on
 
 - alias: "Kitchen Switch - Off"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: kitchen_switch
-      event: 4000
+    device_id: 4518723e0e9a11eb98e9396f5762261c
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
   action:
     service: scene.turn_on
     entity_id: scene.kitchen_off
 
 - alias: "Kitchen Switch - Up"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: kitchen_switch
-      event: 2000
+    device_id: 4518723e0e9a11eb98e9396f5762261c
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_up
   action:
     service: cover.open_cover
     entity_id: cover.kitchen
 
 - alias: "Kitchen Switch - Down"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: kitchen_switch
-      event: 3000
+    device_id: 4518723e0e9a11eb98e9396f5762261c
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_down
   action:
     service: cover.close_cover
     entity_id: cover.kitchen

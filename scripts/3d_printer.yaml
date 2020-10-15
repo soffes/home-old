@@ -1,6 +1,0 @@
-3d_printer_shutdown:
-  sequence:
-    - service: shell_command.octoprint_shutdown
-    - delay: 15
-    - service: homeassistant.turn_off
-      entity_id: switch.3d_printer

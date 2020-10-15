@@ -11,35 +11,33 @@
     entity_id: binary_sensor.front_door_open
     state: 'off'
   action:
-    - service: timer.start
-      entity_id: timer.front_door_lock
-      data:
-        duration: '00:01:00'
+    service: timer.start
+    entity_id: timer.front_door_lock
 
 - alias: Front Door Autolock - Pause Timer
   trigger:
-    - platform: state
-      entity_id: binary_sensor.front_door_open
-      to: 'on'
+    platform: state
+    entity_id: binary_sensor.front_door_open
+    to: 'on'
   action:
-    - service: timer.pause
-      entity_id: timer.front_door_lock
+    service: timer.pause
+    entity_id: timer.front_door_lock
 
 - alias: Front Door Autolock - Cancel Timer
   trigger:
-    - platform: state
-      entity_id: lock.front_door
-      to: locked
+    platform: state
+    entity_id: lock.front_door
+    to: locked
   action:
-    - service: timer.cancel
-      entity_id: timer.front_door_lock
+    service: timer.cancel
+    entity_id: timer.front_door_lock
 
 - alias: Front Door Autolock - Lock
   trigger:
-    - platform: event
-      event_type: timer.finished
-      event_data:
-        entity_id: timer.front_door_lock
+    platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.front_door_lock
   condition:
     condition: and
     conditions:
@@ -50,5 +48,5 @@
         entity_id: binary_sensor.front_door_open
         state: 'off'
   action:
-    - service: lock.lock
-      entity_id: lock.front_door
+    service: lock.lock
+    entity_id: lock.front_door

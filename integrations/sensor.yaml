@@ -86,7 +86,6 @@
           invalid
         {% endif %}
       unit_of_measurement: "AQI"
-      entity_id: sensor.purpleair
       availability_template: "{{ sensor.purpleair_available }}"
     purpleair_description:
       friendly_name: 'PurpleAir AQI Description'
@@ -109,13 +108,11 @@
         {% else %}
           unknown
         {% endif %}
-      entity_id: sensor.purpleair
       availability_template: "{{ sensor.purpleair_available }}"
     purpleair_pm25:
       friendly_name: 'PurpleAir PM 2.5'
       value_template: "{{ state_attr('sensor.purpleair', 'results')[0]['PM2_5Value'] }}"
       unit_of_measurement: "μg/m3"
-      entity_id: sensor.purpleair
       availability_template: "{{ sensor.purpleair_available }}"
     purpleair_temp:
       friendly_name: 'PurpleAir Temperature'
@@ -124,19 +121,16 @@
       value_template: "{{ state_attr('sensor.purpleair', 'results')[0]['temp_f'] | float - 8 }}"
       unit_of_measurement: "°F"
       device_class: temperature
-      entity_id: sensor.purpleair
       availability_template: "{{ sensor.purpleair_available }}"
     purpleair_humidity:
       friendly_name: 'PurpleAir Humidity'
       value_template: "{{ state_attr('sensor.purpleair', 'results')[0]['humidity'] }}"
       unit_of_measurement: "%"
       device_class: humidity
-      entity_id: sensor.purpleair
       availability_template: "{{ sensor.purpleair_available }}"
     purpleair_pressure:
       friendly_name: 'PurpleAir Pressure'
       value_template: "{{ state_attr('sensor.purpleair', 'results')[0]['pressure'] }}"
       unit_of_measurement: "mb"
       device_class: pressure
-      entity_id: sensor.purpleair
       availability_template: "{{ sensor.purpleair_available }}"

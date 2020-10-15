@@ -1,43 +1,43 @@
 - alias: "Living Room Switch - On"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: living_room_switch
-      event: 1000
+    device_id: f9f52b9b0e9811eb933a8190df4e86f9
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
   action:
     service: scene.turn_on
     entity_id: scene.living_room_on
 
 - alias: "Living Room Switch - Off"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: living_room_switch
-      event: 4000
+    device_id: f9f52b9b0e9811eb933a8190df4e86f9
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
   action:
     service: scene.turn_on
     entity_id: scene.living_room_off
 
 - alias: "Living Room Switch - Up"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: living_room_switch
-      event: 2000
+    device_id: f9f52b9b0e9811eb933a8190df4e86f9
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_up
   action:
     service: cover.open_cover
     entity_id: cover.living_room
 
 - alias: "Living Room Switch - Down"
   trigger:
-    platform: event
-    event_type: deconz_event
-    event_data:
-      id: living_room_switch
-      event: 3000
+    device_id: f9f52b9b0e9811eb933a8190df4e86f9
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_down
   action:
     service: cover.close_cover
     entity_id: cover.living_room

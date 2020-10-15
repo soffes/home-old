@@ -90,3 +90,13 @@
       state: 'off'
     light.dining_room_overhead:
       state: 'off'
+
+- name: Hallway - On
+  entities:
+    light.hallway_overhead:
+      state: 'on'
+
+- name: Hallway - Off
+  entities:
+    light.hallway_overhead:
+      state: 'off'
