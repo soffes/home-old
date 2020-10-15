@@ -1,4 +1,4 @@
-- alias: "Office Switch - On"
+- alias: Office Switch - On
   trigger:
     device_id: 686f8b550a3d4976bbcb888b1eae0062
     domain: zha
@@ -9,7 +9,7 @@
     service: scene.turn_on
     entity_id: scene.office_on
 
-- alias: "Office Switch - Off"
+- alias: Office Switch - Off
   trigger:
     device_id: 686f8b550a3d4976bbcb888b1eae0062
     domain: zha
@@ -20,7 +20,7 @@
     service: scene.turn_on
     entity_id: scene.office_off
 
-- alias: "Turn on office closet light"
+- alias: Turn on office closet light
   trigger:
     # Closet opens
     - platform: state
@@ -42,7 +42,7 @@
     service: homeassistant.turn_on
     entity_id: light.office_closet_overhead
 
-- alias: "Turn off office closet light"
+- alias: Turn off office closet light
   trigger:
     device_id: 686f8b550a3d4976bbcb888b1eae0062
     domain: zha
@@ -53,7 +53,7 @@
     service: homeassistant.turn_off
     entity_id: light.office_closet_overhead
 
-- alias: "Toggle space heater"
+- alias: Toggle space heater
   trigger:
     # Office Button
     device_id: f80a4c940e9b11eb9a3d1f26729555ba

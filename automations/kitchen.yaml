@@ -1,4 +1,4 @@
-- alias: "Kitchen Switch - On"
+- alias: Kitchen Switch - On
   trigger:
     device_id: 4518723e0e9a11eb98e9396f5762261c
     domain: zha
@@ -9,7 +9,7 @@
     service: scene.turn_on
     entity_id: scene.kitchen_on
 
-- alias: "Kitchen Switch - Off"
+- alias: Kitchen Switch - Off
   trigger:
     device_id: 4518723e0e9a11eb98e9396f5762261c
     domain: zha
@@ -20,7 +20,7 @@
     service: scene.turn_on
     entity_id: scene.kitchen_off
 
-- alias: "Kitchen Switch - Up"
+- alias: Kitchen Switch - Up
   trigger:
     device_id: 4518723e0e9a11eb98e9396f5762261c
     domain: zha
@@ -31,7 +31,7 @@
     service: cover.open_cover
     entity_id: cover.kitchen
 
-- alias: "Kitchen Switch - Down"
+- alias: Kitchen Switch - Down
   trigger:
     device_id: 4518723e0e9a11eb98e9396f5762261c
     domain: zha

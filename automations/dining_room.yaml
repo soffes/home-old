@@ -1,4 +1,4 @@
-- alias: "Dining Room Switch - On"
+- alias: Dining Room Switch - On
   trigger:
     device_id: c4a57a84729842b09704440c81a26ac8
     domain: zha
@@ -9,7 +9,7 @@
     service: scene.turn_on
     entity_id: scene.kitchen_on
 
-- alias: "Dining Room Switch - Off"
+- alias: Dining Room Switch - Off
   trigger:
     device_id: c4a57a84729842b09704440c81a26ac8
     domain: zha
@@ -20,7 +20,7 @@
     service: scene.turn_on
     entity_id: scene.kitchen_off
 
-- alias: "Dining Room Switch - Up"
+- alias: Dining Room Switch - Up
   trigger:
     device_id: c4a57a84729842b09704440c81a26ac8
     domain: zha
@@ -31,7 +31,7 @@
     service: cover.open_cover
     entity_id: cover.dining_room
 
-- alias: "Dining Room Switch - Down"
+- alias: Dining Room Switch - Down
   trigger:
     device_id: c4a57a84729842b09704440c81a26ac8
     domain: zha

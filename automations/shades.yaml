@@ -1,4 +1,4 @@
-- alias: "Open shades on weekday mornings"
+- alias: Open shades on weekday mornings
   trigger:
     - platform: sun
       event: sunrise
@@ -19,7 +19,7 @@
       - cover.dining_room
       # - cover.office
 
-- alias: "Close shades in the evening"
+- alias: Close shades in the evening
   trigger:
     - platform: sun
       event: sunset

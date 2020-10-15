@@ -4,6 +4,6 @@ front_door_lock:
   icon: mdi:door
 
 hallway:
-    name: Hallway Timer
-    duration: '00:01:00'
-    icon: mdi:ceiling-light
+  name: Hallway Timer
+  duration: '00:01:00'
+  icon: mdi:ceiling-light

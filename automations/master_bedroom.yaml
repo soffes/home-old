@@ -1,4 +1,4 @@
-- alias: "Master Bedroom Switch - On"
+- alias: Master Bedroom Switch - On
   trigger:
     - device_id: 4456c02f0e9a11ebbe43dbb15798791e
       domain: zha
@@ -14,7 +14,7 @@
     service: scene.turn_on
     entity_id: scene.master_bedroom_on
 
-- alias: "Master Bedroom Switch - Off"
+- alias: Master Bedroom Switch - Off
   trigger:
     - device_id: 4456c02f0e9a11ebbe43dbb15798791e
       domain: zha
@@ -30,7 +30,7 @@
     service: scene.turn_on
     entity_id: scene.master_bedroom_off
 
-- alias: "Master Bedroom Switch - Up"
+- alias: Master Bedroom Switch - Up
   trigger:
     - device_id: 4456c02f0e9a11ebbe43dbb15798791e
       domain: zha
@@ -46,7 +46,7 @@
     service: cover.open_cover
     entity_id: cover.master_bedroom
 
-- alias: "Master Bedroom Switch - Down"
+- alias: Master Bedroom Switch - Down
   trigger:
     - device_id: 4456c02f0e9a11ebbe43dbb15798791e
       domain: zha

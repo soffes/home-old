@@ -17,8 +17,11 @@
   entities:
     light.office_overhead:
       state: 'on'
-    # light.desk_lamp:
-    #   state: 'on'
+
+- name: Office - Lamp On
+  entities:
+    light.desk_lamp:
+      state: 'on'
 
 - name: Office - Off
   entities:
