@@ -44,11 +44,14 @@
 
 - alias: Turn off office closet light
   trigger:
-    device_id: 686f8b550a3d4976bbcb888b1eae0062
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: turn_off
+    - device_id: 686f8b550a3d4976bbcb888b1eae0062
+      domain: zha
+      platform: device
+      type: remote_button_short_press
+      subtype: turn_off
+    - platform: state
+      entity_id: binary_sensor.office_closet_door
+      to: 'off'
   action:
     service: homeassistant.turn_off
     entity_id: light.office_closet_overhead
