@@ -85,33 +85,65 @@ shades:
   name: Shades
   icon: mdi:blinds
   entities:
-    - cover.dining_room
-    - cover.kitchen
     - cover.living_room
+    - cover.dining_room
     - cover.master_bedroom
-    - cover.office
+    # - cover.kitchen
+    # - cover.office
 
-lights:
-  name: Lights
-  icon: mdi:home-lightbulb
+master_bedroom_lights:
+  name: Master Bedroom Lights
   entities:
-    - group.outdoor_lights
-    - light.office_overhead
-    - light.desk_lamp
-    - light.office_closet_overhead
     - light.master_bedroom_overhead
     - light.master_bedroom_left_lamp
     - light.master_bedroom_right_lamp
-    - light.master_bathroom_vanity
+    - light.bed_lightstrips
+
+office_lights:
+  name: Office Lights
+  entities:
+    - light.office_overhead
+    - light.office_closet_overhead
+    - light.desk_lamp
+
+hallway_lights:
+  name: Hallway Lights
+  entities:
     - light.hallway_overhead
-    - light.guest_bedroom_overhead
-    - light.guest_bedroom_lamp
+
+entryway_lights:
+  name: Entryway Lights
+  entities:
+    - light.entryway_overhead
+
+living_room_lights:
+  name: Living Room Lights
+  entities:
+    - light.living_room_arc_lamp
+    - light.living_room_lamp
+    - light.bulb_lamp
+    - light.sofa_lightstrip
+    - light.chair_lightstrip
+
+dining_room_lights:
+  name: Dining Room Lights
+  entities:
+    - light.dining_room_overhead
+
+kitchen_lights:
+  name: Kitchen Lights
+  entities:
+    - light.kitchen_overhead
+    - light.kitchen_recessed_1
+
+bonus_room_lights:
+  name: Bonus Room Lights
+  entities:
+    - light.bonus_room_overhead
+
+garage_lights:
+  name: Garage Lights
+  entities:
+    - light.garage_overhead
     - light.garage_stairs
     - light.garage_hallway_overhead
-    - light.entryway_overhead
-    - light.living_room_lamp
-    - light.living_room_arc_lamp
-    - light.bulb_lamp
-    - light.dining_room_overhead
-    - light.kitchen_overhead
-    - light.bonus_room_overhead

@@ -25,10 +25,39 @@ cards:
         state_filter:
           - 'on'
         type: entity-filter
-      - entities:
+      - type: entities
+        entities:
           - entity: fan.master_bedroom
             name: Fan
-        type: entities
+      - type: horizontal-stack
+        cards:
+          - type: button
+            entity: scene.bedtime
+            show_name: false
+            icon_height: 32px
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.bedtime
+          - type: button
+            entity: scene.goodnight
+            show_name: false
+            icon_height: 32px
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.goodnight
+          - type: button
+            entity: scene.movie
+            show_name: false
+            icon_height: 32px
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.movie
       - type: conditional
         conditions:
           - entity: binary_sensor.bad_air
@@ -44,29 +73,26 @@ cards:
           - entity: sensor.purpleair_pm25
           - entity: sensor.purpleair_temp
         show_name: false
+  - type: vertical-stack
+    cards:
       - aspect_ratio: 56.25%
         entity: camera.front_porch
-        hold_action:
-          action: none
         show_name: false
         show_state: false
         tap_action:
-          action: none
+          action: url
+          url_path: !secret front_porch_url
         type: picture-entity
       - aspect_ratio: 56.25%
         entity: camera.driveway
-        hold_action:
-          action: none
+        tap_action:
+          action: url
+          url_path: !secret driveway_url
         show_name: false
         show_state: false
-        tap_action:
-          action: none
         type: picture-entity
-  - type: vertical-stack
-    cards:
       - card:
           show_header_toggle: false
-          title: Shades
           type: entities
         group: group.shades
         type: 'custom:group-card'
@@ -74,12 +100,10 @@ cards:
           - cover.car_garage_door
           - cover.shop_garage_door
         show_header_toggle: false
-        title: Garage
         type: entities
         state_color: true
       - entities:
           - input_boolean.party_mode
           - input_boolean.vacation_mode
         show_header_toggle: false
-        title: Modes
         type: entities
