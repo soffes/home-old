@@ -4,13 +4,13 @@
     },
     "files.exclude": {
         ".cloud/": true,
-        "deps": true,
-        ".august.conf": true,
         ".homekit.state": true,
         ".uuid": true,
+        "*.august.conf": true,
         "*.db": true,
+        "*.db*": true,
         "*.log": true,
         "*/@eaDir": true,
-        "*.db*": true,
+        "deps": true,
     }
 }
