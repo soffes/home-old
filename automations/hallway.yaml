@@ -25,31 +25,31 @@
       entity_id: timer.hallway
 
 # TODO: This probably doesn't handle every combination of timer and switch presses
-- alias: Hallway Motion
-  trigger:
-    type: motion
-    platform: device
-    device_id: 5090f5239ebb45ceb8632bd9b11cee3f
-    entity_id: binary_sensor.hallway_motion
-    domain: binary_sensor
-  condition:
-    condition: state
-    entity_id: light.hallway_overhead
-    state: 'off'
-  action:
-    - service: scene.turn_on
-      entity_id: scene.hallway_on
-    - service: timer.cancel
-      entity_id: timer.hallway
-    - service: timer.start
-      entity_id: timer.hallway
+# - alias: Hallway Motion
+#   trigger:
+#     type: motion
+#     platform: device
+#     device_id: 5090f5239ebb45ceb8632bd9b11cee3f
+#     entity_id: binary_sensor.hallway_motion
+#     domain: binary_sensor
+#   condition:
+#     condition: state
+#     entity_id: light.hallway_overhead
+#     state: 'off'
+#   action:
+#     - service: scene.turn_on
+#       entity_id: scene.hallway_on
+#     - service: timer.cancel
+#       entity_id: timer.hallway
+#     - service: timer.start
+#       entity_id: timer.hallway
 
-- alias: Hallway Timer
-  trigger:
-    platform: event
-    event_type: timer.finished
-    event_data:
-      entity_id: timer.hallway
-  action:
-    service: scene.turn_on
-    entity_id: scene.hallway_off
+# - alias: Hallway Timer
+#   trigger:
+#     platform: event
+#     event_type: timer.finished
+#     event_data:
+#       entity_id: timer.hallway
+#   action:
+#     service: scene.turn_on
+#     entity_id: scene.hallway_off

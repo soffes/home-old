@@ -1,5 +1,4 @@
-- id: presence-leave
-  alias: 'Turn off things when leaving'
+- alias: 'Turn off things when leaving'
   trigger:
     - platform: state
       entity_id: person.sam
@@ -46,8 +45,7 @@
     - service: script.turn_on
       entity_id: script.sonos_pause_all
 
-- id: presence-arrive
-  alias: 'Turn on things when arriving'
+- alias: 'Turn on things when arriving'
   trigger:
     - platform: state
       entity_id: person.sam
@@ -64,8 +62,7 @@
       data:
         entity_id: scene.presence_before
 
-- id: presence-arrive-shades
-  alias: 'Restore shades when arriving if the sun is up'
+- alias: 'Restore shades when arriving if the sun is up'
   trigger:
     - platform: state
       entity_id: person.sam

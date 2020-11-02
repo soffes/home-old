@@ -8,7 +8,7 @@
     bad_air:
       friendly_name: "Bad Air"
       value_template: >-
-        {{ states("sensor.purpleair_aqi") | float > 50 }}
+        {{ states("sensor.purpleair_aqi") | float > 75 }}
 
 - platform: workday
   country: US
