@@ -1,0 +1,85 @@
+title: Favorites
+path: favorites
+icon: mdi:star
+cards:
+  - type: vertical-stack
+    cards:
+      - entity: climate.hallway
+        name: ' '
+        type: thermostat
+      - entities:
+          - binary_sensor.bonus_room_left_window
+          - binary_sensor.bonus_room_right_window
+          - binary_sensor.bonus_room_small_window
+          - binary_sensor.dining_room_window
+          - binary_sensor.guest_bedroom_left_window
+          - binary_sensor.guest_bedroom_right_window
+          - binary_sensor.kitchen_window
+          - binary_sensor.laundry_window
+          - binary_sensor.living_room_window_left
+          - binary_sensor.living_room_window_right
+          - binary_sensor.master_bathroom_window
+          - binary_sensor.master_bedroom_window
+          - binary_sensor.office_window
+        show_empty: false
+        state_filter:
+          - 'on'
+        type: entity-filter
+      - entities:
+          - entity: fan.master_bedroom
+            name: Fan
+        type: entities
+      - type: conditional
+        conditions:
+          - entity: binary_sensor.bad_air
+            state: 'on'
+        card:
+          type: history-graph
+          hours_to_show: 12
+          entities:
+            - sensor.purpleair_aqi
+      - type: glance
+        entities:
+          - entity: sensor.purpleair_aqi
+          - entity: sensor.purpleair_pm25
+          - entity: sensor.purpleair_temp
+        show_name: false
+      - aspect_ratio: 56.25%
+        entity: camera.front_porch
+        hold_action:
+          action: none
+        show_name: false
+        show_state: false
+        tap_action:
+          action: none
+        type: picture-entity
+      - aspect_ratio: 56.25%
+        entity: camera.driveway
+        hold_action:
+          action: none
+        show_name: false
+        show_state: false
+        tap_action:
+          action: none
+        type: picture-entity
+  - type: vertical-stack
+    cards:
+      - card:
+          show_header_toggle: false
+          title: Shades
+          type: entities
+        group: group.shades
+        type: 'custom:group-card'
+      - entities:
+          - cover.car_garage_door
+          - cover.shop_garage_door
+        show_header_toggle: false
+        title: Garage
+        type: entities
+        state_color: true
+      - entities:
+          - input_boolean.party_mode
+          - input_boolean.vacation_mode
+        show_header_toggle: false
+        title: Modes
+        type: entities

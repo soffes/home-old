@@ -1,0 +1,56 @@
+title: Status
+path: status
+cards:
+  - type: vertical-stack
+    cards:
+      - entities:
+          - person.sam
+        show_header_toggle: false
+        title: People
+        type: entities
+      - entities:
+          - sensor.master_bedroom_filter_life
+        show_header_toggle: false
+        title: Filters
+        type: entities
+      - cards:
+          - entity: sensor.processor_use
+            graph: line
+            type: sensor
+          - cards:
+              - entity: sensor.memory_use_percent
+                graph: line
+                name: Memory
+                type: sensor
+              - entity: sensor.disk_use_percent
+                graph: line
+                name: Disk
+                type: sensor
+            type: horizontal-stack
+        type: vertical-stack
+  - type: vertical-stack
+    cards:
+      - card:
+          show_header_toggle: false
+          title: Doors
+          type: entities
+        group: group.door_sensors
+        type: 'custom:group-card'
+      - card:
+          show_header_toggle: false
+          title: Windows
+          type: entities
+        group: group.window_sensors
+        type: 'custom:group-card'
+      - card:
+          show_header_toggle: false
+          title: Closets
+          type: entities
+        group: group.closet_doors_sensors
+        type: 'custom:group-card'
+      - card:
+          show_header_toggle: false
+          title: Batteries
+          type: entities
+        group: group.batteries
+        type: 'custom:group-card'
