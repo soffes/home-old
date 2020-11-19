@@ -28,13 +28,14 @@ CONF_HIGH_FPS_ON = "high_fps_on"
 CONF_MESSAGE = "message"
 CONF_DURATION = "duration"
 
-DEFAULT_PORT = 7443
+DEFAULT_PORT = 443
 DEFAULT_ATTRIBUTION = "Powered by Unifi Protect Server"
 DEFAULT_BRAND = "Ubiquiti"
 DEFAULT_THUMB_WIDTH = 640
 DEFAULT_SCAN_INTERVAL = 2
 
-DEVICE_CLASS_DOORBELL = "doorbell"
+DEVICE_TYPE_DOORBELL = "doorbell"
+DEVICE_TYPE_MOTION = "motion"
 
 SERVICE_SAVE_THUMBNAIL = "save_thumbnail_image"
 SERVICE_SET_RECORDING_MODE = "set_recording_mode"
