@@ -13,6 +13,15 @@
     switch.humidifier:
       state: 'off'
 
+- name: Front Porch - On
+  entities:
+    light.front_porch:
+      state: 'on'
+      brightness: 76
+    light.stairs:
+      state: 'on'
+      brightness: 76
+
 - name: Office - On
   entities:
     light.office_overhead:
@@ -106,6 +115,8 @@
   entities:
     light.hallway_overhead:
       state: 'on'
+      brightness: 200
+      color_temp: 320
 
 - name: Hallway - Off
   entities:
