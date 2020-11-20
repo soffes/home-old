@@ -22,10 +22,10 @@
 # When the front door closes, restore the state of the lights
 - alias: Front door closed
   trigger:
-  - platform: state
-    entity_id: binary_sensor.front_door_open
-    from: 'on'
-    to: 'off'
+    - platform: state
+      entity_id: binary_sensor.front_door_open
+      from: 'on'
+      to: 'off'
   condition:
     condition: state
     entity_id: sun.sun
