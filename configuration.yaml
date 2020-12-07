@@ -30,20 +30,18 @@ updater:
 
 # Integrations
 august: !include integrations/august.yaml
-binary_sensor: !include integrations/binary_sensor.yaml
+# binary_sensor: !include integrations/binary_sensor.yaml
 cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml
 group: !include groups.yaml
-homekit: !include integrations/homekit.yaml
+# homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
-scene: !include scenes.yaml
+# scene: !include scenes.yaml
 sensor: !include integrations/sensor.yaml
-shell_command: !include integrations/shell_command.yaml
-somfy_mylink: !include integrations/somfy_mylink.yaml
-spotify: !include integrations/spotify.yaml
-timer: !include integrations/timer.yaml
-weather: !include integrations/weather.yaml
+# somfy_mylink: !include integrations/somfy_mylink.yaml
+# timer: !include integrations/timer.yaml
+# weather: !include integrations/weather.yaml
 yeelight: !include integrations/yeelight.yaml
 zone: !include integrations/zone.yaml
