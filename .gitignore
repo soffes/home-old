@@ -16,3 +16,4 @@ www/community
 *.pyc
 /appdaemon/compiled
 __pycache__
+.HA_VERSION
