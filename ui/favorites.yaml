@@ -73,37 +73,67 @@ cards:
       #     - entity: sensor.purpleair_pm25
       #     - entity: sensor.purpleair_temp
       #   show_name: false
+      - type: entities
+        show_header_toggle: false
+        state_color: true
+        entities:
+          - cover.living_room_shades
+          - cover.dining_room_shades
+          - cover.master_bedroom_shades
   - type: vertical-stack
     cards:
-      - aspect_ratio: 56.25%
-        entity: camera.front_porch
-        show_name: false
-        show_state: false
-        tap_action:
-          action: url
-          url_path: !secret front_porch_url
-        type: picture-entity
-      - aspect_ratio: 56.25%
-        entity: camera.driveway
-        tap_action:
-          action: url
-          url_path: !secret driveway_url
-        show_name: false
-        show_state: false
-        type: picture-entity
-      - card:
-          show_header_toggle: false
-          type: entities
-        group: group.shades
-        type: "custom:group-card"
-      - entities:
+      - type: horizontal-stack
+        cards:
+          - aspect_ratio: 56%
+            entity: camera.front_porch
+            show_name: false
+            show_state: false
+            tap_action:
+              action: url
+              url_path: !secret front_porch_camera_url
+            type: picture-entity
+          - aspect_ratio: 56%
+            entity: camera.driveway
+            tap_action:
+              action: url
+              url_path: !secret driveway_camera_url
+            show_name: false
+            show_state: false
+            type: picture-entity
+      - type: horizontal-stack
+        cards:
+          - aspect_ratio: 56%
+            entity: camera.garage_car
+            show_name: false
+            show_state: false
+            tap_action:
+              action: url
+              url_path: !secret garage_car_camera_url
+            type: picture-entity
+          - aspect_ratio: 56%
+            entity: camera.garage_shop
+            tap_action:
+              action: url
+              url_path: !secret garage_shop_camera_url
+            show_name: false
+            show_state: false
+            type: picture-entity
+          - aspect_ratio: 56%
+            entity: camera.garage_back_door
+            tap_action:
+              action: url
+              url_path: !secret garage_back_door_camera_url
+            show_name: false
+            show_state: false
+            type: picture-entity
+      - type: entities
+        show_header_toggle: false
+        state_color: true
+        entities:
           - cover.car_garage_door
           - cover.shop_garage_door
+      - type: entities
         show_header_toggle: false
-        type: entities
-        state_color: true
-      - entities:
+        entities:
           - input_boolean.party_mode
           - input_boolean.vacation_mode
-        show_header_toggle: false
-        type: entities

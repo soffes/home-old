@@ -43,7 +43,6 @@ cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml
 group: !include groups.yaml
-homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
 sensor: !include integrations/sensor.yaml
