@@ -3,21 +3,14 @@
   password: !secret myq_password
   type: chamberlain
 
-- platform: group
-  name: Living Room
-  entities:
-    - cover.living_room_left
-    - cover.living_room_center
-    - cover.living_room_right
+# - platform: group
+#   name: Office
+#   entities:
+#     - cover.office_left
+#     - cover.office_right
 
 - platform: group
-  name: Office
+  name: Master Bedroom Shades
   entities:
-    - cover.office_left
-    - cover.office_right
-
-- platform: group
-  name: Master Bedroom
-  entities:
-    - cover.master_bedroom_left
-    - cover.master_bedroom_right
+    - cover.master_bedroom_north_shades
+    - cover.master_bedroom_south_shades

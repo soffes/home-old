@@ -8,43 +8,36 @@ filter:
     - cover.kitchen
     - cover.living_room
     - cover.master_bedroom
-    # - cover.office
+    - cover.office
     - cover.shop_garage_door
     - fan.master_bedroom
-    - light.3d_printer
-    - light.back_porch
-    - light.bed_left_lightstrip
-    - light.bed_rear_lightstrip
-    - light.bed_right_lightstrip
+    - light.back_porch_light
     - light.bonus_room_overhead
-    - light.bulb_lamp
-    - light.chair_lightstrip
-    - light.desk_lamp
     - light.dining_room_overhead
     - light.entryway_overhead
-    - light.front_porch
-    - light.garage_car_overhead
-    - light.garage_front_overhead
+    - light.front_porch_light
+    - light.garage_east_overhead
     - light.garage_hallway_overhead
-    - light.garage_laundry_overhead
-    - light.garage_shop_overhead
-    - light.garage_stairs1
-    - light.garage_stairs2
+    - light.garage_south_overhead
+    - light.garage_stairs_overhead
+    - light.garage_west_overhead
     - light.guest_bedroom_lamp
     - light.guest_bedroom_overhead
     - light.hallway_overhead
     - light.kitchen_overhead
     - light.living_room_arc_lamp
+    - light.living_room_bulb_lamp
+    - light.living_room_chair_lightstrip
     - light.living_room_lamp
-    - light.master_bathroom_vanity
-    - light.master_bedroom_left_lamp
+    - light.living_room_sofa_lightstrip
+    - light.master_bathroom_overhead
+    - light.master_bedroom_east_lamp
+    - light.master_bedroom_lightstrips
     - light.master_bedroom_overhead
-    - light.master_bedroom_right_lamp
+    - light.master_bedroom_west_lamp
     - light.office_closet_overhead
+    - light.office_desk_lamp
     - light.office_overhead
-    - light.sofa_lightstrip
-    - light.stairs
     - lock.back_door
     - lock.front_door
-    - switch.humidifier
     - switch.space_heater

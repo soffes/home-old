@@ -11,37 +11,42 @@ homeassistant:
 # Base configuration
 automation: !include_dir_merge_list automations
 config:
+counter:
 discovery:
 frontend:
-  themes: !include_dir_merge_named themes
 history:
 http:
   ssl_certificate: ssl/fullchain.pem
   ssl_key: ssl/privkey.pem
+image:
 ios:
 logbook:
 lovelace: !include integrations/lovelace.yaml
+map:
+media_source:
 mobile_app:
+person:
 recorder:
+scene: !include scenes.yaml
 script: !include_dir_merge_named scripts
+ssdp:
 sun:
 system_health:
+timer: !include integrations/timer.yaml
 updater:
+zone: !include integrations/zone.yaml
 
 # Integrations
 august: !include integrations/august.yaml
-# binary_sensor: !include integrations/binary_sensor.yaml
+binary_sensor: !include integrations/binary_sensor.yaml
 cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
 ecobee: !include integrations/ecobee.yaml
 group: !include groups.yaml
-# homekit: !include integrations/homekit.yaml
+homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
-# scene: !include scenes.yaml
 sensor: !include integrations/sensor.yaml
-# somfy_mylink: !include integrations/somfy_mylink.yaml
-# timer: !include integrations/timer.yaml
-# weather: !include integrations/weather.yaml
+somfy_mylink: !include integrations/somfy_mylink.yaml
+weather:
 yeelight: !include integrations/yeelight.yaml
-zone: !include integrations/zone.yaml

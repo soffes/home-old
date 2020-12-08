@@ -8,72 +8,102 @@ cards:
         name: Fan
       - entity: light.master_bedroom_overhead
         name: Overhead
-      - entity: light.master_bedroom_left_lamp
-        name: Left Lamp
-      - entity: light.master_bedroom_right_lamp
-        name: Right Lamp
-      - entity: light.bed_lightstrips
-      - entity: cover.master_bedroom
+      - entity: light.master_bedroom_west_lamp
+        name: West Lamp
+      - entity: light.master_bedroom_east_lamp
+        name: East Lamp
+      - entity: light.master_bedroom_lightstrips
+        name: Bed Lightstrips
+      # - entity: cover.master_bedroom
+      #   name: Shades
+
   - type: entities
     title: Office
     show_header_toggle: true
     entities:
       - entity: light.office_overhead
         name: Overhead
-      - entity: light.desk_lamp
+      - entity: light.office_desk_lamp
+        name: Desk Lamp
       - entity: light.office_closet_overhead
         name: Closet
-      - entity: switch.space_heater
-      - entity: cover.office
+      # - entity: switch.office_space_heater
+      #   name: Space Heater
+      # - entity: cover.office
+      #   name: Shades
+
   - type: entities
     title: Living Room
     entities:
-      - light.bulb_lamp
       - entity: light.living_room_arc_lamp
         name: Arc Lamp
       - entity: light.living_room_lamp
         name: Floor Lamp
-      - light.sofa_lightstrip
-      - light.chair_lightstrip
-      - cover.living_room
+      - entity: light.living_room_bulb_lamp
+        name: Bulb Lamp
+      - entity: light.living_room_sofa_lightstrip
+        name: Sofa Lightstrip
+      - entity: light.living_room_chair_lightstrip
+        name: Chair Lightstrip
+      # - entity: cover.living_room
+      #   name: Shades
+
   - type: entities
     title: Entryway
     show_header_toggle: false
     entities:
-      - lock.front_door
       - entity: light.entryway_overhead
         name: Overhead
+      - entity: light.front_porch_light
+        name: Front Porch
+      - lock.front_door
+
   - type: entities
     title: Kitchen
     show_header_toggle: true
     entities:
       - entity: light.kitchen_overhead
       - entity: light.dining_room_overhead
-      - entity: cover.kitchen
-      - entity: cover.dining_room
-  - type: entities
-    title: Outdoor Lights
-    entities:
-      - entity: light.front_porch
-      - entity: light.back_porch
-      - entity: light.stairs
+      # - entity: cover.kitchen
+      # - entity: cover.dining_room
+
   - type: entities
     title: Hallway
     show_header_toggle: false
     entities:
       - entity: light.hallway_overhead
         name: Overhead
+      - entity: climate.hallway
+        name: Thermostat
+
   - type: entities
     title: Garage
     show_header_toggle: true
     entities:
-      - lock.back_door
-      - cover.car_garage_door
-      - cover.shop_garage_door
-      - light.garage_stairs
+      - entity: light.garage_stairs_overhead
+        name: Stairs
       - entity: light.garage_hallway_overhead
         name: Hallway Overhead
-      - light.garage_overhead
+      - entity: light.garage_shop_overheads
+        name: Shop Lights
+      - cover.car_garage_door
+      - cover.shop_garage_door
+      - lock.back_door
+
+  - type: entities
+    title: Bonus Room
+    show_header_toggle: false
+    entities:
+      - entity: light.bonus_room_overhead
+        name: Overhead
+
+  - type: entities
+    title: Master Bathroom
+    show_header_toggle: false
+    entities:
+      - entity: light.master_bathroom_overhead
+        name: Vanity
+
   - type: entities
     title: Guest Bedroom
     show_header_toggle: true
@@ -81,15 +111,3 @@ cards:
       - entity: light.guest_bedroom_overhead
         name: Overhead
       - entity: light.guest_bedroom_lamp
-  - type: entities
-    title: Bonus Room
-    show_header_toggle: false
-    entities:
-      - entity: light.bonus_room_overhead
-        name: Overhead
-  - type: entities
-    title: Master Bathroom
-    show_header_toggle: false
-    entities:
-      - entity: light.master_bathroom_vanity
-        name: Vanity

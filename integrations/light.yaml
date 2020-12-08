@@ -3,7 +3,7 @@
   entities:
     - light.bonus_room_overhead_1
     - light.bonus_room_overhead_2
-    - light.bonus_room_nook
+    - light.bonus_room_nook_overhead
 
 - platform: group
   name: Dining Room Overhead
@@ -25,6 +25,20 @@
     - light.garage_hallway_overhead_2
 
 - platform: group
+  name: Garage Stairs Overhead
+  entities:
+    - light.garage_stairs_overhead_1
+    - light.garage_stairs_overhead_2
+
+- platform: group
+  name: Garage Shop Overheads
+  entities:
+    - light.garage_east_overhead
+    - light.garage_north_overhead
+    - light.garage_south_overhead
+    - light.garage_west_overhead
+
+- platform: group
   name: Guest Bedroom Overhead
   entities:
     - light.guest_bedroom_overhead_1
@@ -37,13 +51,27 @@
     - light.hallway_overhead_2
 
 - platform: group
+  name: Kitchen Overhead
+  entities:
+    - light.kitchen_overhead_1
+    - light.kitchen_overhead_2
+    - light.kitchen_recessed_overhead
+
+- platform: group
   name: Living Room Lamp
   entities:
     - light.living_room_lamp_1
     - light.living_room_lamp_2
 
 - platform: group
-  name: Master Bathroom Vanity
+  name: Master Bedroom Lightstrips
+  entities:
+    - light.master_bedroom_east_lightstrip
+    - light.master_bedroom_north_lightstrip
+    - light.master_bedroom_west_lightstrip
+
+- platform: group
+  name: Master Bathroom Overhead
   entities:
     - light.master_bathroom_overhead_1
     - light.master_bathroom_overhead_2
@@ -57,49 +85,16 @@
     - light.master_bedroom_hallway_overhead
 
 - platform: group
+  name: Office Closet Overhead
+  entities:
+    - light.office_closet_east_overhead
+    - light.office_closet_west_overhead
+
+- platform: group
   name: Office Overhead
   entities:
     - light.office_overhead_1
     - light.office_overhead_2
-
-- platform: group
-  name: Office Closet Overhead
-  entities:
-    - light.office_closet_left
-    - light.office_closet_right
-
-- platform: group
-  name: Kitchen Overhead
-  entities:
-    - light.kitchen_overhead_1
-    - light.kitchen_overhead_2
-    - light.kitchen_recessed_1
-
-- platform: group
-  name: Garage Stairs
-  entities:
-    - light.garage_stairs1
-    - light.garage_stairs2
-
-- platform: group
-  name: Garage Overhead
-  entities:
-    - light.garage_font_overhead
-    - light.garage_car_overhead
-    - light.garage_shop_overhead
-    - light.garage_laundry_overhead
-
-- platform: switch
-  name: 3D Printer
-  entity_id: switch.3d_printer_lights
-
-- platform: switch
-  name: Stairs
-  entity_id: switch.stair_lights
-
-- platform: group
-  name: Bed Lightstrips
-  entities:
-    - light.bed_left_lightstrip
-    - light.bed_right_lightstrip
-    - light.bed_rear_lightstrip
+# - platform: switch
+#   name: Front Porch Stairs
+#   entity_id: switch.front_porch_stairs_plug

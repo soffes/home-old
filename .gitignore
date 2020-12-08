@@ -17,3 +17,4 @@ www/community
 /appdaemon/compiled
 __pycache__
 .HA_VERSION
+/image

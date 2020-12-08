@@ -5,7 +5,7 @@ cards:
   - type: vertical-stack
     cards:
       - entity: climate.hallway
-        name: ' '
+        name: " "
         type: thermostat
       - entities:
           - binary_sensor.bonus_room_left_window
@@ -23,7 +23,7 @@ cards:
           - binary_sensor.office_window
         show_empty: false
         state_filter:
-          - 'on'
+          - "on"
         type: entity-filter
       - type: entities
         entities:
@@ -58,21 +58,21 @@ cards:
               service: scene.turn_on
               service_data:
                 entity_id: scene.movie
-      - type: conditional
-        conditions:
-          - entity: binary_sensor.bad_air
-            state: 'on'
-        card:
-          type: history-graph
-          hours_to_show: 12
-          entities:
-            - sensor.purpleair_aqi
-      - type: glance
-        entities:
-          - entity: sensor.purpleair_aqi
-          - entity: sensor.purpleair_pm25
-          - entity: sensor.purpleair_temp
-        show_name: false
+      # - type: conditional
+      #   conditions:
+      #     - entity: binary_sensor.bad_air
+      #       state: 'on'
+      #   card:
+      #     type: history-graph
+      #     hours_to_show: 12
+      #     entities:
+      #       - sensor.purpleair_aqi
+      # - type: glance
+      #   entities:
+      #     - entity: sensor.purpleair_aqi
+      #     - entity: sensor.purpleair_pm25
+      #     - entity: sensor.purpleair_temp
+      #   show_name: false
   - type: vertical-stack
     cards:
       - aspect_ratio: 56.25%
@@ -95,7 +95,7 @@ cards:
           show_header_toggle: false
           type: entities
         group: group.shades
-        type: 'custom:group-card'
+        type: "custom:group-card"
       - entities:
           - cover.car_garage_door
           - cover.shop_garage_door

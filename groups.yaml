@@ -85,9 +85,9 @@ shades:
   name: Shades
   icon: mdi:blinds
   entities:
-    - cover.living_room
-    - cover.dining_room
-    - cover.master_bedroom
+    - cover.living_room_shades
+    - cover.dining_room_shades
+    - cover.master_bedroom_shades
     # - cover.kitchen
     # - cover.office
 

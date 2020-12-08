@@ -1,106 +1,202 @@
-# Light Groups
+# Lights
+light.back_porch_light:
+  icon: mdi:outdoor-lamp
+
+light.bonus_room_nook_overhead:
+  icon: mdi:ceiling-light
+
 light.bonus_room_overhead:
   icon: mdi:ceiling-light
-light.dining_room_overhead:
-  icon: mdi:ceiling-light
-light.entryway_overhead:
-  icon: mdi:ceiling-light
-light.garage_hallway_overhead:
-  icon: mdi:ceiling-light
-light.guest_bedroom_overhead:
-  icon: mdi:ceiling-light
-light.hallway_overhead:
-  icon: mdi:ceiling-light
-light.living_room_lamp:
-  icon: mdi:floor-lamp
-light.master_bathroom_vanity:
-  icon: mdi:vanity-light
-light.master_bedroom_overhead:
-  icon: mdi:ceiling-light
-light.office_overhead:
-  icon: mdi:ceiling-light
-light.office_closet_overhead:
-  icon: mdi:lightbulb
-light.kitchen_overhead:
-  icon: mdi:ceiling-light
-light.desk_lamp:
-  icon: mdi:desk-lamp
 
-# Lights
-light.back_porch:
-  icon: mdi:outdoor-lamp
-light.bonus_room_nook:
-  icon: mdi:ceiling-light
 light.bonus_room_overhead_1:
   icon: mdi:ceiling-light
+
 light.bonus_room_overhead_2:
   icon: mdi:ceiling-light
-light.chair_lightstrip:
-  icon: mdi:led-strip-variant
+
+light.dining_room_overhead:
+  icon: mdi:ceiling-light
+
 light.dining_room_overhead_1:
   icon: mdi:ceiling-light
+
 light.dining_room_overhead_2:
   icon: mdi:ceiling-light
+
 light.dining_room_overhead_3:
   icon: mdi:ceiling-light
-light.master_bedroom_left_lamp:
-  icon: mdi:lamp
-light.master_bedroom_right_lamp:
-  icon: mdi:lamp
+
+light.entryway_overhead:
+  icon: mdi:ceiling-light
+
 light.entryway_overhead_1:
   icon: mdi:ceiling-light
+
 light.entryway_overhead_2:
   icon: mdi:ceiling-light
-light.front_porch:
+
+light.front_porch_light:
   icon: mdi:outdoor-lamp
+
+light.garage_south_overhead:
+  icon: mdi:wall-sconce-flat
+
+light.garage_east_overhead:
+  icon: mdi:wall-sconce-flat
+
+light.garage_hallway_overhead:
+  icon: mdi:ceiling-light
+
 light.garage_hallway_overhead_1:
   icon: mdi:ceiling-light
+
 light.garage_hallway_overhead_2:
   icon: mdi:ceiling-light
-light.guest_bedroom_lamp_right:
+
+light.garage_north_overhead:
+  icon: mdi:wall-sconce-flat
+
+light.garage_west_overhead:
+  icon: mdi:wall-sconce-flat
+
+light.garage_shop_overheads:
+  icon: mdi:wall-sconce-flat
+
+light.garage_stairs_overhead:
+  icon: mdi:ceiling-light
+
+light.garage_stairs_overhead_1:
+  icon: mdi:ceiling-light
+
+light.garage_stairs_overhead_2:
+  icon: mdi:ceiling-light
+
+light.guest_bedroom_lamp:
   icon: mdi:lamp
+
+light.guest_bedroom_overhead:
+  icon: mdi:ceiling-light
+
 light.guest_bedroom_overhead_1:
   icon: mdi:ceiling-light
+
 light.guest_bedroom_overhead_2:
   icon: mdi:ceiling-light
+
+light.hallway_overhead:
+  icon: mdi:ceiling-light
+
 light.hallway_overhead_1:
   icon: mdi:ceiling-light
+
 light.hallway_overhead_2:
   icon: mdi:ceiling-light
+
+light.kitchen_overhead:
+  icon: mdi:ceiling-light
+
 light.kitchen_overhead_1:
   icon: mdi:ceiling-light
+
 light.kitchen_overhead_2:
   icon: mdi:ceiling-light
-light.kitchen_recessed_1:
-  icon: mdi:wall-sconce-flat
+
+light.kitchen_recessed_overhead:
+  icon: mdi:wall-sconce-round
+
 light.living_room_arc_lamp:
   icon: mdi:desk-lamp
-light.living_room_lamp_1:
+
+light.living_room_bulb_lamp:
+  icon: mdi:lightbulb
+
+light.living_room_chair_lightstrip:
+  icon: mdi:led-strip-variant
+
+light.living_room_lamp:
   icon: mdi:floor-lamp
+
+light.living_room_lamp_1:
+  icon: mdi:ceiling-light
+
 light.living_room_lamp_2:
   icon: mdi:floor-lamp
+
+light.living_room_sofa_lightstrip:
+  icon: mdi:led-strip-variant
+
+light.master_bathroom_overhead:
+  icon: mdi:vanity-light
+
 light.master_bathroom_overhead_1:
   icon: mdi:vanity-light
+
 light.master_bathroom_overhead_2:
   icon: mdi:vanity-light
+
 light.master_bathroom_overhead_3:
   icon: mdi:vanity-light
+
+light.master_bedroom_east_lamp:
+  icon: mdi:lamp
+
+light.master_bedroom_east_lightstrip:
+  icon: mdi:led-strip-variant
+
 light.master_bedroom_hallway_overhead:
   icon: mdi:ceiling-light
+
+light.master_bedroom_lightstrips:
+  icon: mdi:led-strip-variant
+
+light.master_bedroom_north_lightstrip:
+  icon: mdi:led-strip-variant
+
+light.master_bedroom_overhead:
+  icon: mdi:ceiling-light
+
+light.master_bedroom_overhead_1:
+  icon: mdi:ceiling-light
+
+light.master_bedroom_overhead_2:
+  icon: mdi:ceiling-light
+
+light.master_bedroom_west_lamp:
+  icon: mdi:lamp
+
+light.master_bedroom_west_lightstrip:
+  icon: mdi:led-strip-variant
+
+light.office_closet_east_overhead:
+  icon: mdi:lightbulb
+
+light.office_closet_overhead:
+  icon: mdi:lightbulb
+
+light.office_closet_west_overhead:
+  icon: mdi:lightbulb
+
+light.office_desk_lamp:
+  icon: mdi:desk-lamp
+
+light.office_overhead:
+  icon: mdi:ceiling-light
+
 light.office_overhead_1:
   icon: mdi:ceiling-light
+
 light.office_overhead_2:
   icon: mdi:ceiling-light
-light.sofa_lightstrip:
-  icon: mdi:led-strip-variant
-light.bed_left_lightstrip:
-  icon: mdi:led-strip-variant
-light.bed_right_lightstrip:
-  icon: mdi:led-strip-variant
-light.bed_rear_lightstrip:
-  icon: mdi:led-strip-variant
-light.bed_lightstrips:
-  icon: mdi:led-strip-variant
+
+# Shades
+cover.living_room_shades:
+  icon: mdi:blinds
+
+cover.dining_room_shades:
+  icon: mdi:blinds
+
+cover.master_bedroom_shades:
+  icon: mdi:blinds
 
 # Windows
 binary_sensor.bonus_room_left_window:
@@ -152,30 +248,8 @@ person.sam:
   icon: mdi:human-male
 
 # Misc
-switch.3d_printer:
-  icon: mdi:printer-3d
-
-light.3d_printer:
-  icon: mdi:led-strip-variant
-
-light.stairs:
+light.front_porch_stairs:
   icon: mdi:wall-sconce-flat
 
-switch.space_heater:
+switch.office_space_heater:
   icon: mdi:radiator
-
-switch.humidifier:
-  icon: mdi:air-humidifier
-
-# COVID-19
-sensor.us_coronavirus_confirmed:
-  icon: 'mdi:emoticon-neutral-outline'
-
-sensor.us_coronavirus_current:
-  icon: 'mdi:emoticon-frown-outline'
-
-sensor.us_coronavirus_recovered:
-  icon: 'mdi:emoticon-happy-outline'
-
-sensor.us_coronavirus_deaths:
-  icon: 'mdi:emoticon-dead-outline'

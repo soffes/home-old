@@ -8,9 +8,7 @@ I plan to write up more about it at some point. [Follow me on Twitter](https://t
 
 ### Installation
 
-I run Home Assistant via Hass.io [on my Synology NAS](https://community.home-assistant.io/t/hass-io-on-synology-dsm-native-package/125559). It works really well! (I was doing [plain Docker](https://www.home-assistant.io/docs/installation/docker/#synology-nas) at first.)
-
-This git repo is the `/config` directory that the container mounts. I use the `make` command in the Makefile to upload and validate the configuration when I make a change and then `make restart` to restart the container if everything is good.
+I run Home Assistant via [Hass.io](https://www.home-assistant.io/hassio/installation/) on my Synology NAS as a virtual machine. It works really well! (I was doing [plain Docker](https://www.home-assistant.io/docs/installation/docker/#synology-nas) at first.)
 
 ### HomeKit
 
