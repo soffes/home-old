@@ -95,16 +95,16 @@ master_bedroom_lights:
   name: Master Bedroom Lights
   entities:
     - light.master_bedroom_overhead
-    - light.master_bedroom_left_lamp
-    - light.master_bedroom_right_lamp
-    - light.bed_lightstrips
+    - light.master_bedroom_east_lamp
+    - light.master_bedroom_west_lamp
+    - light.master_bedroom_lightstrips
 
 office_lights:
   name: Office Lights
   entities:
     - light.office_overhead
     - light.office_closet_overhead
-    - light.desk_lamp
+    - light.office_desk_lamp
 
 hallway_lights:
   name: Hallway Lights
@@ -121,9 +121,9 @@ living_room_lights:
   entities:
     - light.living_room_arc_lamp
     - light.living_room_lamp
-    - light.bulb_lamp
-    - light.sofa_lightstrip
-    - light.chair_lightstrip
+    - light.living_room_bulb_lamp
+    - light.living_room_sofa_lightstrip
+    - light.living_room_chair_lightstrip
 
 dining_room_lights:
   name: Dining Room Lights
@@ -134,7 +134,6 @@ kitchen_lights:
   name: Kitchen Lights
   entities:
     - light.kitchen_overhead
-    - light.kitchen_recessed_1
 
 bonus_room_lights:
   name: Bonus Room Lights
@@ -144,6 +143,16 @@ bonus_room_lights:
 garage_lights:
   name: Garage Lights
   entities:
-    - light.garage_overhead
-    - light.garage_stairs
+    - light.garage_shop_overheads
+    - light.garage_stairs_overhead
     - light.garage_hallway_overhead
+
+back_porch_lights:
+  name: Back Porch Lights
+  entities:
+    - light.back_porch_light
+
+front_porch_lights:
+  name: Front Porch Lights
+  entities:
+    - light.front_porch_light
