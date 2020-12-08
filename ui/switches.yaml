@@ -27,8 +27,8 @@ cards:
         name: Desk Lamp
       - entity: light.office_closet_overhead
         name: Closet
-      # - entity: switch.office_space_heater
-      #   name: Space Heater
+      - entity: switch.office_space_heater_plug
+        name: Space Heater
       # - entity: cover.office
       #   name: Shades
 
@@ -45,8 +45,10 @@ cards:
         name: Sofa Lightstrip
       - entity: light.living_room_chair_lightstrip
         name: Chair Lightstrip
-      # - entity: cover.living_room
-      #   name: Shades
+      - entity: light.living_room_christmas_tree_lights
+        name: Christmas Tree
+      - entity: cover.living_room_shades
+        name: Shades
 
   - type: entities
     title: Entryway

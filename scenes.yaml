@@ -40,7 +40,7 @@
       state: "off"
     light.office_closet_overhead:
       state: "off"
-    switch.space_heater:
+    switch.office_space_heater_plug:
       state: "off"
 
 - name: Master Bedroom - On
@@ -184,8 +184,8 @@
       state: "off"
     group.back_porch_lights:
       state: "off"
-    # switch.space_heater_plug:
-    #   state: 'off'
+    switch.office_space_heater_plug:
+      state: "off"
 
 - name: Goodnight
   icon: mdi:weather-night
@@ -214,5 +214,5 @@
       state: "off"
     group.back_porch_lights:
       state: "off"
-    # switch.space_heater:
-    #   state: "off"
+    switch.office_space_heater_plug:
+      state: "off"

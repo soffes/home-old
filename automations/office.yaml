@@ -1,25 +1,25 @@
 - alias: Office Switch - On
   trigger:
-    device_id: 686f8b550a3d4976bbcb888b1eae0062
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: turn_on
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: office_dimmer_switch
+      event: 1000
   action:
     service: scene.turn_on
     entity_id: scene.office_on
 
 - alias: Office Switch - Lamp On
   trigger:
-    device_id: 686f8b550a3d4976bbcb888b1eae0062
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: turn_on
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: office_dimmer_switch
+      event: 1000
   condition:
     condition: state
     entity_id: sun.sun
-    state: 'below_horizon'
+    state: "below_horizon"
   action:
     service: scene.turn_on
     entity_id: scene.office_lamp_on
@@ -31,18 +31,18 @@
   condition:
     condition: state
     entity_id: light.office_overhead
-    state: 'on'
+    state: "on"
   action:
     service: scene.turn_on
     entity_id: scene.office_lamp_on
 
 - alias: Office Switch - Off
   trigger:
-    device_id: 686f8b550a3d4976bbcb888b1eae0062
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: turn_off
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: office_dimmer_switch
+      event: 4000
   action:
     service: scene.turn_on
     entity_id: scene.office_off
@@ -52,45 +52,33 @@
     # Closet opens
     - platform: state
       entity_id: binary_sensor.office_closet_door
-      to: 'on'
+      to: "on"
     # Office switch - on
-    - device_id: 686f8b550a3d4976bbcb888b1eae0062
-      domain: zha
-      platform: device
-      type: remote_button_short_press
-      subtype: turn_on
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: office_dimmer_switch
+        event: 1000
   # Ensure the closet is open since it could’ve been an
   # office switch press but the door is closed
   condition:
     condition: state
     entity_id: binary_sensor.office_closet_door
-    state: 'on'
+    state: "on"
   action:
     service: homeassistant.turn_on
     entity_id: light.office_closet_overhead
 
 - alias: Turn off office closet light
   trigger:
-    - device_id: 686f8b550a3d4976bbcb888b1eae0062
-      domain: zha
-      platform: device
-      type: remote_button_short_press
-      subtype: turn_off
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: office_dimmer_switch
+        event: 4000
     - platform: state
       entity_id: binary_sensor.office_closet_door
-      to: 'off'
+      to: "off"
   action:
     service: homeassistant.turn_off
     entity_id: light.office_closet_overhead
-
-- alias: Toggle space heater
-  trigger:
-    # Office Button
-    device_id: f80a4c940e9b11eb9a3d1f26729555ba
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: remote_button_short_press
-  action:
-    service: homeassistant.toggle
-    entity_id: switch.space_heater

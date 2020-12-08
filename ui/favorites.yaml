@@ -29,6 +29,8 @@ cards:
         entities:
           - entity: fan.master_bedroom
             name: Fan
+          - entity: light.living_room_christmas_tree_lights
+            name: Christmas Tree
       - type: horizontal-stack
         cards:
           - type: button

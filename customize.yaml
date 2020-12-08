@@ -188,6 +188,12 @@ light.office_overhead_1:
 light.office_overhead_2:
   icon: mdi:ceiling-light
 
+light.front_porch_stairs_lights:
+  icon: mdi:wall-sconce-flat-variant
+
+light.living_room_christmas_tree_lights:
+  icon: mdi:pine-tree
+
 # Shades
 cover.living_room_shades:
   icon: mdi:blinds
@@ -251,5 +257,5 @@ person.sam:
 light.front_porch_stairs:
   icon: mdi:wall-sconce-flat
 
-switch.office_space_heater:
+switch.office_space_heater_plug:
   icon: mdi:radiator

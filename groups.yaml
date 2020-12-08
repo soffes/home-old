@@ -2,9 +2,9 @@ outdoor_lights:
   name: Outdoor Lights
   icon: mdi:outdoor-lamp
   entities:
-    - light.front_porch
-    - light.back_porch
-    - light.stairs
+    - light.front_porch_light
+    - light.front_porch_stairs_lights
+    - light.back_porch_light
 
 sonos:
   name: Sonos
@@ -124,6 +124,7 @@ living_room_lights:
     - light.living_room_bulb_lamp
     - light.living_room_sofa_lightstrip
     - light.living_room_chair_lightstrip
+    - light.living_room_christmas_tree_lights
 
 dining_room_lights:
   name: Dining Room Lights
@@ -156,3 +157,4 @@ front_porch_lights:
   name: Front Porch Lights
   entities:
     - light.front_porch_light
+    - light.front_porch_stairs_lights
