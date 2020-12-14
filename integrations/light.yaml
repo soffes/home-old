@@ -1,99 +1,15 @@
-- platform: group
-  name: Bonus Room Overhead
-  entities:
-    - light.bonus_room_overhead_1
-    - light.bonus_room_overhead_2
-    - light.bonus_room_nook_overhead
-
-- platform: group
-  name: Dining Room Overhead
-  entities:
-    - light.dining_room_overhead_1
-    - light.dining_room_overhead_2
-    - light.dining_room_overhead_3
-
-- platform: group
-  name: Entryway Overhead
-  entities:
-    - light.entryway_overhead_1
-    - light.entryway_overhead_2
-
-- platform: group
-  name: Garage Hallway Overhead
-  entities:
-    - light.garage_hallway_overhead_1
-    - light.garage_hallway_overhead_2
-
-- platform: group
-  name: Garage Stairs Overhead
-  entities:
-    - light.garage_stairs_overhead_1
-    - light.garage_stairs_overhead_2
-
-- platform: group
-  name: Garage Shop Overheads
-  entities:
-    - light.garage_east_overhead
-    - light.garage_north_overhead
-    - light.garage_south_overhead
-    - light.garage_west_overhead
-
-- platform: group
-  name: Guest Bedroom Overhead
-  entities:
-    - light.guest_bedroom_overhead_1
-    - light.guest_bedroom_overhead_2
-
-- platform: group
-  name: Hallway Overhead
-  entities:
-    - light.hallway_overhead_1
-    - light.hallway_overhead_2
-
-- platform: group
-  name: Kitchen Overhead
-  entities:
-    - light.kitchen_overhead_1
-    - light.kitchen_overhead_2
-    - light.kitchen_recessed_overhead
-
-- platform: group
-  name: Living Room Lamp
-  entities:
-    - light.living_room_lamp_1
-    - light.living_room_lamp_2
-
-- platform: group
-  name: Master Bedroom Lightstrips
-  entities:
-    - light.master_bedroom_east_lightstrip
-    - light.master_bedroom_north_lightstrip
-    - light.master_bedroom_west_lightstrip
-
-- platform: group
-  name: Master Bathroom Overhead
-  entities:
-    - light.master_bathroom_overhead_1
-    - light.master_bathroom_overhead_2
-    - light.master_bathroom_overhead_3
-
-- platform: group
-  name: Master Bedroom Overhead
-  entities:
-    - light.master_bedroom_overhead_1
-    - light.master_bedroom_overhead_2
-    - light.master_bedroom_hallway_overhead
-
-- platform: group
-  name: Office Closet Overhead
-  entities:
-    - light.office_closet_east_overhead
-    - light.office_closet_west_overhead
-
 - platform: switch
   name: Front Porch Stairs Lights
   entity_id: switch.front_porch_stairs_plug
 
 - platform: switch
+  name: Living Room Bulb Lamp
+  entity_id: switch.living_room_bulb_lamp_plug
+
+- platform: switch
   name: Living Room Christmas Tree Lights
   entity_id: switch.living_room_christmas_tree_plug
+
+- platform: switch
+  name: Living Room Window Christmas Lights
+  entity_id: switch.living_room_window_christmas_lights_plug

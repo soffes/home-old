@@ -31,6 +31,8 @@ cards:
             name: Fan
           - entity: light.living_room_christmas_tree_lights
             name: Christmas Tree
+          - entity: light.living_room_window_christmas_lights
+            name: Window Christmas Lights
       - type: horizontal-stack
         cards:
           - type: button

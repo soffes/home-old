@@ -4,7 +4,7 @@
       friendly_name: "Office Closet Door"
       device_class: door
       value_template: >-
-        {{ is_state("binary_sensor.office_closet_door_left", "on") or is_state("binary_sensor.office_closet_door_right", "on") }}
+        {{ is_state("binary_sensor.office_closet_west_door", "on") or is_state("binary_sensor.office_closet_east_door", "on") }}
     bad_air:
       friendly_name: "Bad Air"
       value_template: >-

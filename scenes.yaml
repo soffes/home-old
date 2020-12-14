@@ -29,14 +29,14 @@
 
 - name: Office - Lamp On
   entities:
-    light.desk_lamp:
+    light.office_desk_lamp:
       state: "on"
 
 - name: Office - Off
   entities:
     light.office_overhead:
       state: "off"
-    light.desk_lamp:
+    light.office_desk_lamp:
       state: "off"
     light.office_closet_overhead:
       state: "off"

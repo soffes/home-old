@@ -3,7 +3,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: office_dimmer_switch
+      id: office_switch
       event: 1000
   action:
     service: scene.turn_on
@@ -14,7 +14,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: office_dimmer_switch
+      id: office_switch
       event: 1000
   condition:
     condition: state
@@ -41,7 +41,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: office_dimmer_switch
+      id: office_switch
       event: 4000
   action:
     service: scene.turn_on
@@ -57,7 +57,7 @@
     - platform: event
       event_type: deconz_event
       event_data:
-        id: office_dimmer_switch
+        id: office_switch
         event: 1000
   # Ensure the closet is open since it could’ve been an
   # office switch press but the door is closed
@@ -74,7 +74,7 @@
     - platform: event
       event_type: deconz_event
       event_data:
-        id: office_dimmer_switch
+        id: office_switch
         event: 4000
     - platform: state
       entity_id: binary_sensor.office_closet_door

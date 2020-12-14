@@ -1,28 +1,28 @@
-- alias: Hallway Switch - On
-  trigger:
-    device_id: 6cfdbf5b0ea111eb8a875b5d0311d22b
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: turn_on
-  action:
-    - service: scene.turn_on
-      entity_id: scene.hallway_on
-    - service: timer.cancel
-      entity_id: timer.hallway
+# - alias: Hallway Switch - On
+#   trigger:
+#     device_id: 6cfdbf5b0ea111eb8a875b5d0311d22b
+#     domain: zha
+#     platform: device
+#     type: remote_button_short_press
+#     subtype: turn_on
+#   action:
+#     - service: scene.turn_on
+#       entity_id: scene.hallway_on
+#     - service: timer.cancel
+#       entity_id: timer.hallway
 
-- alias: Hallway Switch - Off
-  trigger:
-    device_id: 6cfdbf5b0ea111eb8a875b5d0311d22b
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: turn_off
-  action:
-    - service: scene.turn_on
-      entity_id: scene.hallway_off
-    - service: timer.cancel
-      entity_id: timer.hallway
+# - alias: Hallway Switch - Off
+#   trigger:
+#     device_id: 6cfdbf5b0ea111eb8a875b5d0311d22b
+#     domain: zha
+#     platform: device
+#     type: remote_button_short_press
+#     subtype: turn_off
+#   action:
+#     - service: scene.turn_on
+#       entity_id: scene.hallway_off
+#     - service: timer.cancel
+#       entity_id: timer.hallway
 
 # TODO: This probably doesn't handle every combination of timer and switch presses
 # - alias: Hallway Motion

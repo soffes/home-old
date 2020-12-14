@@ -47,8 +47,8 @@ closet_doors_sensors:
   icon: mdi:wardrobe
   entities:
     - binary_sensor.hall_closet_door
-    - binary_sensor.office_closet_door_left
-    - binary_sensor.office_closet_door_right
+    - binary_sensor.office_closet_west_door
+    - binary_sensor.office_closet_east_door
 
 batteries:
   name: Batteries
@@ -68,8 +68,8 @@ batteries:
     - sensor.living_room_window_right_battery
     - sensor.master_bathroom_window_battery
     - sensor.master_bedroom_window_battery
-    - sensor.office_closet_door_left_battery
-    - sensor.office_closet_door_right_battery
+    - sensor.office_closet_west_door_battery
+    - sensor.office_closet_east_door_battery
     - sensor.office_mini_button_battery
     - sensor.office_switch_battery
     - sensor.office_window_battery
