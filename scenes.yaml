@@ -3,6 +3,10 @@
     group.outdoor_lights:
       state: "on"
       brightness: 76
+    light.living_room_christmas_tree_lights:
+      state: "on"
+    light.living_room_window_christmas_lights:
+      state: "on"
 
 - name: Sunrise
   entities:
@@ -215,4 +219,8 @@
     group.back_porch_lights:
       state: "off"
     switch.office_space_heater_plug:
+      state: "off"
+    light.living_room_christmas_tree_lights:
+      state: "off"
+    light.living_room_window_christmas_lights:
       state: "off"

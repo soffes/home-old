@@ -26,25 +26,25 @@ shades_close_dining_room:
   sequence:
     - condition: state
       entity_id: binary_sensor.dining_room_window
-      state: 'off'
+      state: "off"
     - service: cover.close_cover
       data:
-        entity_id: cover.dining_room
+        entity_id: cover.dining_room_shades
 
 shades_close_master_bedroom:
   sequence:
     - condition: state
       entity_id: binary_sensor.master_bedroom_window
-      state: 'off'
+      state: "off"
     - service: cover.close_cover
       data:
-        entity_id: cover.master_bedroom
+        entity_id: cover.master_bedroom_shades
 
 shades_close_office:
   sequence:
     - condition: state
       entity_id: binary_sensor.office_window
-      state: 'off'
+      state: "off"
     - service: cover.close_cover
       data:
         entity_id: cover.office
@@ -54,20 +54,20 @@ shades_close_living_room:
     - condition: and
       conditions:
         - condition: state
-          entity_id: binary_sensor.living_room_window_left
-          state: 'off'
+          entity_id: binary_sensor.living_room_north_window
+          state: "off"
         - condition: state
-          entity_id: binary_sensor.living_room_window_right
-          state: 'off'
+          entity_id: binary_sensor.living_room_south_window
+          state: "off"
     - service: cover.close_cover
       data:
-        entity_id: cover.living_room
+        entity_id: cover.living_room_shades
 
 shades_close_kitchen:
   sequence:
     - condition: state
       entity_id: binary_sensor.kitchen_window
-      state: 'off'
+      state: "off"
     - service: cover.close_cover
       data:
         entity_id: cover.kitchen
