@@ -38,7 +38,9 @@ shades_close_master_bedroom:
       state: "off"
     - service: cover.close_cover
       data:
-        entity_id: cover.master_bedroom_shades
+        entity_id:
+          - cover.master_bedroom_north_shades
+          - cover.master_bedroom_south_shades
 
 shades_close_office:
   sequence:
