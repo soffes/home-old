@@ -5,11 +5,3 @@
 - platform: switch
   name: Living Room Bulb Lamp
   entity_id: switch.living_room_bulb_lamp_plug
-
-- platform: switch
-  name: Living Room Christmas Tree Lights
-  entity_id: switch.living_room_christmas_tree_plug
-
-- platform: switch
-  name: Living Room Window Christmas Lights
-  entity_id: switch.living_room_window_christmas_lights_plug

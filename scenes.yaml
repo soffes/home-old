@@ -3,10 +3,6 @@
     group.outdoor_lights:
       state: "on"
       brightness: 76
-    light.living_room_christmas_tree_lights:
-      state: "on"
-    light.living_room_window_christmas_lights:
-      state: "on"
 
 - name: Sunrise
   entities:
@@ -15,6 +11,11 @@
     fan.master_bedroom:
       state: "off"
     switch.humidifier:
+      state: "off"
+
+- name: Outdoor Off
+  entities:
+    group.outdoor_lights:
       state: "off"
 
 - name: Front Porch - On
@@ -214,13 +215,7 @@
       state: "off"
     group.garage_lights:
       state: "off"
-    group.front_porch_lights:
-      state: "off"
-    group.back_porch_lights:
+    group.outdoor_lights:
       state: "off"
     switch.office_space_heater_plug:
-      state: "off"
-    light.living_room_christmas_tree_lights:
-      state: "off"
-    light.living_room_window_christmas_lights:
       state: "off"

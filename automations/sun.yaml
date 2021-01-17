@@ -13,3 +13,15 @@
   action:
     service: homeassistant.turn_on
     entity_id: scene.sunrise
+
+- alias: Late Night
+  trigger:
+    platform: time
+    at: "12:00:00"
+  condition:
+    - condition: state
+      entity_id: input_boolean.party_mode
+      state: "off"
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.outdoor_off
