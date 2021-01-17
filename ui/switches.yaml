@@ -14,34 +14,23 @@ cards:
         name: East Lamp
       - entity: light.master_bedroom_lightstrips
         name: Bed Lightstrips
-      # - entity: cover.master_bedroom
-      #   name: Shades
+      - entity: cover.master_bedroom_shades
+        name: Shades
 
-  - type: custom:vertical-stack-in-card
-    cards:
-      - type: entities
-        title: Office
-        show_header_toggle: true
-        entities:
-          - entity: light.office_overhead
-            name: Overhead
-          - entity: light.office_desk_lamp
-            name: Desk Lamp
-          - entity: light.office_closet_overhead
-            name: Closet
-          - entity: switch.office_space_heater_plug
-            name: Space Heater
-          # - entity: cover.office
-          #   name: Shades
-      - type: conditional
-        conditions:
-          - entity: binary_sensor.office_window
-            state: "on"
-        card:
-          type: entities
-          entities:
-            - entity: binary_sensor.office_window
-              name: Window
+  - type: entities
+    title: Office
+    show_header_toggle: true
+    entities:
+      - entity: light.office_overhead
+        name: Overhead
+      - entity: light.office_desk_lamp
+        name: Desk Lamp
+      - entity: light.office_closet_overhead
+        name: Closet
+      - entity: switch.office_space_heater_plug
+        name: Space Heater
+      # - entity: cover.office
+      #   name: Shades
 
   - type: entities
     title: Living Room
@@ -56,10 +45,6 @@ cards:
         name: Sofa Lightstrip
       - entity: light.living_room_chair_lightstrip
         name: Chair Lightstrip
-      - entity: light.living_room_christmas_tree_lights
-        name: Christmas Tree
-      - entity: light.living_room_window_christmas_lights
-        name: Window Christmas Lights
       - entity: cover.living_room_shades
         name: Shades
 
@@ -69,9 +54,17 @@ cards:
     entities:
       - entity: light.entryway_overhead
         name: Overhead
+      - lock.front_door
+
+  - type: entities
+    title: Outside
+    entities:
       - entity: light.front_porch_light
         name: Front Porch
-      - lock.front_door
+      - entity: light.front_porch_stairs_lights
+        name: Stairs
+      - entity: light.back_porch_light
+        name: Back Porch
 
   - type: entities
     title: Kitchen

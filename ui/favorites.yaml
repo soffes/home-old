@@ -8,16 +8,16 @@ cards:
         name: " "
         type: thermostat
       - entities:
-          - binary_sensor.bonus_room_left_window
-          - binary_sensor.bonus_room_right_window
+          - binary_sensor.bonus_room_north_window
           - binary_sensor.bonus_room_small_window
+          - binary_sensor.bonus_room_south_window
           - binary_sensor.dining_room_window
-          - binary_sensor.guest_bedroom_left_window
-          - binary_sensor.guest_bedroom_right_window
+          - binary_sensor.garage_laundry_window
+          - binary_sensor.guest_bedroom_east_window
+          - binary_sensor.guest_bedroom_west_window
           - binary_sensor.kitchen_window
-          - binary_sensor.laundry_window
-          - binary_sensor.living_room_window_left
-          - binary_sensor.living_room_window_right
+          - binary_sensor.living_room_north_window
+          - binary_sensor.living_room_south_window
           - binary_sensor.master_bathroom_window
           - binary_sensor.master_bedroom_window
           - binary_sensor.office_window
@@ -29,10 +29,6 @@ cards:
         entities:
           - entity: fan.master_bedroom
             name: Fan
-          - entity: light.living_room_christmas_tree_lights
-            name: Christmas Tree
-          - entity: light.living_room_window_christmas_lights
-            name: Window Christmas Lights
       - type: horizontal-stack
         cards:
           - type: button
