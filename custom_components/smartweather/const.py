@@ -21,6 +21,7 @@ DOMAIN = "smartweather"
 
 ATTR_SMARTWEATHER_STATION_NAME = "station_name"
 ATTR_SMARTWEATHER_STATION_ID = "station_id"
+ATTR_DEVICE_TYPE = "device_type"
 ATTR_TEMP_HIGH_TODAY = "temp_high_today"
 ATTR_TEMP_LOW_TODAY = "temp_low_today"
 ATTR_UPDATED = "updated"
@@ -48,6 +49,7 @@ DEFAULT_BRAND = "WeatherFlow"
 DEFAULT_ATTRIBUTION = "Powered by a WeatherFlow Smart Weather Station"
 DEFAULT_SCAN_INTERVAL = 60
 DEFAULT_FORECAST_INTERVAL = 5
+DEFAULT_DEVICE_INTERVAL = 60
 
 DEVICE_TYPE_WEATHER = "weather"
 
@@ -65,7 +67,7 @@ CONDITION_CLASSES = {
         "partly-cloudy-day",
         "partly-cloudy-night",
     ],
-    "pouring": ["rainy"],
+    # "pouring": ["rainy"],
     "rainy": [
         "rainy",
         "possibly-rainy-day",
@@ -75,5 +77,5 @@ CONDITION_CLASSES = {
     "snowy-rainy": ["sleet", "possibly-sleet-day", "possibly-sleet-night"],
     "sunny": ["clear-day"],
     "windy": ["windy"],
-    "windy-variant": ["windy"],
+    # "windy-variant": ["windy"],
 }

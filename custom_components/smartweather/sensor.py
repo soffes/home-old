@@ -8,19 +8,25 @@
     Author: Bjarne Riis
 """
 import logging
+from typing import Dict
 
 from homeassistant.helpers.entity import Entity
 from homeassistant.const import (
+    ATTR_ATTRIBUTION,
     DEVICE_CLASS_HUMIDITY,
     DEVICE_CLASS_ILLUMINANCE,
     DEVICE_CLASS_PRESSURE,
     DEVICE_CLASS_TEMPERATURE,
+    DEVICE_CLASS_VOLTAGE,
 )
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.helpers.typing import HomeAssistantType
 import homeassistant.helpers.device_registry as dr
 from homeassistant.util import slugify
 from .const import (
+    ATTR_DEVICE_TYPE,
+    ATTR_SMARTWEATHER_STATION_ID,
+    DEFAULT_ATTRIBUTION,
     DOMAIN,
     UNIT_TYPE_TEMP,
     UNIT_TYPE_WIND,
@@ -40,6 +46,12 @@ SENSOR_TYPES = {
         UNIT_TYPE_TEMP,
         "mdi:thermometer",
         DEVICE_CLASS_TEMPERATURE,
+    ],
+    "air_density": [
+        "Air Density",
+        "kg/m3",
+        "mdi:weight-kilogram",
+        None,
     ],
     "feels_like": [
         "Feels Like",
@@ -83,9 +95,16 @@ SENSOR_TYPES = {
         "mdi:weather-rainy",
         None,
     ],
+    "pressure_trend": ["Pressure Trend", None, "mdi:trending-up", None],
     "relative_humidity": ["Humidity", "%", "mdi:water-percent", DEVICE_CLASS_HUMIDITY],
     "station_pressure": [
         "Pressure",
+        UNIT_TYPE_PRESSURE,
+        "mdi:gauge",
+        DEVICE_CLASS_PRESSURE,
+    ],
+    "sea_level_pressure": [
+        "Sea Level Pressure",
         UNIT_TYPE_PRESSURE,
         "mdi:gauge",
         DEVICE_CLASS_PRESSURE,
@@ -109,6 +128,12 @@ SENSOR_TYPES = {
         "Lightning Time",
         "",
         "mdi:clock-outline",
+        None,
+    ],
+    "lightning_strike_count_last_1hr": [
+        "Lightning Last 1Hrs",
+        "",
+        "mdi:history",
         None,
     ],
     "lightning_strike_count_last_3hr": [
@@ -149,6 +174,10 @@ async def async_setup_entry(
     if not coordinator.data:
         return
 
+    device_coordinator = hass.data[DOMAIN][entry.entry_id]["device_coordinator"]
+    if not device_coordinator.data:
+        return
+
     smartweather = hass.data[DOMAIN][entry.entry_id]["smw"]
     if not smartweather:
         return
@@ -158,16 +187,33 @@ async def async_setup_entry(
     if not station_info:
         return
 
+    for sensor in device_coordinator.data:
+        # Append Batteri Devices to SENSOR_TYPES
+        key = f"battery_{sensor.device_type_desc}_{sensor.device_id}"
+        SENSOR_TYPES.setdefault(key, [])
+        SENSOR_TYPES[key] = [
+            f"Battery {sensor.device_name}",
+            "V",
+            "mdi:battery",
+            DEVICE_CLASS_VOLTAGE,
+        ]
+
     sensors = []
     for sensor in SENSOR_TYPES:
         sensors.append(
             SmartWeatherSensor(
-                coordinator, entry.data, sensor, units, station_info, fcst_coordinator
+                coordinator,
+                entry.data,
+                sensor,
+                units,
+                station_info,
+                fcst_coordinator,
+                device_coordinator,
             )
         )
         _LOGGER.debug(f"SENSOR ADDED: {sensor}")
-    async_add_entities(sensors, True)
 
+    async_add_entities(sensors, True)
     return True
 
 
@@ -175,10 +221,24 @@ class SmartWeatherSensor(SmartWeatherEntity, Entity):
     """ Implementation of a SmartWeather Weatherflow Sensor. """
 
     def __init__(
-        self, coordinator, entries, sensor, units, station_info, fcst_coordinator
+        self,
+        coordinator,
+        entries,
+        sensor,
+        units,
+        station_info,
+        fcst_coordinator,
+        device_coordinator,
     ):
         """Initialize the sensor."""
-        super().__init__(coordinator, entries, sensor, station_info, fcst_coordinator)
+        super().__init__(
+            coordinator,
+            entries,
+            sensor,
+            station_info,
+            fcst_coordinator,
+            device_coordinator,
+        )
         self._units = units
         self._sensor = sensor
         self._state = None
@@ -192,9 +252,17 @@ class SmartWeatherSensor(SmartWeatherEntity, Entity):
     @property
     def state(self):
         """Return the state of the sensor."""
-        value = getattr(self.coordinator.data[0], self._sensor, None)
-        if not isinstance(value, str) and value is not None:
-            return round(value, 1)
+
+        if "battery" in self._sensor:
+            value = 0
+            for row in self.device_coordinator.data:
+                if str(row.device_id) in self._sensor:
+                    value = row.battery
+                    break
+        else:
+            value = getattr(self.coordinator.data[0], self._sensor, None)
+            if not isinstance(value, str) and value is not None:
+                return round(value, 1)
 
         return value
 
@@ -215,3 +283,24 @@ class SmartWeatherSensor(SmartWeatherEntity, Entity):
     def device_class(self):
         """Return the device class of the sensor."""
         return SENSOR_TYPES[self._sensor][3]
+
+    @property
+    def device_state_attributes(self) -> Dict:
+        """Return SmartWeather specific attributes."""
+        if "battery" in self._sensor:
+            value_type = None
+            for row in self.device_coordinator.data:
+                if str(row.device_id) in self._sensor:
+                    value_type = row.device_type_desc
+                    break
+
+            return {
+                ATTR_DEVICE_TYPE: value_type,
+                ATTR_ATTRIBUTION: DEFAULT_ATTRIBUTION,
+                ATTR_SMARTWEATHER_STATION_ID: self._device_key,
+            }
+        else:
+            return {
+                ATTR_ATTRIBUTION: DEFAULT_ATTRIBUTION,
+                ATTR_SMARTWEATHER_STATION_ID: self._device_key,
+            }

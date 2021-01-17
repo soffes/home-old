@@ -67,3 +67,36 @@ set_doorbell_lcd_message:
     duration:
       description: "(Optional) Number of minutes to display message, before returning to default. Leave blank to display always"
       example: "15"
+set_mic_volume:
+  description: "Sets the microphone sensitivity volume"
+  fields:
+    entity_id:
+      description: "string (required) camera to change volume level for"
+      example: "camera.outdoor"
+    level:
+      description: "(Required) Number between 0 and 100 (0 equals off)"
+      example: "75"
+set_privacy_mode:
+  description: "Enables or disables a full cover Privacy Zone for the Camera"
+  fields:
+    entity_id:
+      description: "string (required) camera to set privacy mode for"
+      example: "camera.outdoor"
+    privacy_mode:
+      description: "(Required) Valid options are: true or false"
+      example: true
+    mic_level:
+      description: "(Optional) Microphone Level, a number between 0 and 100 (0 equals off) Default is no change"
+      example: "75"
+    recording_mode:
+      description: "(Optional) Valid options are: always = Always Recording, motion = Only record on motion, never = stop recording, smart = Smart Detect. Default value is: no change"
+      example: motion
+set_zoom_position:
+  description: "Sets the cameras optical Zoom Position"
+  fields:
+    entity_id:
+      description: "string (required) camera to change zoom position for"
+      example: "camera.outdoor"
+    position:
+      description: "(Required) Number between 0 and 100 (0 equals no zoom)"
+      example: "25"
