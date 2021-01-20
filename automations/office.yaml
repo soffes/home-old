@@ -47,6 +47,57 @@
     service: scene.turn_on
     entity_id: scene.office_off
 
+- alias: Office Key Light - Auto On
+  trigger:
+    platform: state
+    entity_id: binary_sensor.macbook_camera_in_use
+    from: "off"
+    to: "on"
+    for: 0:00:02
+  condition:
+    - condition: state
+      entity_id: sensor.macbook_ssid
+      state: "Adventure"
+    - condition: state
+      entity_id: light.office_overhead
+      state: "on"
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.office_key_light
+
+- alias: Office Key Light - Switch On
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: office_switch
+      event: 1000
+  condition:
+    - condition: state
+      entity_id: sensor.macbook_ssid
+      state: "Adventure"
+    - condition: state
+      entity_id: binary_sensor.macbook_camera_in_use
+      state: "on"
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.office_key_light
+
+- alias: Office Key Light - Auto Off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.macbook_camera_in_use
+    from: "on"
+    to: "off"
+    for: 0:00:02
+  condition:
+    condition: state
+    entity_id: sensor.macbook_ssid
+    state: "Adventure"
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.office_key_light
+
 - alias: Turn on office closet light
   trigger:
     # Closet opens

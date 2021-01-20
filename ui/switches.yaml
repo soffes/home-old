@@ -25,6 +25,8 @@ cards:
         name: Overhead
       - entity: light.office_desk_lamp
         name: Desk Lamp
+      - entity: light.office_key_light
+        name: Key Light
       - entity: light.office_closet_overhead
         name: Closet
       - entity: switch.office_space_heater_plug

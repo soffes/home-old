@@ -43,6 +43,8 @@
       state: "off"
     light.office_desk_lamp:
       state: "off"
+    light.office_key_light:
+      state: "off"
     light.office_closet_overhead:
       state: "off"
     switch.office_space_heater_plug:
