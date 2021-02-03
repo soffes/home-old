@@ -4,7 +4,7 @@ icon: mdi:star
 cards:
   - type: vertical-stack
     cards:
-      - entity: climate.hallway
+      - entity: climate.main_floor
         name: " "
         type: thermostat
       - entities:
@@ -29,6 +29,8 @@ cards:
         entities:
           - entity: fan.master_bedroom
             name: Fan
+          - entity: light.master_bedroom_lightstrips
+            name: Bed Lightstrips
       - type: horizontal-stack
         cards:
           - type: button

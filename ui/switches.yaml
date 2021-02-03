@@ -83,7 +83,7 @@ cards:
     entities:
       - entity: light.hallway_overhead
         name: Overhead
-      - entity: climate.hallway
+      - entity: climate.main_floor
         name: Thermostat
 
   - type: entities

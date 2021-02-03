@@ -6,7 +6,7 @@
   action:
     # Set thermostate to away
     - service: climate.set_preset_mode
-      entity_id: climate.hallway
+      entity_id: climate.main_floor
       data:
         preset_mode: Away
 
@@ -53,7 +53,7 @@
   action:
     # Restore the thermostat
     - service: climate.set_preset_mode
-      entity_id: climate.hallway
+      entity_id: climate.main_floor
       data:
         preset_mode: Home
 

@@ -1,10 +1,10 @@
 # When a window opens, capture the thermostat state and turn it off
 - alias: Window opened
   trigger:
-  - platform: state
-    entity_id: sensor.open_windows_count
-    from: '0'
-    to: '1'
+    - platform: state
+      entity_id: sensor.open_windows_count
+      from: "0"
+      to: "1"
   condition: []
   action:
     # Create a scene of the current state
@@ -12,29 +12,29 @@
       data:
         scene_id: window_before
         snapshot_entities:
-          - climate.hallway
+          - climate.main_floor
 
     # Turn off the thermostat
     - service: climate.set_hvac_mode
       data:
-        entity_id: climate.hallway
-        hvac_mode: 'off'
+        entity_id: climate.main_floor
+        hvac_mode: "off"
 
 # When a window opens when the air is bad, send a push
 - alias: Window opened with bad air
   trigger:
     - platform: state
       entity_id: sensor.open_windows_count
-      from: '0'
-      to: '1'
+      from: "0"
+      to: "1"
   condition:
     - condition: state
       entity_id: binary_sensor.bad_air
-      state: 'on'
+      state: "on"
   action:
     - service: notify.mobile_app_sams_iphone
       data_template:
-        title: '😷 Bad air'
+        title: "😷 Bad air"
         message: 'There’s a window open and the current AQI is {{ states("sensor.purpleair_aqi") }}.'
         data:
           push:
@@ -43,14 +43,13 @@
           apns_headers:
             apns-collapse-id: window-bad-air
 
-
 # When all windows are closed, restore the previous thermostat state
 - alias: Window closed
   trigger:
     - platform: state
       entity_id: sensor.open_windows_count
-      from: '1'
-      to: '0'
+      from: "1"
+      to: "0"
   condition: []
   action:
     # Restore the state before the window opened
