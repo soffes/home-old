@@ -1,8 +1,3 @@
-- platform: myq
-  username: !secret myq_username
-  password: !secret myq_password
-  type: chamberlain
-
 # - platform: group
 #   name: Office
 #   entities:

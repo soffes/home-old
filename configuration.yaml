@@ -37,15 +37,12 @@ updater:
 zone: !include integrations/zone.yaml
 
 # Integrations
-august: !include integrations/august.yaml
 binary_sensor: !include integrations/binary_sensor.yaml
 cover: !include integrations/cover.yaml
 dyson: !include integrations/dyson.yaml
-ecobee: !include integrations/ecobee.yaml
 group: !include groups.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
 sensor: !include integrations/sensor.yaml
-somfy_mylink: !include integrations/somfy_mylink.yaml
 weather:
 yeelight: !include integrations/yeelight.yaml

@@ -1,2 +1,0 @@
-host: !secret somfy_host
-system_id: !secret somfy_system_id

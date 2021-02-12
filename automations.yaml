@@ -1,0 +1,17 @@
+- id: '1612310974652'
+  alias: Washer has finished
+  description: ''
+  use_blueprint:
+    path: Sbyx/notify-or-do-something-when-an-appliance-like-a-dishwasher-or-washing-machine-finishes.yaml
+    input:
+      finishing_hysteresis: '2'
+      power_sensor: sensor.washer_consumption
+      starting_threshold: '23'
+      finishing_threshold: '23'
+      starting_hysteresis: '2'
+      actions:
+      - device_id: 7bd0159b4de701a17d961d50c7a58020
+        domain: mobile_app
+        type: notify
+        message: ''
+        title: 🧺 Washer has finished
