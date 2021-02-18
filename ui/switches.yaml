@@ -31,8 +31,6 @@ cards:
         name: Closet
       - entity: switch.office_space_heater_plug
         name: Space Heater
-      # - entity: cover.office
-      #   name: Shades
 
   - type: entities
     title: Living Room

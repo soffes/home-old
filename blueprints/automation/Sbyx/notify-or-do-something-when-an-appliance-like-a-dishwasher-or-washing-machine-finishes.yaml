@@ -63,20 +63,20 @@ blueprint:
         action: {}
   source_url: https://community.home-assistant.io/t/notify-or-do-something-when-an-appliance-like-a-dishwasher-or-washing-machine-finishes/254841
 trigger:
-- platform: numeric_state
-  entity_id: !input 'power_sensor'
-  for:
-    minutes: !input 'starting_hysteresis'
-  above: !input 'starting_threshold'
-condition: []
-action:
-- wait_for_trigger:
   - platform: numeric_state
     entity_id: !input 'power_sensor'
-    below: !input 'finishing_threshold'
     for:
-      minutes: !input 'finishing_hysteresis'
-- choose: []
-  default: !input 'actions'
+      minutes: !input 'starting_hysteresis'
+    above: !input 'starting_threshold'
+condition: []
+action:
+  - wait_for_trigger:
+    - platform: numeric_state
+      entity_id: !input 'power_sensor'
+      below: !input 'finishing_threshold'
+      for:
+        minutes: !input 'finishing_hysteresis'
+  - choose: []
+    default: !input 'actions'
 mode: single
 max_exceeded: silent

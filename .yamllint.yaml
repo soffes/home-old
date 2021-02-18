@@ -7,4 +7,5 @@ rules:
 
 ignore: |
   esphome/*/.piolibdeps/**/*
-  custom_components/hacs/*
+  custom_components/**/*
+  blueprints/**/*
