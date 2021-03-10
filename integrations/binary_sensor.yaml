@@ -9,6 +9,11 @@
       friendly_name: "Bad Air"
       value_template: >-
         {{ states("sensor.purpleair_aqi") | float > 75 }}
+    garage_door_open:
+      friendly_name: "Garage Door Open"
+      device_class: garage_door
+      value_template: >-
+        {{ is_state("cover.car_garage_door", "open") or is_state("cover.shop_garage_door", "open") }}
 
 - platform: workday
   country: US

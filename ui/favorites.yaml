@@ -4,10 +4,14 @@ icon: mdi:star
 cards:
   - type: vertical-stack
     cards:
-      - entity: climate.main_floor
+      - type: thermostat
+        entity: climate.main_floor
         name: " "
-        type: thermostat
-      - entities:
+      - type: entity-filter
+        state_filter:
+          - "on"
+        show_empty: false
+        entities:
           - binary_sensor.bonus_room_north_window
           - binary_sensor.bonus_room_small_window
           - binary_sensor.bonus_room_south_window
@@ -21,10 +25,6 @@ cards:
           - binary_sensor.master_bathroom_window
           - binary_sensor.master_bedroom_window
           - binary_sensor.office_window
-        show_empty: false
-        state_filter:
-          - "on"
-        type: entity-filter
       - type: entities
         entities:
           - entity: fan.master_bedroom
@@ -105,20 +105,12 @@ cards:
       - type: horizontal-stack
         cards:
           - aspect_ratio: 56%
-            entity: camera.garage_car
+            entity: camera.backyard
             show_name: false
             show_state: false
             tap_action:
               action: url
-              url_path: !secret garage_car_camera_url
-            type: picture-entity
-          - aspect_ratio: 56%
-            entity: camera.garage_shop
-            tap_action:
-              action: url
-              url_path: !secret garage_shop_camera_url
-            show_name: false
-            show_state: false
+              url_path: !secret backyard_camera_url
             type: picture-entity
           - aspect_ratio: 56%
             entity: camera.garage_back_door
@@ -128,6 +120,29 @@ cards:
             show_name: false
             show_state: false
             type: picture-entity
+      - type: conditional
+        conditions:
+          - entity: binary_sensor.garage_door_open
+            state: "on"
+        card:
+          type: horizontal-stack
+          cards:
+            - aspect_ratio: 56%
+              entity: camera.garage_car
+              show_name: false
+              show_state: false
+              tap_action:
+                action: url
+                url_path: !secret garage_car_camera_url
+              type: picture-entity
+            - aspect_ratio: 56%
+              entity: camera.garage_shop
+              tap_action:
+                action: url
+                url_path: !secret garage_shop_camera_url
+              show_name: false
+              show_state: false
+              type: picture-entity
       - type: entities
         show_header_toggle: false
         state_color: true
