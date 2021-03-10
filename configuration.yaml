@@ -39,7 +39,6 @@ zone: !include integrations/zone.yaml
 # Integrations
 binary_sensor: !include integrations/binary_sensor.yaml
 cover: !include integrations/cover.yaml
-dyson: !include integrations/dyson.yaml
 group: !include groups.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
