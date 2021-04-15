@@ -40,6 +40,7 @@ zone: !include integrations/zone.yaml
 binary_sensor: !include integrations/binary_sensor.yaml
 cover: !include integrations/cover.yaml
 group: !include groups.yaml
+homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
 sensor: !include integrations/sensor.yaml

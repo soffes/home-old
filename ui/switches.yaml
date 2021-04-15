@@ -39,6 +39,8 @@ cards:
         name: Arc Lamp
       - entity: light.living_room_floor_lamp
         name: Floor Lamp
+      - entity: light.living_room_lamp
+        name: Table Lamp
       - entity: light.living_room_bulb_lamp
         name: Bulb Lamp
       - entity: light.living_room_sofa_lightstrip
@@ -59,6 +61,7 @@ cards:
   - type: entities
     title: Outside
     entities:
+      - light.house_number
       - entity: light.front_porch_light
         name: Front Porch
       - entity: light.front_porch_stairs_lights

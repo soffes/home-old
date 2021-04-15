@@ -5,6 +5,7 @@ outdoor_lights:
     - light.front_porch_light
     - light.front_porch_stairs_lights
     - light.back_porch_light
+    - light.house_number
 
 sonos:
   name: Sonos
@@ -137,8 +138,9 @@ living_room_lights:
   name: Living Room Lights
   entities:
     - light.living_room_arc_lamp
-    - light.living_room_lamp
+    - light.living_room_floor_lamp
     - light.living_room_bulb_lamp
+    - light.living_room_lamp
     - light.living_room_sofa_lightstrip
     - light.living_room_chair_lightstrip
 

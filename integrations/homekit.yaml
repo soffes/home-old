@@ -1,0 +1,5 @@
+- name: "Home Assistant"
+  port: 56332
+  include_domains:
+    - light
+    - cover

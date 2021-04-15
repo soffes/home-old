@@ -11,28 +11,40 @@ cover.master_bedroom_shades:
 # Windows
 binary_sensor.bonus_room_north_window:
   device_class: window
-binary_sensor.bonus_room_south_window:
-  device_class: window
+
 binary_sensor.bonus_room_small_window:
   device_class: window
+
+binary_sensor.bonus_room_south_window:
+  device_class: window
+
 binary_sensor.dining_room_window:
   device_class: window
-binary_sensor.guest_bedroom_left_window:
+
+binary_sensor.garage_laundry_window:
   device_class: window
-binary_sensor.guest_bedroom_right_window:
+
+binary_sensor.guest_bedroom_east_window:
   device_class: window
+
+binary_sensor.guest_bedroom_west_window:
+  device_class: window
+
 binary_sensor.kitchen_window:
   device_class: window
-binary_sensor.laundry_window:
-  device_class: window
+
 binary_sensor.living_room_north_window:
   device_class: window
+
 binary_sensor.living_room_south_window:
   device_class: window
+
 binary_sensor.master_bathroom_window:
   device_class: window
+
 binary_sensor.master_bedroom_window:
   device_class: window
+
 binary_sensor.office_window:
   device_class: window
 

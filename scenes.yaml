@@ -187,9 +187,7 @@
       state: "off"
     group.garage_lights:
       state: "off"
-    group.front_porch_lights:
-      state: "off"
-    group.back_porch_lights:
+    group.outdoor_lights:
       state: "off"
     switch.office_space_heater_plug:
       state: "off"
