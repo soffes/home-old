@@ -32,4 +32,3 @@
   entity_config:
     switch.office_space_heater_plug:
       type: outlet
-
