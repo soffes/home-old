@@ -1,6 +1,6 @@
-title: Favorites
-path: favorites
-icon: mdi:star
+title: Home
+path: home
+icon: mdi:home
 cards:
   - type: vertical-stack
     cards:

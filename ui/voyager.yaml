@@ -1,0 +1,48 @@
+title: Voyager
+path: voyager
+icon: mdi:car
+cards:
+  - type: gauge
+    entity: sensor.voyager_range
+    name: Range
+    min: 0
+    max: 320
+
+  - type: entities
+    entities:
+      - name: Location
+        entity: device_tracker.voyager
+      - name: Mileage
+        entity: sensor.voyager_mileage
+      - name: Charger Connected
+        entity: binary_sensor.voyager_charger
+      - name: Charging
+        entity: switch.voyager_charging
+      - name: Charge Rate
+        entity: sensor.voyager_charging_rate
+
+  - type: entities
+    entities:
+      - name: Doors
+        entity: lock.voyager_doors
+      - name: Frunk
+        entity: lock.voyager_frunk
+      - name: Trunk
+        entity: lock.voyager_trunk
+      - name: Charge Port
+        entity: lock.voyager_charge_port
+
+  - type: entities
+    entities:
+      - name: Climate
+        entity: climate.voyager
+      - name: Inside Temperature
+        entity: sensor.voyager_temperature_inside
+      - name: Outside Temperatures
+        entity: sensor.voyager_temperature_outside
+
+# Only show if false `binary_sensor.voyager_online`
+# Only show if true `binary_sensor.voyager_update_available`
+#
+# - binary_sensor.voyager_parking_brake
+# - switch.voyager_sentry_mode

@@ -1,5 +1,6 @@
 title: !secret home_name
 views:
-  - !include ui/favorites.yaml
+  - !include ui/home.yaml
+  - !include ui/voyager.yaml
   - !include ui/switches.yaml
   - !include ui/status.yaml
