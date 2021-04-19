@@ -1,5 +1,35 @@
 - name: "Home Assistant"
   port: 56332
-  include_domains:
-    - light
-    - cover
+  filter:
+    include_domains:
+      - climate
+      - cover
+      - fan
+      - light
+      - lock
+    include_entities:
+      - switch.office_space_heater_plug
+    exclude_entity_globs:
+      - cover.*_north_shades
+      - cover.*_south_shades
+      - light.*_1
+      - light.*_2
+      - light.*_3
+      - light.*_east_bulb
+      - light.*_east_lightstrip
+      - light.*_north_lightstrip
+      - light.*_west_bulb
+      - light.*_west_lightstrip
+      - lock.voyager_*
+    exclude_entities:
+      - climate.voyager
+      - light.garage
+      - light.guest_bedroom
+      - light.kitchen_recessed_overhead
+      - light.living_room
+      - light.master_bedroom
+      - light.master_bedroom_hallyway_overhead
+  entity_config:
+    switch.office_space_heater_plug:
+      type: outlet
+
