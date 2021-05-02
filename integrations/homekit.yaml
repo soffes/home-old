@@ -25,6 +25,7 @@
       - climate.voyager
       - climate.guest_bathroom
       - cover.dining_room_shades
+      - fan.airmega
       - light.garage
       - light.guest_bedroom
       - light.kitchen_recessed_overhead
