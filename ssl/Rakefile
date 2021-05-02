@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+desc 'Start the server'
+task :server, %i[challenge] do |_, args|
+  unless (challenge = args[:challenge])
+    print 'Usage: rake "server[challenge...]"'
+    exit 1
+  end
+
+  sh %(ACME_CHALLENGE=#{challenge} bundle exec rackup -o 0.0.0.0)
+end
