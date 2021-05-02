@@ -23,6 +23,8 @@
       - lock.voyager_*
     exclude_entities:
       - climate.voyager
+      - climate.guest_bathroom
+      - cover.dining_room_shades
       - light.garage
       - light.guest_bedroom
       - light.kitchen_recessed_overhead

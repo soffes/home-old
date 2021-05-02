@@ -1,0 +1,2 @@
+username: !secret schluter_username
+password: !secret schluter_password

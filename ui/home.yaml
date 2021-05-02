@@ -25,6 +25,17 @@ cards:
           - binary_sensor.master_bathroom_window
           - binary_sensor.master_bedroom_window
           - binary_sensor.office_window
+      # - type: entities
+      #   entities:
+      #     - entity: light.entryway
+      #     - entity: light.living_room
+      #     - entity: light.kitchen
+      #     - entity: light.hallway
+      #     - entity: light.office
+      #     - entity: light.master_bedroom
+      #     - entity: light.garage
+      #     - entity: light.master_bathroom
+      #     - entity: light.guest_bedroom
       - type: entities
         entities:
           - entity: fan.master_bedroom
@@ -80,7 +91,6 @@ cards:
         state_color: true
         entities:
           - cover.living_room_shades
-          - cover.dining_room_shades
           - cover.master_bedroom_shades
   - type: vertical-stack
     cards:
