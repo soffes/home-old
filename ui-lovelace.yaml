@@ -1,5 +1,0 @@
-title: !secret home_name
-views:
-  - !include ui/home.yaml
-  - !include ui/switches.yaml
-  - !include ui/status.yaml

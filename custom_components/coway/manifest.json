@@ -1,9 +1,0 @@
-{
-  "domain": "coway",
-  "name": "Coway IoCare",
-  "version": "2021.4.0",
-  "config_flow": true,
-  "requirements": ["git+https://github.com/RobertD502/python-iocare@master#python-iocare==0.1.6"],
-  "dependencies": [],
-  "codeowners": ["@sarahhenkens"]
-}

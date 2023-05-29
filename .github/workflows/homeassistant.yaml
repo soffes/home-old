@@ -6,8 +6,9 @@ jobs:
     container:
       image: homeassistant/amd64-homeassistant
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Copy secrets
-        run: cp secrets_ci.yaml secrets.yaml && mkdir -p ssl && touch ssl/fullchain.pem && touch ssl/privkey.pem
+        run: cp secrets_ci.yaml secrets.yaml
       - name: Check configuration
         run: hass --script check_config -c .
