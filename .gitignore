@@ -18,3 +18,4 @@ www/community
 __pycache__
 .HA_VERSION
 /image
+/custom_components

@@ -1,0 +1,18 @@
+bedroom_shades_half_open:
+  alias: Bedroom Shades Half Open
+  sequence:
+    - service: cover.set_cover_position
+      target:
+        entity_id: cover.bedroom_door_shade_1
+      data:
+        position: 70
+    - service: cover.set_cover_position
+      target:
+        entity_id: cover.bedroom_door_shade_2
+      data:
+        position: 70
+    - service: cover.set_cover_position
+      target:
+        entity_id: cover.bedroom_window_shade
+      data:
+        position: 55

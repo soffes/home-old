@@ -1,0 +1,6 @@
+- platform: switch
+  name: Bulb Lamp
+  entity_id: switch.bulb_lamp
+- platform: switch
+  name: Porch Light
+  entity_id: switch.porch_light

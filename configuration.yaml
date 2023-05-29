@@ -1,0 +1,15 @@
+default_config:
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+tts:
+  - platform: google_translate
+
+alert: !include integrations/alert.yaml
+automation: !include_dir_merge_list automations
+group: !include integrations/group.yaml
+input_boolean: !include integrations/input_boolean.yaml
+light: !include integrations/light.yaml
+scene: !include scenes.yaml
+script: !include_dir_merge_named scripts

@@ -1,0 +1,14 @@
+garage_door:
+  name: "Garage door has been open for {{ relative_time(states.cover.garage_door.last_changed) }}"
+  done_message: "Garage door is now closed"
+  entity_id: cover.garage_door
+  state: "open"
+  repeat:
+    - 10
+    - 20
+    - 30
+    - 60
+  can_acknowledge: True
+  skip_first: True
+  notifiers:
+    - mobile_app_sam_s_iphone

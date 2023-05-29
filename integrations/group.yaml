@@ -1,0 +1,52 @@
+living_room_shades:
+  name: Living Room Shades
+  icon: mdi:blinds
+  entities:
+    - cover.living_room_shade_1
+    - cover.living_room_shade_4
+    - cover.living_room_shade_5
+    - cover.living_room_shade_6
+    - cover.living_room_shade_7
+    - cover.living_room_shade_8
+
+office_shades:
+  name: Office Shades
+  icon: mdi:blinds
+  entities:
+    - cover.living_room_shade_2
+    - cover.living_room_shade_3
+
+balcony_shades:
+  name: Balcony Shades
+  icon: mdi:blinds
+  entities:
+    - cover.balcony_shade_1
+    - cover.balcony_shade_2
+
+entrance_shades:
+  name: Entrance Shades
+  icon: mdi:blinds
+  entities:
+    - cover.entrance_shade_1
+    - cover.entrance_shade_2
+    - cover.entrance_shade_3
+    - cover.entrance_shade_4
+    - cover.entrance_shade_5
+    - cover.entrance_shade_6
+    - cover.entrance_shade_7
+    - cover.counter_shade_1
+    - cover.counter_shade_2
+
+outdoor_lights:
+  name: Outdoor Lights
+  icon: mdi:outdoor-lamp
+  entities:
+    - light.porch_light
+
+bedroom_shades:
+  name: Bedroom Shades
+  icon: mdi:blinds
+  entities:
+    - cover.bedroom_door_shade_1
+    - cover.bedroom_door_shade_2
+    - cover.bedroom_window_shade
