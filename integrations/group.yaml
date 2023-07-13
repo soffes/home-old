@@ -37,12 +37,6 @@ entrance_shades:
     - cover.counter_shade_1
     - cover.counter_shade_2
 
-outdoor_lights:
-  name: Outdoor Lights
-  icon: mdi:outdoor-lamp
-  entities:
-    - light.porch_light
-
 bedroom_shades:
   name: Bedroom Shades
   icon: mdi:blinds
@@ -50,3 +44,28 @@ bedroom_shades:
     - cover.bedroom_door_shade_1
     - cover.bedroom_door_shade_2
     - cover.bedroom_window_shade
+
+outdoor_lights:
+  name: Outdoor Lights
+  icon: mdi:outdoor-lamp
+  entities:
+    - light.porch_light
+
+living_room_lights:
+  name: Living Room Lights
+  entities:
+    - light.arc_lamp
+    - light.sofa_lamp
+    - light.bulb_lamp
+    - light.living_room_overhead
+
+office_lights:
+  name: Office Lights
+  entities:
+    - light.desk_lamp
+    - light.office_overhead
+
+kitchen_lights:
+  name: Kitchen Lights
+  entities: 
+    - light.kitchen_overhead
