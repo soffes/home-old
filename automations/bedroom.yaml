@@ -1,0 +1,45 @@
+- alias: Bedroom Scene Switch 1
+  trigger:
+    device_id: 22fcb669802475532f44ec65a31b2aa0
+    domain: zha
+    platform: device
+    type: button_single
+    subtype: button_1
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.bedroom_bright
+
+- alias: Bedroom Scene Switch 2
+  trigger:
+    device_id: 22fcb669802475532f44ec65a31b2aa0
+    domain: zha
+    platform: device
+    type: button_single
+    subtype: button_2
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.bedroom_off
+
+- alias: Turn Off Bedroom Switch (Top)
+  mode: single
+  trigger:
+    platform: state
+    entity_id:
+      - switch.bedroom_top
+    to: "on"
+  action:
+    service: switch.turn_off
+    target:
+      entity_id: switch.bedroom_top
+
+- alias: Turn Off Bedroom Switch (Bottom)
+  mode: single
+  trigger:
+    platform: state
+    entity_id:
+      - switch.bedroom_bottom
+    to: "on"
+  action:
+    service: switch.turn_off
+    target:
+      entity_id: switch.bedroom_bottom

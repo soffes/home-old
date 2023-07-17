@@ -1,0 +1,194 @@
+- name: Sunset
+  entities:
+    group.outdoor_lights:
+      state: "on"
+
+- name: Sunrise
+  entities:
+    group.outdoor_lights:
+      state: "off"
+    fan.bedroom:
+      state: "off"
+    group.living_room_shades:
+      state: "off"
+    group.office_shades:
+      state: "off"
+    group.balcony_shades:
+      state: "off"
+    group.entrance_shades:
+      state: "off"
+
+- name: Late Night
+  entities:
+    fan.living_room:
+      state: "off"
+    group.outdoor_lights:
+      state: "off"
+    light.bulb_lamp:
+      state: "off"
+
+- name: Bedroom Bright
+  entities:
+    light.bedroom_lamp_1:
+      state: on
+      brightness: 255
+    light.bedroom_lamp_2:
+      state: on
+      brightness: 255
+    light.bedroom_overhead:
+      state: on
+      brightness: 255
+
+- name: Bedroom Off
+  entities:
+    light.bedroom_lamp_1:
+      state: off
+    light.bedroom_lamp_2:
+      state: off
+    light.bedroom_overhead:
+      state: off
+
+- name: Bedtime
+  entities:
+    light.bedroom_lamp_1:
+      state: on
+      brightness: 128
+    light.bedroom_lamp_2:
+      state: on
+      brightness: 128
+    light.bedroom_overhead:
+      state: off
+    fan.bedroom:
+      state: on
+      percentage: 40
+    group.outdoor_lights:
+      state: off
+    group.living_room_lights:
+      state: off
+    group.office_lights:
+      state: off
+    group.kitchen_lights:
+      state: off
+    group.entrance_lights:
+      state: off
+    switch.3d_printer:
+      state: off
+    switch.glowforge:
+      state: off
+    switch.bookshelf_speakers:
+      state: off
+    fan.living_room:
+      state: off
+    group.living_room_shades:
+      state: closed
+    group.office_shades:
+      state: closed
+    group.balcony_shades:
+      state: closed
+    group.entrance_shades:
+      state: closed
+    group.bedroom_shades:
+      state: closed
+
+- name: Goodnight
+  entities:
+    light.bedroom_lamp_1:
+      state: off
+    light.bedroom_lamp_2:
+      state: off 
+    light.bedroom_overhead:
+      state: off
+    fan.bedroom:
+      state: off
+    group.outdoor_lights:
+      state: off
+    group.living_room_lights:
+      state: off
+    group.office_lights:
+      state: off
+    group.kitchen_lights:
+      state: off
+    group.entrance_lights:
+      state: off
+    switch.3d_printer:
+      state: off
+    switch.glowforge:
+      state: off
+    switch.bookshelf_speakers:
+      state: off
+    fan.living_room:
+      state: off
+    group.living_room_shades:
+      state: closed
+    group.office_shades:
+      state: closed
+    group.balcony_shades:
+      state: closed
+    group.entrance_shades:
+      state: closed
+    group.bedroom_shades:
+      state: closed
+
+- name: Bedroom Shades - Closed
+  entities:
+    group.bedroom_shades:
+      state: closed
+
+- name: Bedroom Shades - Open
+  entities:
+    group.bedroom_shades:
+      state: open
+
+- name: Entrance Shades - Closed
+  entities:
+    group.entrance_shades:
+      state: closed
+
+- name: Entrance Shades - Open
+  entities:
+    group.entrance_shades:
+      state: open
+
+- name: Living Room Shades - Closed
+  entities:
+    group.living_room_shades:
+      state: closed
+    group.office_shades:
+      state: closed
+    group.balcony_shades:
+      state: closed
+
+- name: Living Room Shades - Open
+  entities:
+    group.living_room_shades:
+      state: open
+    group.office_shades:
+      state: open
+    group.balcony_shades:
+      state: open
+
+- name: All Shades - Closed
+  entities:
+    group.living_room_shades:
+      state: closed
+    group.office_shades:
+      state: closed
+    group.balcony_shades:
+      state: closed
+    group.entrance_shades:
+      state: closed
+    group.bedroom_shades:
+      state: closed
+
+- name: All Shades - Open
+  entities:
+    group.living_room_shades:
+      state: open
+    group.office_shades:
+      state: open
+    group.balcony_shades:
+      state: open
+    group.entrance_shades:
+      state: open
+    group.bedroom_shades:
+      state: open
