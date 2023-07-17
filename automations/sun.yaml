@@ -17,7 +17,7 @@
 - alias: Late Night
   trigger:
     platform: time
-    at: "12:00:00"
+    at: "23:00:00"
   condition:
     - condition: state
       entity_id: input_boolean.party_mode
