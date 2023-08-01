@@ -5,14 +5,14 @@ bedroom_shades_half_open:
       target:
         entity_id: cover.bedroom_door_shade_1
       data:
-        position: 70
+        position: 51
     - service: cover.set_cover_position
       target:
         entity_id: cover.bedroom_door_shade_2
       data:
-        position: 70
+        position: 52
     - service: cover.set_cover_position
       target:
         entity_id: cover.bedroom_window_shade
       data:
-        position: 55
+        position: 30

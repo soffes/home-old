@@ -18,3 +18,7 @@
       - switch.bedroom_top
       - switch.bulb_lamp
       - switch.porch_light
+    include_entities:
+      - sensor.living_room_temperature
+      - sensor.living_room_humidity
+      - sensor.living_room_voc
