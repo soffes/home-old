@@ -1,8 +1,8 @@
 - name: Home Assistant Bridge
   mode: bridge
+  port: 21063
   filter:
     include_domains:
-      - climate
       - cover
       - fan
       - light
@@ -11,14 +11,10 @@
     exclude_entities:
       - fan.airmega
       - light.bedroom
+      - light.bedroom_bottom
+      - light.bedroom_top
       - light.living_room
       - light.standing_desk_status
       - switch.airmega_light
-      - switch.bedroom_bottom
-      - switch.bedroom_top
       - switch.bulb_lamp
       - switch.porch_light
-    include_entities:
-      - sensor.living_room_temperature
-      - sensor.living_room_humidity
-      - sensor.living_room_voc

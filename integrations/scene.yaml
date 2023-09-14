@@ -29,31 +29,46 @@
 
 - name: Bedroom Bright
   entities:
-    light.bedroom_lamp_1:
+    light.bedroom_lamp_west:
       state: on
       brightness: 255
-    light.bedroom_lamp_2:
+    light.bedroom_lamp_east:
       state: on
       brightness: 255
     light.bedroom_overhead:
+      state: off
+    light.bed_lightstrip_west:
       state: on
-      brightness: 255
+      brightness: 128
+    light.bed_lightstrip_east:
+      state: on
+      brightness: 128
 
 - name: Bedroom Off
   entities:
-    light.bedroom_lamp_1:
+    light.bedroom_lamp_west:
       state: off
-    light.bedroom_lamp_2:
+    light.bedroom_lamp_east:
       state: off
     light.bedroom_overhead:
+      state: off
+    light.bed_lightstrip_west:
+      state: off
+    light.bed_lightstrip_east:
       state: off
 
 - name: Bedtime
   entities:
-    light.bedroom_lamp_1:
+    light.bedroom_lamp_west:
       state: on
       brightness: 128
-    light.bedroom_lamp_2:
+    light.bedroom_lamp_east:
+      state: on
+      brightness: 128
+    light.bed_lightstrip_west:
+      state: on
+      brightness: 128
+    light.bed_lightstrip_east:
       state: on
       brightness: 128
     light.bedroom_overhead:
@@ -92,9 +107,13 @@
 
 - name: Goodnight
   entities:
-    light.bedroom_lamp_1:
+    light.bedroom_lamp_west:
       state: off
-    light.bedroom_lamp_2:
+    light.bedroom_lamp_east:
+      state: off 
+    light.bed_lightstrip_west:
+      state: off
+    light.bed_lightstrip_east:
       state: off 
     light.bedroom_overhead:
       state: off

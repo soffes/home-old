@@ -1,0 +1,16 @@
+- id: '1694701481728'
+  alias: Bookshelf Monitors Button Toggle
+  description: ''
+  trigger:
+  - device_id: 2df2887ce20976438106dcf96934701f
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  condition: []
+  action:
+  - type: toggle
+    device_id: b866c53728ab345b4b119483ac8a9d00
+    entity_id: c7b8e6b24af20607180a2a75927ee0c5
+    domain: switch
+  mode: single

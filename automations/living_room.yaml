@@ -1,0 +1,25 @@
+- alias: Toggle monitors
+  mode: single
+  trigger:
+    device_id: 2df2887ce20976438106dcf96934701f
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  action:
+    service: homeassistant.toggle
+    target:
+      entity_id: switch.monitors
+
+- alias: Toggle bulb lamp
+  mode: single
+  trigger:
+    device_id: 2df2887ce20976438106dcf96934701f
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+  action:
+    service: homeassistant.toggle
+    target:
+      entity_id: light.bulb_lamp

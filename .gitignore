@@ -21,3 +21,6 @@ __pycache__
 /image
 /custom_components
 /esphome/.esphome
+
+/pymyq
+/nest

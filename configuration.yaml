@@ -8,9 +8,11 @@ tts:
 
 alert: !include integrations/alert.yaml
 automation: !include_dir_merge_list automations
+ffmpeg:
 group: !include integrations/group.yaml
 homekit: !include integrations/homekit.yaml
 input_boolean: !include integrations/input_boolean.yaml
 light: !include integrations/light.yaml
 scene: !include integrations/scene.yaml
 script: !include_dir_merge_named scripts
+sensor: !include integrations/sensor.yaml

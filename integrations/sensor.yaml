@@ -1,0 +1,2 @@
+- platform: noaa_tides
+  station_id: 9414819
