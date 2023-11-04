@@ -20,7 +20,6 @@ __pycache__
 .HA_VERSION
 /image
 /custom_components
-/esphome/.esphome
 
 /pymyq
 /nest

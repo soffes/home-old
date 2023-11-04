@@ -1,0 +1,27 @@
+esphome:
+  name: skylight
+
+esp32:
+  board: esp-wrover-kit
+  framework:
+    type: arduino
+
+logger:
+  level: INFO
+
+api:
+  encryption:
+    key: !secret esphome_skylight_key
+
+ota:
+  password: !secret esphome_skylight_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  power_save_mode: NONE
+  fast_connect: true
+
+web_server:
+  local: true
+  ota: false
