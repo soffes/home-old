@@ -9,7 +9,7 @@ esphome:
   friendly_name: ${friendly_name}
 api:
   encryption:
-    key: YXTNs282vYWZDqTLm96XY/QMWipjJa2XS4V7goF5BDU=
+    key: !secret esphome_upsy_desky_key
 
 
 wifi:
