@@ -15,6 +15,7 @@
       - light.bedroom_top
       - light.living_room
       - light.standing_desk_status
+      - light.studio
       - switch.airmega_light
       - switch.bulb_lamp
       - switch.porch_light
