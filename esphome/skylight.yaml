@@ -11,9 +11,6 @@ esp32:
   framework:
     type: arduino
 
-# esp8266:
-#   board: nodemcuv2
-
 logger:
   level: INFO
 
@@ -37,7 +34,7 @@ web_server:
 sensor:
   - platform: adc
     pin: GPIO32
-    name: Skylight Proximity
+    name: Proximity
     update_interval: 0.5s
 
 output:
@@ -50,13 +47,13 @@ output:
     pin:
       number: GPIO33
 
-# switch:
-# - platform: output
-#   output: hbridge_a
-#   name: "Pin A"
-# - platform: output
-#   output: hbridge_b
-#   name: "Pin B"
+switch:
+- platform: output
+  output: hbridge_a
+  name: "Pin A"
+- platform: output
+  output: hbridge_b
+  name: "Pin B"
 
 cover:
   - platform: template
