@@ -1,10 +1,18 @@
 esphome:
   name: skylight
+  on_boot:
+    priority: 90
+    then:
+      - output.turn_off: hbridge_a
+      - output.turn_off: hbridge_b
 
 esp32:
   board: esp-wrover-kit
   framework:
     type: arduino
+
+# esp8266:
+#   board: nodemcuv2
 
 logger:
   level: INFO
@@ -25,3 +33,45 @@ wifi:
 web_server:
   local: true
   ota: false
+
+sensor:
+  - platform: adc
+    pin: GPIO32
+    name: Skylight Proximity
+    update_interval: 0.5s
+
+output:
+  - platform: gpio
+    id: hbridge_a
+    pin:
+      number: GPIO25
+  - platform: gpio
+    id: hbridge_b
+    pin:
+      number: GPIO33
+
+# switch:
+# - platform: output
+#   output: hbridge_a
+#   name: "Pin A"
+# - platform: output
+#   output: hbridge_b
+#   name: "Pin B"
+
+cover:
+  - platform: template
+    name: Skylight
+    open_action:
+      - output.turn_off: hbridge_b
+      - output.turn_on: hbridge_a
+      - delay: 2s
+      - output.turn_off: hbridge_a
+    close_action:
+      - output.turn_off: hbridge_a
+      - output.turn_on: hbridge_b
+      - delay: 2s
+      - output.turn_off: hbridge_b
+    stop_action:
+      - output.turn_off: hbridge_a
+      - output.turn_off: hbridge_b
+    optimistic: true
