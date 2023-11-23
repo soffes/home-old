@@ -56,19 +56,16 @@ switch:
   name: "Pin B"
 
 cover:
-  - platform: template
+  - platform: time_based
     name: Skylight
     open_action:
       - output.turn_off: hbridge_b
       - output.turn_on: hbridge_a
-      - delay: 2s
-      - output.turn_off: hbridge_a
+    open_duration: 34s
     close_action:
       - output.turn_off: hbridge_a
       - output.turn_on: hbridge_b
-      - delay: 2s
-      - output.turn_off: hbridge_b
+    close_duration: 24s
     stop_action:
       - output.turn_off: hbridge_a
       - output.turn_off: hbridge_b
-    optimistic: true
